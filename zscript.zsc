@@ -1,16 +1,14 @@
 class Spot : DoomPlayer replaces DoomPlayer
 {
-	Default{
+	Default
+	{
 		Player.DisplayName "Spot";
 		Player.SoundClass "spot";
 		Player.Face "SPT";
-
-		
+		Player.ColorRange 192, 207;
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 	}
-	
-	
-		States
+	States
 	{
 
 	Spawn:
@@ -67,19 +65,17 @@ class Spot : DoomPlayer replaces DoomPlayer
 
 class Deathshead : DoomPlayer replaces DoomPlayer
 {
-	Default{
+	Default
+	{
 		Player.DisplayName "Deathshead";
 		Player.SoundClass "deathshead";
 		Player.Face "MOF";
-
-		
+		Player.DamageScreenColor "37732b";
+		Player.ColorRange 192, 207;
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 	}
-	
-	
-		States
+	States
 	{
-
 	Spawn:
 		MOFF A -1;
 		Loop;
@@ -129,12 +125,5 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		MOFF STUVWX 5;
 		MOFF Y -1;
 		Stop;
-	}
-}
-
-class Test : DoomPlayer replaces DoomPlayer
-{
-	Default{
-		Player.DisplayName "Other";
 	}
 }
