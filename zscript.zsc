@@ -177,6 +177,7 @@ class SpotMallet : Fist
 			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
 		}
 		MALL HIJ 1 A_SetAngle(self.angle - 4);
+		MTCD DCBA 2;
 		Goto Ready;
 	}
 }
