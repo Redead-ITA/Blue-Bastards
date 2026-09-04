@@ -145,7 +145,7 @@ class SpotMallet : Fist
 		MALL A 1 A_Raise;
 		Loop;
 	Fire:
-		MALL BC 2;
+		MALL BC 2 A_SetAngle(self.angle + 4);
 		MALL C 2;
 		Goto Hold_Check;
 	Hold_Check:
@@ -163,16 +163,19 @@ class SpotMallet : Fist
 		MALL C 1;
 		Goto Hold_Check;
 	Swing:
-		MALL DEF 1;
+		MALL DEF 1 A_SetAngle(self.angle - 4);
+		MALL G 0 A_Recoil(-4);
+		MALL G 0;
 		MALL G 1{
-			int dmg = 3 * random(1,10);
+			int dmg = 2 * random(1,10);
+			A_SetAngle(self.angle - 4);
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 10;
 			}
 			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
 		}
-		MALL HIJ 1;
+		MALL HIJ 1 A_SetAngle(self.angle - 4);
 		Goto Ready;
 	}
 }
