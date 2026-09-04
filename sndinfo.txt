@@ -3,6 +3,10 @@ weapons/mallet2 "sounds/weapons/AXE5.ogg"
 $random weapons/mallet {weapons/mallet1 weapons/mallet2}
 weapons/mallet/miss "sounds/weapons/PUNCHMIS.wav"
 
+weapons/adpistol1 "sounds/weapons/pistol_fire.wav"
+weapons/adpistol2 "sounds/weapons/pistol_fire (2).wav"
+$random weapons/adpistol {weapons/adpistol1 weapons/adpistol2}
+
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
 $playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
