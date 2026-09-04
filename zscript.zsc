@@ -76,6 +76,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.DamageScreenColor "37732b";
 		Player.ColorRange 192, 207;
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
+		BloodColor "37732b";
 	}
 	States
 	{
