@@ -1,3 +1,5 @@
+#include "zscript/weapons.zsc"
+
 class Spot : DoomPlayer replaces DoomPlayer
 {
 	Default
@@ -129,56 +131,5 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		MOFF STUVWX 5;
 		MOFF Y -1;
 		Stop;
-	}
-}
-
-class SpotMallet : Fist
-{
-	States
-	{
-	Ready:
-		MALL A 1 A_WeaponReady;
-		Loop;
-	Deselect:
-		MALL A 1 A_Lower;
-		Loop;
-	Select:
-		MALL A 1 A_Raise;
-		Loop;
-	Fire:
-		MALL BC 2 A_SetAngle(self.angle + 4);
-		MALL C 2;
-		Goto Hold_Check;
-	Hold_Check:
-		MALL C 0{
-			if (player.cmd.buttons & BT_ATTACK)
-			{
-				return ResolveState("Hold");
-			} 
-			else
-			{
-				return ResolveState("Swing");
-			}
-		}
-	Hold:
-		MALL C 1;
-		Goto Hold_Check;
-	Swing:
-		MALL DEF 1 A_SetAngle(self.angle - 4);
-		MALL G 0 A_Recoil(-4);
-		MALL G 0;
-		MALL G 1{
-			int dmg = 2 * random(1,10);
-			A_SetAngle(self.angle - 4);
-			if (FindInventory("PowerStrength"))
-			{
-				dmg *= 10;
-			}
-			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
-		}
-		MALL HIJ 1 A_SetAngle(self.angle - 4);
-		TNT1 A 10;
-		MTCD DCBA 2;
-		Goto Ready;
 	}
 }
