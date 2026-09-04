@@ -1,0 +1,19 @@
+// Spot Sound Effects
+$playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
+$playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
+$playersound	spot male	*pain100		   "sounds/spot/DSSPTPAI.wav"
+$playersound	spot	male	*pain75			   "sounds/spot/DSSPTPAI.wav"
+$playersound	spot	male	*pain50			   "sounds/spot/DSSPTPAI.wav"
+$playersound	spot	male	*pain25			   "sounds/spot/DSSPTPAI.wav"
+$playersound	spot	male	*usefail	   "sounds/spot/DSSPTNWA.wav"
+$playersound	spot	male	*land	   "sounds/player_generic/land.wav"
+
+// Deathshead Sound Effects
+$playersound	deathshead	male	*death			  "sounds/deathshead/DSMOFDIE.ogg"
+$playersound	deathshead	male	*xdeath			   "sounds/deathshead/DSMOFSCR.ogg"
+$playersound	deathshead male	*pain100		   "sounds/deathshead/DSMOFJMP.ogg"
+$playersound	deathshead	male	*pain75			   "sounds/deathshead/DSMOFJMP.ogg"
+$playersound	deathshead	male	*pain50			   "sounds/deathshead/DSMOFJMP.ogg"
+$playersound	deathshead	male	*pain25			   "sounds/deathshead/DSMOFJMP.ogg"
+$playersound	deathshead	male	*usefail	   "sounds/deathshead/DSMOFNWA.ogg"
+$playersound	deathshead	male	*land	   "sounds/player_generic/land.wav"
