@@ -7,10 +7,13 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.Face "SPT";
 		Player.ColorRange 192, 207;
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
+		Player.StartItem "Pistol";
+		Player.StartItem "SpotMallet";
+		Player.StartItem "Clip", 50;
+		Player.WeaponSlot 1, "SpotMallet", "Chainsaw";
 	}
 	States
 	{
-
 	Spawn:
 		SPOT A -1;
 		Loop;
@@ -125,5 +128,36 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		MOFF STUVWX 5;
 		MOFF Y -1;
 		Stop;
+	}
+}
+
+class SpotMallet : Fist
+{
+	States
+	{
+	Ready:
+		MALL A 1 A_WeaponReady;
+		Loop;
+	Deselect:
+		MALL A 1 A_Lower;
+		Loop;
+	Select:
+		MALL A 1 A_Raise;
+		Loop;
+	Fire:
+		MALL B 4;
+		MALL C 4
+		{
+			int dmg = 2 * random(1,10);
+			if (FindInventory("PowerStrength"))
+			{
+				dmg *= 10;
+			}
+			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
+		}
+		MALL D 5;
+		MALL C 4;
+		MALL B 5 A_ReFire;
+		Goto Ready;
 	}
 }

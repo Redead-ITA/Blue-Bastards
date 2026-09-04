@@ -1,4 +1,7 @@
-// Spot Sound Effects
+weapons/mallet "sounds/weapons/MUMPUN5.wav"
+weapons/mallet/miss "sounds/weapons/PUNCHMIS.wav"
+
+// Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
 $playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
 $playersound	spot	male	*pain100		   "sounds/spot/DSSPTPAI.wav"
@@ -8,7 +11,7 @@ $playersound	spot	male	*pain25			   "sounds/spot/DSSPTPAI.wav"
 $playersound	spot	male	*usefail	   "sounds/spot/DSSPTNWA.wav"
 $playersound	spot	male	*land	   "sounds/player_generic/land.wav"
 
-// Deathshead Sound Effects
+// Deathshead
 $playersound	deathshead	male	*death		"sounds/deathshead/DSMOFDIE.ogg"
 $playersound	deathshead	male	*xdeath		"sounds/deathshead/DSMOFSCR.ogg"
 $playersound	deathshead	male	*gibbed		"sounds/deathshead/DSMOFSPL.ogg"
