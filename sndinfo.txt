@@ -1,4 +1,6 @@
-weapons/mallet "sounds/weapons/MUMPUN5.wav"
+weapons/mallet1 "sounds/weapons/MUMPUN5.ogg"
+weapons/mallet2 "sounds/weapons/AXE5.ogg"
+$random weapons/mallet {weapons/mallet1 weapons/mallet2}
 weapons/mallet/miss "sounds/weapons/PUNCHMIS.wav"
 
 // Spot
