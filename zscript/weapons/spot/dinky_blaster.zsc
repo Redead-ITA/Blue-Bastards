@@ -1,0 +1,23 @@
+class DinkyBlaster : Pistol
+{
+	States
+	{
+	Ready:
+		DNKB A 1 A_WeaponReady;
+		Loop;
+	Deselect:
+		DNKB A 1 A_Lower;
+		Loop;
+	Select:
+		DNKB A 1 A_Raise;
+		Loop;
+	Fire:
+		DNKB C 4 A_FirePlasma;
+        DNKB B 4;
+        Goto Ready;
+    Flash:
+        DKFR A 4 A_Light1;
+        TNT1 A 1 A_Light0;
+        stop;
+	}
+}

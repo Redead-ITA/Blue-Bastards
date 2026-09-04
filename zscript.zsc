@@ -1,4 +1,9 @@
+//Replace with seperate files for Ace Deathshead - Tofi
 #include "zscript/weapons.zsc"
+
+// Spot's weapons
+#include "zscript/weapons/spot/malett.zsc"
+#include "zscript/weapons/spot/dinky_blaster.zsc"
 
 class Spot : DoomPlayer replaces DoomPlayer
 {
@@ -9,10 +14,11 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.Face "SPT";
 		Player.ColorRange 192, 207;
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
-		Player.StartItem "Pistol";
+		Player.StartItem "DinkyBlaster";
 		Player.StartItem "SpotMallet";
 		Player.StartItem "Clip", 50;
 		Player.WeaponSlot 1, "SpotMallet", "Chainsaw";
+		Player.WeaponSlot 2, "DinkyBlaster";
 	}
 	States
 	{
