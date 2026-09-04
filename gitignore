@@ -1,0 +1,9 @@
+*.pk3
+*.bak
+*.backup?
+*.backup??
+*.autosave?
+*.autosave??
+*.dbs
+*.lmp_bak
+*-export.png
