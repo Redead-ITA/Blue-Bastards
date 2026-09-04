@@ -1,3 +1,9 @@
+
+//If I can pose a suggestion, I'd say make two separate kinda of cell ammo, one for the BFG and Plasma Gun/your new gun
+//Maybe make the new gun not shoot cells plasma rifle specifically but have it maybe be a low powered energy beam
+//For more focused shots whilst the Plasma gun could be used for more rapid firing devastating plasma shots like the original
+//ve e vett from discord
+
 class DinkyBlaster : Pistol
 {
     Default
