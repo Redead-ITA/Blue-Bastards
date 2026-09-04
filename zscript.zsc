@@ -145,19 +145,34 @@ class SpotMallet : Fist
 		MALL A 1 A_Raise;
 		Loop;
 	Fire:
-		MALL B 4;
-		MALL C 4
-		{
-			int dmg = 2 * random(1,10);
+		MALL BC 2;
+		MALL C 2;
+		Goto Hold_Check;
+	Hold_Check:
+		MALL C 0{
+			if (player.cmd.buttons & BT_ATTACK)
+			{
+				return ResolveState("Hold");
+			} 
+			else
+			{
+				return ResolveState("Swing");
+			}
+		}
+	Hold:
+		MALL C 1;
+		Goto Hold_Check;
+	Swing:
+		MALL DEF 1;
+		MALL G 1{
+			int dmg = 3 * random(1,10);
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 10;
 			}
 			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
 		}
-		MALL D 5;
-		MALL C 4;
-		MALL B 5 A_ReFire;
+		MALL HIJ 1;
 		Goto Ready;
 	}
 }
