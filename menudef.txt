@@ -1,0 +1,5 @@
+DefaultListMenu
+{
+	Font "DBIGFONT", "Sapphire", "LightBlue"
+	Selector "M_SKULL1", -28, -1
+}

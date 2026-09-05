@@ -1,4 +1,13 @@
 GameInfo
 {
+	ForceTextInMenus = True
 	PlayerClasses = "Spot", "Deathshead"
+	MenuFontColor_Title = "Sapphire"
+	MenuFontColor_Label = "Sapphire"
+	MenuFontColor_Value = "Sapphire"
+	MenuFontColor_Action = "Sapphire"
+	MenuFontColor_Header = "Sapphire"
+	MenuFontColor_Highlight = "Sapphire"
+	MenuFontColor_Selection = "Sapphire"
 }
+
