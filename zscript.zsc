@@ -1,9 +1,5 @@
-//Replace with seperate files for Ace Deathshead - Tofi
-#include "zscript/weapons.zsc"
-
-// Spot's weapons
-#include "zscript/weapons/spot/malett.zsc"
-#include "zscript/weapons/spot/dinky_blaster.zsc"
+#include "zscript/weapons/deathshead.zsc"
+#include "zscript/weapons/spot.zsc"
 
 class Spot : DoomPlayer replaces DoomPlayer
 {
