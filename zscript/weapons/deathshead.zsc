@@ -28,6 +28,9 @@ class DeathsheadPistol : Pistol
 {
 	Default
 	{
+		Weapon.BobRangeX 0.75;
+		Weapon.BobSpeed 2;
+		Weapon.BobStyle "InverseSmooth";
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
 	}
@@ -72,6 +75,9 @@ class DeathsheadMAC10 : Chaingun
 {
 	Default
 	{
+		Weapon.BobRangeX 0.5;
+		Weapon.BobSpeed 1.5;
+		Weapon.BobStyle "InverseSmooth";
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
         Inventory.PickupMessage "Picked up a MAC-10.";
