@@ -1,5 +1,6 @@
 #include "zscript/weapons/deathshead.zsc"
 #include "zscript/weapons/spot.zsc"
+#include "zscript/weapons/weapons.zsc"
 
 class Spot : DoomPlayer replaces DoomPlayer
 {
@@ -15,6 +16,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.StartItem "DinkyBlasterAmmo", 10;
 		Player.WeaponSlot 1, "SpotMallet", "Chainsaw";
 		Player.WeaponSlot 2, "DinkyBlaster";
+		Player.WeaponSlot 4, "SpotChaingun";
 	}
 	States
 	{

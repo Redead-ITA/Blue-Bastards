@@ -134,3 +134,7 @@ class DinkyPuff : BulletPuff
             stop;
     }
 }
+
+class SpotChaingun : Chaingun
+{
+}
