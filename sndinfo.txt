@@ -17,6 +17,8 @@ weapons/mac3 "sounds/weapons/MicroUzi-Single3.wav"
 $random weapons/mac10 {weapons/mac1 weapons/mac2 weapons/mac3}
 weapons/mac10/deploy "sounds/weapons/mac10_boltpull.wav"
 
+weapons/fists/deploy "sounds/weapons/KNUCKLED.ogg"
+
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
 $playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
