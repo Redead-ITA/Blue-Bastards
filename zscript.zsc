@@ -85,10 +85,11 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.ColorRange 192, 207;
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		BloodColor "37732b";
-		Player.StartItem "Pistol";
+		Player.StartItem "DeathsheadPistol";
 		Player.StartItem "DeathsheadFist";
 		Player.StartItem "Clip", 50;
 		Player.WeaponSlot 1, "DeathsheadFist", "Chainsaw";
+		Player.WeaponSlot 2, "DeathsheadPistol";
 	}
 	States
 	{
