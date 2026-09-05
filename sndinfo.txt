@@ -3,6 +3,9 @@ weapons/mallet2 "sounds/weapons/AXE5.ogg"
 $random weapons/mallet {weapons/mallet1 weapons/mallet2}
 weapons/mallet/miss "sounds/weapons/PUNCHMIS.wav"
 
+weapons/blaster/shoot "sounds/weapons/plasma_2fire3.wav"
+weapons/blaster/reload "sounds/weapons/bfg_reload.wav"
+
 weapons/adpistol1 "sounds/weapons/pistol_fire.wav"
 weapons/adpistol2 "sounds/weapons/pistol_fire (2).wav"
 $random weapons/adpistol {weapons/adpistol1 weapons/adpistol2}
