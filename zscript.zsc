@@ -16,7 +16,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.StartItem "DinkyBlaster";
 		Player.StartItem "SpotMallet";
-		Player.StartItem "Cell", 40;
+		Player.StartItem "DinkyBlasterAmmo", 10;
 		Player.WeaponSlot 1, "SpotMallet", "Chainsaw";
 		Player.WeaponSlot 2, "DinkyBlaster";
 	}
