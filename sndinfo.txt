@@ -11,6 +11,11 @@ weapons/adpistol2 "sounds/weapons/pistol_fire (2).wav"
 $random weapons/adpistol {weapons/adpistol1 weapons/adpistol2}
 weapons/adpistol/deploy "sounds/weapons/usp_slideback.wav"
 
+weapons/mac1 "sounds/weapons/MicroUzi-Single1.wav"
+weapons/mac2 "sounds/weapons/MicroUzi-Single2.wav"
+weapons/mac3 "sounds/weapons/MicroUzi-Single3.wav"
+$random weapons/mac10 {weapons/mac1 weapons/mac2 weapons/mac3}
+
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
 $playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"

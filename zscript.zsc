@@ -86,6 +86,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.StartItem "Clip", 50;
 		Player.WeaponSlot 1, "DeathsheadFist", "Chainsaw";
 		Player.WeaponSlot 2, "DeathsheadPistol";
+		Player.WeaponSlot 4, "DeathsheadMAC10";
 	}
 	States
 	{
