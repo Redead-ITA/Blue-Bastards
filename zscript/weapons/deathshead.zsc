@@ -123,3 +123,7 @@ class DeathsheadMAC10 : Chaingun
 		Stop;
 	}
 }
+
+class DeathsheadShotgun : Shotgun
+{
+}
