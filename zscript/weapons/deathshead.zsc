@@ -26,6 +26,11 @@ class DeathsheadFist : Fist
 
 class DeathsheadPistol : Pistol
 {
+	Default
+	{
+		Weapon.WeaponScaleX 0.9;
+		Weapon.WeaponScaleY 1.08;
+	}
 	States
 	{
 	Select:
@@ -65,6 +70,12 @@ class DeathsheadPistol : Pistol
 
 class DeathsheadMAC10 : Chaingun
 {
+	Default
+	{
+		Weapon.WeaponScaleX 0.9;
+		Weapon.WeaponScaleY 1.08;
+        Inventory.PickupMessage "Picked up a MAC-10.";
+	}
 	States
 	{
 	Ready:
@@ -82,14 +93,13 @@ class DeathsheadMAC10 : Chaingun
 		{
 			A_FireBullets (7, 4, 1, 5, "BulletPuff");
 			A_StartSound("weapons/mac10", CHAN_WEAPON);
-			A_WeaponOffset(random(-2.0,2.0), random(32.0,48.0));
+			A_WeaponOffset(random(-4.0,8.0), random(32.0,48.0),WOF_INTERPOLATE);
 		}
 		ADMC A 0 A_ReFire;
 		Goto Ready;
 	Flash:
-		TNT1 A 2 Bright A_Light1;
-		Goto LightDone;
-		TNT1 A 2 Bright A_Light2;
+		ADMC CE 1 Bright A_Light1;
+		ADMC DF 1 Bright A_Light2;
 		Goto LightDone;
 	Spawn:
 		ADMC A -1;
