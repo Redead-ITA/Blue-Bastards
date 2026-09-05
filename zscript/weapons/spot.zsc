@@ -159,9 +159,9 @@ class SpotShotgun : Shotgun
 				A_FireBullets(7, 4, 20, 5, "BulletPuff");
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
-				A_SetPitch(self.pitch + 4, WOF_INTERPOLATE);
+				A_SetPitch(self.pitch - 4, WOF_INTERPOLATE);
 			}
-			SSHT DC 2 A_SetPitch(self.pitch - 2, WOF_INTERPOLATE);
+			SSHT DC 2 A_SetPitch(self.pitch + 2, WOF_INTERPOLATE);
 			SSHT A 6;
 			SSHT EF 2;
 			SSHT A 0 A_PlaySound("weapons/shotgun/pump");
