@@ -4,7 +4,7 @@ $random weapons/mallet {weapons/mallet1 weapons/mallet2}
 weapons/mallet/miss "sounds/weapons/PUNCHMIS.wav"
 
 weapons/claw/swing "sounds/weapons/fists_raise_fists_01.wav"
-weapons/claw/impact "sounds/weapons/doom_claw_hd.wav"
+weapons/claw/impact "sounds/weapons/claw_impact.ogg"
 
 weapons/shotgun/pump "sounds/weapons/shotgunpump1.ogg"
 weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
