@@ -145,7 +145,6 @@ class SpotShotgun : Shotgun
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 2;
 		Weapon.AmmoGive 8;
-		Weapon.SlotNumber 3;
 	}
 	States {
 		Ready:
