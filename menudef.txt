@@ -21,3 +21,18 @@ OptionMenu "Credits"
 	Title "Credit Where It's Due"
 	StaticText "Saver310 and Tofi - Nearly Everything"
 }
+
+ListMenu "PlayerclassMenu"
+{
+	NetgameMessage "$NEWGAME"
+	StaticTextCentered 160, 15, "PICK YOUR BLUE BASTARD!"
+	Position 48, 63
+	PlayerDisplay 220, 63, "20 00 00", "80 00 40"
+	MouseWindow 0, 220
+}
+
+ListMenu "SkillMenu"
+{
+	StaticTextCentered 160, 15, "HOW TOUGH?"
+	Position 48, 63
+}
