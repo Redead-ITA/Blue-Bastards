@@ -3,3 +3,19 @@ DefaultListMenu
 	Font "DBIGFONT", "Sapphire", "LightBlue"
 	Selector "M_SKULL1", -28, -1
 }
+
+ListMenu "MainMenu"
+{
+	TextItem "$MNU_NEWGAME", "n", "PlayerclassMenu"
+	TextItem "$MNU_OPTIONS", "o", "OptionsMenu"
+	TextItem "$MNU_LOADGAME", "l", "LoadGameMenu"
+	TextItem "$MNU_SAVEGAME", "s", "SaveGameMenu"
+	TextItem "$MNU_CREDITS", "c", "Credits"
+	TextItem "$MNU_QUITGAME", "q", "QuitMenu"
+}
+
+OptionMenu "Credits"
+{
+	Title "Credit Where It's Due"
+	StaticText "Saver310 and Tofi - Nearly Everything"
+}
