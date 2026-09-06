@@ -44,7 +44,8 @@ $playersound	spot	male	*pain75			   "sounds/spot/DSSPTPAI.wav"
 $playersound	spot	male	*pain50			   "sounds/spot/DSSPTPAI.wav"
 $playersound	spot	male	*pain25			   "sounds/spot/DSSPTPAI.wav"
 $playersound	spot	male	*usefail	   "sounds/spot/DSSPTNWA.wav"
-$playersound	spot	male	*land	   "sounds/spot/DSSPTOOF.wav"
+$playersound	spot	male	*grunt	   "sounds/spot/DSSPTOOF.wav"
+$playersounddup	spot	male	*land		*grunt
 
 // Deathshead
 $playersound	deathshead	male	*death		"sounds/deathshead/DSMOFDIE.ogg"
@@ -72,3 +73,9 @@ $alias menu/invalid			menu/cancel
 $alias menu/dismiss			menu/ok
 $alias menu/choose			menu/ok
 $alias menu/clear			menu/cancel
+
+menu/jingle1 "sounds/deathshead/DSMOFNWA.ogg"
+menu/jingle2 "sounds/spot/DSSPTNWA.wav"
+$alias menu/jingle3 weapons/mac10/deploy
+$alias menu/jingle4 weapons/adpistol/deploy
+$random menu/jingle {menu/jingle1 menu/jingle2 menu/jingle3 menu/jingle4}
