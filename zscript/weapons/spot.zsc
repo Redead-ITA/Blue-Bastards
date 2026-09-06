@@ -216,11 +216,7 @@ class SpotRustyClaws : Fist
 		Swing_Left:
 			CLWL AB 1;
 			CLWL C 1 {
-				int dmg = random(5,15);
-				if (FindInventory("PowerStrength"))
-				{
-					dmg *= 10;
-				}
+				int dmg = random(5,20);
 				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/claw/swing");
 			}
 			CLWL DEF 1;
@@ -228,11 +224,7 @@ class SpotRustyClaws : Fist
 		Swing_Right:
 			CLWR AB 1;
 			CLWR C 1 {
-				int dmg = random(5,15);
-				if (FindInventory("PowerStrength"))
-				{
-					dmg *= 10;
-				}
+				int dmg = random(5,20);
 				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/claw/swing");
 			}
 			CLWR DEF 1;
