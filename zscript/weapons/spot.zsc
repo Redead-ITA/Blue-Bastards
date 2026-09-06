@@ -210,14 +210,14 @@ class SpotDevastator : SuperShotgun
 				A_Recoil(1);
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
-				A_SetPitch(self.pitch - 4, WOF_INTERPOLATE);
+				A_SetPitch(self.pitch - 3, WOF_INTERPOLATE);
 			}
-			DVST DCB 2 A_SetPitch(self.pitch + 2, WOF_INTERPOLATE);
-			DVST A 4;
+			DVST DCB 2 A_SetPitch(self.pitch + 1, WOF_INTERPOLATE);
+			DVST A 6;
 			goto Ready;
 		Flash:
-			DVTF A 2 Bright A_Light2;
-			DVTF B 2 Bright A_Light1;
+			DVTF B 2 Bright A_Light2;
+			DVTF A 2 Bright A_Light1;
 			TNT1 A 1 A_Light0;
 			stop;
 		Spawn:
