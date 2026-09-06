@@ -12,13 +12,24 @@ weapons/blaster/reload "sounds/weapons/bfg_reload.wav"
 weapons/adpistol1 "sounds/weapons/pistol_fire.wav"
 weapons/adpistol2 "sounds/weapons/pistol_fire (2).wav"
 $random weapons/adpistol {weapons/adpistol1 weapons/adpistol2}
+$limit weapons/adpistol 2 
 weapons/adpistol/deploy "sounds/weapons/usp_slideback.wav"
 
 weapons/mac1 "sounds/weapons/MicroUzi-Single1.wav"
 weapons/mac2 "sounds/weapons/MicroUzi-Single2.wav"
 weapons/mac3 "sounds/weapons/MicroUzi-Single3.wav"
 $random weapons/mac10 {weapons/mac1 weapons/mac2 weapons/mac3}
+$limit weapons/mac10 2 
 weapons/mac10/deploy "sounds/weapons/mac10_boltpull.wav"
+
+weapons/autoshotgun1 "sounds/weapons/Scattergun5c-Shot01.ogg"
+weapons/autoshotgun2 "sounds/weapons/Scattergun5c-Shot02.ogg"
+weapons/autoshotgun3 "sounds/weapons/Scattergun5c-Shot03.ogg"
+weapons/autoshotgun4 "sounds/weapons/Scattergun5c-Shot04.ogg"
+weapons/autoshotgun5 "sounds/weapons/Scattergun5c-Shot05.ogg"
+$random weapons/autoshotgun {weapons/autoshotgun1 weapons/autoshotgun2 weapons/autoshotgun3 weapons/autoshotgun4 weapons/autoshotgun5}
+$limit weapons/autoshotgun 2 
+weapons/autoshotgun/deploy "sounds/weapons/shotgun_deploy_1.wav"
 
 weapons/fists/deploy "sounds/weapons/KNUCKLED.ogg"
 

@@ -14,7 +14,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.StartItem "DinkyBlaster";
 		Player.StartItem "SpotMallet";
 		Player.StartItem "DinkyBlasterAmmo", 10;
-		Player.WeaponSlot 1, "SpotMallet", "Chainsaw";
+		Player.WeaponSlot 1, "SpotMallet", "SpotChainsaw";
 		Player.WeaponSlot 2, "DinkyBlaster";
 		Player.WeaponSlot 4, "SpotChaingun";
 	}
@@ -86,8 +86,9 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.StartItem "DeathsheadPistol";
 		Player.StartItem "DeathsheadFist";
 		Player.StartItem "Clip", 50;
-		Player.WeaponSlot 1, "DeathsheadFist", "Chainsaw";
+		Player.WeaponSlot 1, "DeathsheadFist", "DeathsheadChainsaw";
 		Player.WeaponSlot 2, "DeathsheadPistol";
+		Player.WeaponSlot 3, "DeathsheadShotgun", "SuperShotgun";
 		Player.WeaponSlot 4, "DeathsheadMAC10";
 	}
 	States

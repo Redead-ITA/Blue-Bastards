@@ -53,13 +53,17 @@ class SpotMallet : Fist
 	}
 }
 
+class SpotChainsaw : Chainsaw
+{
+}
+
 class DinkyBlasterAmmo : Ammo
 {
     Default
     {
         Inventory.MaxAmount 10;
         Inventory.Amount 10;
-        Inventory.Icon "CELL";
+        //Inventory.Icon "";
         Inventory.PickupMessage "Picked up... internals of a Dinky Blaster? WHAT?";
     }
 }
