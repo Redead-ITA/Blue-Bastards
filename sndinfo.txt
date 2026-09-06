@@ -36,6 +36,8 @@ weapons/autoshotgun/deploy "sounds/weapons/shotgun_deploy_1.wav"
 
 weapons/fists/deploy "sounds/weapons/KNUCKLED.ogg"
 
+weapons/plasmacannon "sounds/weapons/65_wea_shotgun_alt.wav"
+
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
 $playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
