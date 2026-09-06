@@ -26,6 +26,7 @@ weapons/autoshotgun4 "sounds/weapons/Scattergun5c-Shot04.ogg"
 weapons/autoshotgun5 "sounds/weapons/Scattergun5c-Shot05.ogg"
 $random weapons/autoshotgun {weapons/autoshotgun1 weapons/autoshotgun2 weapons/autoshotgun3 weapons/autoshotgun4 weapons/autoshotgun5}
 $limit weapons/autoshotgun 2 
+weapons/autoshotgun/deploy "sounds/weapons/shotgun_deploy_1.wav"
 
 weapons/fists/deploy "sounds/weapons/KNUCKLED.ogg"
 
