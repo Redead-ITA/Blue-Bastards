@@ -185,6 +185,63 @@ class SpotShotgun : Shotgun
 	}
 }
 
+class SpotRustyClaws : Chainsaw
+{
+	Default
+	{
+		+WEAPON.MELEEWEAPON
+	}
+	States
+	{
+		Ready:
+			CLWI A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			CLWI A 1 A_Lower;
+			Loop;
+		Select:
+			CLWI A 1 A_Raise;
+			Loop;
+		Fire:
+			CLWI A 1{
+				int dice = Random(1, 2);
+				if (dice == 1){
+					return ResolveState("Swing_Left");
+				} 
+				else{
+					return ResolveState("Swing_Right");
+				}
+
+			}
+		Swing_Left:
+			CLWL AB 2;
+			CLWL C 2 {
+				int dmg = random(5,15);
+				A_SetAngle(self.angle - 4);
+				if (FindInventory("PowerStrength"))
+				{
+					dmg *= 10;
+				}
+				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
+			}
+			CLWL DEF 2;
+			goto Ready;
+		Swing_Right:
+			CLWR AB 2;
+			CLWR C 2 {
+				int dmg = random(5,15);
+				A_SetAngle(self.angle - 4);
+				if (FindInventory("PowerStrength"))
+				{
+					dmg *= 10;
+				}
+				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
+			}
+			CLWR DEF 2;
+			goto Ready;
+	}
+}
+
 class SpotChaingun : Chaingun
 {
 }
