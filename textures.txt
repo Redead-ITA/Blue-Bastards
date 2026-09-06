@@ -2,5 +2,5 @@ Graphic M_DOOM, 640, 384
 {
 	XScale 5
 	YScale 5
-	Patch "graphics/m_doom.png", 0, -16
+	Patch "graphics/m_doom.png", 0, -24
 }
