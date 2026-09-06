@@ -189,36 +189,35 @@ class SpotDevastator : SuperShotgun
 {
 	Default{
 		Weapon.AmmoType "Shell";
-		Weapon.AmmoUse 2;
+		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
 		Weapon.SlotNumber 3;
 	}
 	States {
 		Ready:
-			SSHT A 1 A_WeaponReady;
+			DVST A 1 A_WeaponReady;
 			Loop;
 		Deselect:
-			SSHT A 1 A_Lower;
+			DVST A 1 A_Lower;
 			Loop;
 		Select:
-			SSHT A 1 A_Raise;
+			DVST A 1 A_Raise;
 			Loop;
 		Fire:
-			SSHT A 0
+			DVST D 0
 			{
-				A_FireBullets(7, 4, 20, 5, "BulletPuff");
+				A_FireBullets(7, 4, 12, 5, "BulletPuff");
 				A_Recoil(1);
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
 				A_SetPitch(self.pitch - 4, WOF_INTERPOLATE);
 			}
-			SSHT DC 2 A_SetPitch(self.pitch + 2, WOF_INTERPOLATE);
-			SSHT A 6;
-			SSHT EF 2;
+			DVST DCB 2 A_SetPitch(self.pitch + 2, WOF_INTERPOLATE);
+			DVST A 4;
 			goto Ready;
 		Flash:
-			SSMF A 2 Bright A_Light2;
-			SSMF B 2 Bright A_Light1;
+			DVTF A 2 Bright A_Light2;
+			DVTF B 2 Bright A_Light1;
 			TNT1 A 1 A_Light0;
 			stop;
 		Spawn:
