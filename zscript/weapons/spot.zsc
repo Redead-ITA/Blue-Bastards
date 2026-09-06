@@ -185,7 +185,7 @@ class SpotShotgun : Shotgun
 	}
 }
 
-class SpotRustyClaws : Chainsaw
+class SpotRustyClaws : Fist
 {
 	Default
 	{
@@ -203,7 +203,7 @@ class SpotRustyClaws : Chainsaw
 			CLWI A 1 A_Raise;
 			Loop;
 		Fire:
-			CLWI A 1{
+			CLWI A 0{
 				int dice = Random(1, 2);
 				if (dice == 1){
 					return ResolveState("Swing_Left");
@@ -214,8 +214,8 @@ class SpotRustyClaws : Chainsaw
 
 			}
 		Swing_Left:
-			CLWL AB 2;
-			CLWL C 2 {
+			CLWL AB 1;
+			CLWL C 1 {
 				int dmg = random(5,15);
 				A_SetAngle(self.angle - 4);
 				if (FindInventory("PowerStrength"))
@@ -224,11 +224,11 @@ class SpotRustyClaws : Chainsaw
 				}
 				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
 			}
-			CLWL DEF 2;
+			CLWL DEF 1;
 			goto Ready;
 		Swing_Right:
-			CLWR AB 2;
-			CLWR C 2 {
+			CLWR AB 1;
+			CLWR C 1 {
 				int dmg = random(5,15);
 				A_SetAngle(self.angle - 4);
 				if (FindInventory("PowerStrength"))
@@ -237,7 +237,7 @@ class SpotRustyClaws : Chainsaw
 				}
 				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
 			}
-			CLWR DEF 2;
+			CLWR DEF 1;
 			goto Ready;
 	}
 }
