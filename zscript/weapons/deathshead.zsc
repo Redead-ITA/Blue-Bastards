@@ -196,3 +196,7 @@ class DeathsheadShotgun : Shotgun
 		Goto LightDone;
 	}
 }
+
+class DeathsheadSuperShotgun : SuperShotgun
+{
+}
