@@ -197,6 +197,10 @@ class DeathsheadShotgun : Shotgun
 	}
 }
 
+class DeathsheadSuperShotgun : SuperShotgun
+{
+}
+
 class DeathsheadPlasmaRifle : PlasmaRifle
 {
 	Default
