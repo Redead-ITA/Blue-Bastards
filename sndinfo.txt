@@ -58,3 +58,17 @@ $playersound	deathshead	male	*grunt		"sounds/deathshead/DSMOFOOF.ogg"
 $playersounddup	deathshead	male	*land		*grunt
 $playersound	deathshead	male	*jump		"sounds/deathshead/DSMOFJMP.ogg"
 $playersound	deathshead	male	*usefail	"sounds/deathshead/DSMOFNWA.ogg"
+
+menu/slam "sounds/menu/LogoSlam.wav"
+menu/cancel "sounds/menu/MenuCancel.wav"
+menu/move "sounds/menu/MenuMove.wav"
+menu/ok "sounds/menu/MenuOK.wav"
+$alias menu/activate		menu/slam
+$alias menu/backup			menu/ok
+$alias menu/prompt			menu/ok
+$alias menu/cursor			menu/move
+$alias menu/change			menu/move
+$alias menu/invalid			menu/cancel
+$alias menu/dismiss			menu/ok
+$alias menu/choose			menu/ok
+$alias menu/clear			menu/cancel
