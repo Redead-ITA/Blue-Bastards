@@ -135,6 +135,10 @@ class DinkyPuff : BulletPuff
     }
 }
 
+class SpotShotgun : Shotgun
+{
+}
+
 class SpotChaingun : Chaingun
 {
 }

@@ -123,3 +123,39 @@ class DeathsheadMAC10 : Chaingun
 		Stop;
 	}
 }
+
+class DeathsheadShotgun : Shotgun
+{
+	Default
+	{
+		Weapon.BobRangeX 0.75;
+		Weapon.BobStyle "InverseSmooth";
+	}
+	States
+	{
+	Ready:
+		ADSG A 1 A_WeaponReady;
+		Loop;
+	Deselect:
+		ADSG A 1 A_Lower(24);
+		Loop;
+	Select:
+		ADSG A 1 A_Raise(24);
+		Loop;
+	Fire:
+		ADSG C 2 Bright
+		{
+			A_FireBullets (6, 6, 12, random(2,5), "BulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_StartSound("weapons/autoshotgun", CHAN_AUTO);
+			A_GunFlash();
+		}
+		ADSG B 2 Bright;
+		ADSG A 1;
+		ADSG A 1 A_ReFire;
+		Goto Ready;
+	Flash:
+		ADSG D 2 Bright A_Light1;
+		ADSG E 2 Bright A_Light2;
+		Goto LightDone;
+	}
+}
