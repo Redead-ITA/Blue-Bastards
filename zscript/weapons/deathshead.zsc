@@ -196,3 +196,33 @@ class DeathsheadShotgun : Shotgun
 		Goto LightDone;
 	}
 }
+
+class DeathsheadPlasmaRifle : PlasmaRifle
+{
+	Default
+	{
+		Weapon.AmmoUse 5;
+	}
+	States
+	{
+	Fire:
+		PLSG A 20
+		{
+			A_FireProjectile("PlasmaBall",-2,false);
+			A_FireProjectile("PlasmaBall",2,false);
+			A_FireProjectile("PlasmaBall",0,false,0,0,0,-2);
+			A_FireProjectile("PlasmaBall",0,false,0,0,0,2);
+			A_FireProjectile("PlasmaBall",0,true);
+			A_GunFlash();
+		}
+		PLSG A 0 A_ReFire;
+		Goto Ready;
+	Flash:
+		PLSF B 2 Bright A_Light1;
+		PLSF A 2 Bright A_Light1;
+		Goto LightDone;
+	Spawn:
+		PLAS A -1;
+		Stop;
+	}
+}

@@ -90,6 +90,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 2, "DeathsheadPistol";
 		Player.WeaponSlot 3, "DeathsheadShotgun", "SuperShotgun";
 		Player.WeaponSlot 4, "DeathsheadMAC10";
+		Player.WeaponSlot 6, "DeathsheadPlasmaRifle";
 	}
 	States
 	{
