@@ -208,14 +208,18 @@ class DeathsheadPlasmaRifle : PlasmaRifle
 	}
 	States
 	{
-	Ready:
-		ADPC A 1 A_WeaponReady;
-		Loop;
-	Deselect:
-		ADPC A 1 A_Lower;
-		Loop;
 	Select:
-		ADPC A 1 A_Raise;
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Deselect:
+		ADPC GHIJKLM 1;
+		TNT1 A 1 A_Lower(24);
+		Wait;
+	Ready:
+		ADPC M 1 A_StartSound("weapons/plasmacannon/deploy");
+		ADPC LKJIHGA 1;
+	RealReady:
+		ADPC A 1 A_WeaponReady;
 		Loop;
 	Fire:
 		ADPC B 2 Bright
