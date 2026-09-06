@@ -53,6 +53,10 @@ class SpotMallet : Fist
 	}
 }
 
+class SpotChainsaw : Chainsaw
+{
+}
+
 class DinkyBlasterAmmo : Ammo
 {
     Default
