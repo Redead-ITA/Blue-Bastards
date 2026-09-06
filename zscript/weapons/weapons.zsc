@@ -86,7 +86,7 @@ class PlasmaRifleReplacement : CustomInventory replaces PlasmaRifle
 	States
 	{
 	Spawn:
-		MGUN A -1;
+		PLAS A -1;
 		Stop;
 	Pickup:
 		TNT1 A 0 A_GiveInventory("Cell",40);
