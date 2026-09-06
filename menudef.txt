@@ -38,7 +38,6 @@ OptionMenu "Credits"
 	StaticText ""
 	StaticText "Valve, Gearbox, Running with Scissors - Weapon Models"
 	StaticText "Valve, Running with Scissors, Krinkels, Raven Software - Weapon Sounds"
-	StaticText "Valve, Gearbox, Running with Scissors - Weapon Models"
 	StaticText "MythoLogic Interactive - Menu Sounds"
 	StaticText "id Software, Jimmy - Menu Font"
 }
