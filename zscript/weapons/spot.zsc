@@ -274,3 +274,7 @@ class SpotRustyClaws : Fist
 class SpotChaingun : Chaingun
 {
 }
+
+class SpotPlasmaRifle : PlasmaRifle
+{
+}
