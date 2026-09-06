@@ -16,7 +16,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.StartItem "DinkyBlasterAmmo", 10;
 		Player.WeaponSlot 1, "SpotMallet", "SpotRustyClaws";
 		Player.WeaponSlot 2, "DinkyBlaster";
-		Player.WeaponSlot 3, "SpotShotgun", "SuperShotgun";
+		Player.WeaponSlot 3, "SpotShotgun", "SpotDevastator";
 		Player.WeaponSlot 4, "SpotChaingun";
 	}
 	States
