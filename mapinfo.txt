@@ -19,7 +19,7 @@ skill baby
 	DamageFactor = 0.5
 	EasyBossBrain
 	SpawnFilter = Baby
-	Name = "I hate blue!"
+	Name = "Bloodred"
 	Key = "i"
 }
 
@@ -27,7 +27,7 @@ skill easy
 {
 	EasyBossBrain
 	SpawnFilter = Easy
-	Name = "Not too much of blue, please."
+	Name = "Beige"
 	Key = "h"
 }
 
@@ -35,14 +35,14 @@ skill normal
 {
 	SpawnFilter = Normal
 	Key = "h"
-	Name = "Blue is alright, I guess."
+	Name = "Light Blue"
 	DefaultSkill
 }
 
 skill hard
 {
 	SpawnFilter = Hard
-	Name = "Kick My Blue Ass Up"
+	Name = "Blue"
 	Key = "u"
 }
 
@@ -54,7 +54,7 @@ skill nightmare
 	DisableCheats
 	RespawnTime = 12
 	SpawnFilter = Nightmare
-	Name = "I'm Bluemaxxing."
-	MustConfirm = "Well, are you truly a bluemaxxer?\n Prove it!\n\n Press Y if you're insane \nPress N if you're a pussy"
+	Name = "Dark Blue"
+	MustConfirm = "$SKILL_DARK_BLUE"
 	Key = "n"
 }
