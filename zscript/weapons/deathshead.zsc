@@ -1,5 +1,11 @@
 class DeathsheadFist : Fist
 {
+	Default
+	{
+		Weapon.BobStyle "Smooth";
+		Weapon.BobRangeX 1.5;
+		+WEAPON.NOALERT
+	}
 	States
 	{
 	Select:
@@ -55,6 +61,11 @@ class DeathsheadFist : Fist
 
 class DeathsheadChainsaw : Chainsaw
 {
+	Default
+	{
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobRangeX 0.5;
+	}
 	States
 	{
 	Select:
