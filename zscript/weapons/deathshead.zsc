@@ -39,6 +39,8 @@ class DeathsheadChainsaw : Chainsaw
 		ADCS I 1 A_Raise(24);
 		Wait;
 	Deselect:
+		TNT1 A 0 A_StopSound(6);
+		TNT1 A 0 A_StopSound(7);
 		TNT1 A 0 A_StartSound("weapons/sawidle", 7, CHANF_DEFAULT, 0.75);
 		ADCS MLKJI 2;
 		TNT1 I 1 A_Lower(24);
