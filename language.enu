@@ -28,7 +28,7 @@ CREDITS_5 = "id Software, Jimmy - Menu Font";
 [pl]
 
 MNU_CREDITS = "Podziękowania";
-MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO BĘKARTA!";
+MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO GÓWNIARZA!";
 MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
