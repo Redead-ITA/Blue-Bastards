@@ -68,7 +68,7 @@ class DinkyBlasterAmmo : Ammo
         Inventory.MaxAmount 10;
         Inventory.Amount 10;
         //Inventory.Icon "";
-        Inventory.PickupMessage "$GOTDINKYBLASTERAMMO";
+        Inventory.PickupMessage "Picked up... internals of a Dinky Blaster? WHAT?";
     }
 }
 
