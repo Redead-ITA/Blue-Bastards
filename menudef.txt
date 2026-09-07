@@ -20,8 +20,9 @@ ListMenu "PlayerclassMenu"
 {
 	NetgameMessage "$NEWGAME"
 	StaticTextCentered 160, 15, "$MNU_CHOOSECLASS"
-	Position 48, 72
-	PlayerDisplay 220, 48, "20 00 00", "80 00 40"
+	Position 28, 88
+	StaticPatch 184, 48, "graphics/PRT_BG.png"
+	PlayerDisplay 200, 64, "20 00 00", "80 00 40"
 	MouseWindow 0, 220
 }
 
