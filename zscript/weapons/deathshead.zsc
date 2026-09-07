@@ -215,6 +215,7 @@ class DeathsheadSuperShotgun : SuperShotgun
     States
 	{
 	Ready:
+		ADDB I 0 A_StartSound("weapons/sshotc", CHAN_AUTO);
 		ADDB IHGFE 2;
 	RealReady:
 		ADDB A 0 A_GiveInventory("DeathsheadSuperShotgunActive");
@@ -226,6 +227,7 @@ class DeathsheadSuperShotgun : SuperShotgun
 			A_OverlayFlags(OverlayID(),PSPF_MIRROR|PSPF_FLIP,1);
 			A_OverlayFlags(OverlayID(),PSPF_ADDWEAPON,0);
 			A_OverlayOffset(OverlayID(),0,32);
+			A_StartSound("weapons/sshotc", CHAN_AUTO);
 		}
 		ADDB IHGFE 2;
 		ADDB A 0 A_GiveInventory("DeathsheadSuperShotgunVeryActive");
@@ -243,14 +245,15 @@ class DeathsheadSuperShotgun : SuperShotgun
 	Deselect:
 		ADDB A 0 {
 			A_TakeInventory("DeathsheadSuperShotgunActive");
-			A_ZoomFactor(1.0);
 			A_Overlay(2,"LeftDeselect");
 		}
-		ADDB A 1 A_Lower(24);
+		ADDB EFGHI 2;
+		ADDB I 1 A_Lower(24);
 		Wait;
 	LeftDeselect:
 		ADDB A 0 A_OverlayFlags(OverlayID(),PSPF_MIRROR|PSPF_FLIP,1);
-		ADDB A 1;
+		ADDB EFGHI 2;
+		ADDB I 1;
 		Wait;
 	Fire:
 		ADDB B 2 Bright {
