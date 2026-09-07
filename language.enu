@@ -1,5 +1,7 @@
 [enu default]
 
+MNU_CREDITS = "Credits";
+
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
 
@@ -14,6 +16,8 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 "Because I wouldn't!";
 
 [pl]
+
+MNU_CREDITS = "Podziękowania";
 
 PLAYER_DEATHSHEAD = "Trupiogłowy";
 
