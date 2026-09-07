@@ -25,7 +25,7 @@ class DeathsheadFist : Fist
 		ADFS BC 1;
 		ADFS D 2 
 		{
-			int dmg = random(2,24);
+			int dmg = random(8,24);
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 10;
