@@ -19,7 +19,7 @@ skill baby
 	DamageFactor = 0.5
 	EasyBossBrain
 	SpawnFilter = Baby
-	Name = "Bloodred"
+	Name = "$SKILL_BLOODRED"
 	Key = "i"
 }
 
@@ -27,7 +27,7 @@ skill easy
 {
 	EasyBossBrain
 	SpawnFilter = Easy
-	Name = "Beige"
+	Name = "$SKILL_BEIGE"
 	Key = "h"
 }
 
@@ -35,14 +35,14 @@ skill normal
 {
 	SpawnFilter = Normal
 	Key = "h"
-	Name = "Light Blue"
+	Name = "$SKILL_LIGHT_BLUE"
 	DefaultSkill
 }
 
 skill hard
 {
 	SpawnFilter = Hard
-	Name = "Blue"
+	Name = "$SKILL_BLUE"
 	Key = "u"
 }
 
@@ -54,7 +54,7 @@ skill nightmare
 	DisableCheats
 	RespawnTime = 12
 	SpawnFilter = Nightmare
-	Name = "Dark Blue"
-	MustConfirm = "$SKILL_DARK_BLUE"
+	Name = "$SKILL_DARK_BLUE"
+	MustConfirm = "$DARK_BLUE_SURE"
 	Key = "n"
 }
