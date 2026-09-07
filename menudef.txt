@@ -19,7 +19,7 @@ ListMenu "MainMenuTextOnly"
 ListMenu "PlayerclassMenu"
 {
 	NetgameMessage "$NEWGAME"
-	StaticTextCentered 160, 15, "PICK YOUR BLUE BASTARD!"
+	StaticTextCentered 160, 15, "$MNU_CHOOSECLASS"
 	Position 48, 63
 	PlayerDisplay 220, 63, "20 00 00", "80 00 40"
 	MouseWindow 0, 220
@@ -27,7 +27,7 @@ ListMenu "PlayerclassMenu"
 
 ListMenu "SkillMenu"
 {
-	StaticTextCentered 160, 15, "HOW TOUGH?"
+	StaticTextCentered 160, 15, "$MNU_CHOOSESKILL"
 	Position 48, 63
 }
 
