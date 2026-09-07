@@ -382,8 +382,15 @@ class PlasmaCannonBall : PlasmaBall
 {
 	Default
 	{
-		Damage 3;
+		Damage 4;
 		Speed 50;
 		SeeSound "";
+	}
+	States
+	{
+	Death:
+		PLSE A 4 Bright A_Explode(random(1,4),64);
+		PLSE BCDE 4 Bright;
+		Stop;
 	}
 }
