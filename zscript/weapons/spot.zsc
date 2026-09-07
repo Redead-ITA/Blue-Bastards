@@ -3,6 +3,10 @@ class SpotMallet : Fist
 	Default
 	{
 		+WEAPON.NOALERT
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobSpeed 1.75;
+		Weapon.BobRangeX 1.2;
+		Weapon.BobRangeY 0.6;
 	}
 	States
 	{
@@ -75,6 +79,10 @@ class DinkyBlaster : Pistol
         Weapon.AmmoGive 10;
         Weapon.AmmoUse 1;
         Weapon.AmmoType "DinkyBlasterAmmo";
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobSpeed 1.75;
+		Weapon.BobRangeX 1.2;
+		Weapon.BobRangeY 0.6;
         +WEAPON.AMMO_OPTIONAL
     }
 
@@ -145,6 +153,10 @@ class SpotShotgun : Shotgun
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 2;
 		Weapon.AmmoGive 8;
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobSpeed 1.75;
+		Weapon.BobRangeX 1.2;
+		Weapon.BobRangeY 0.6;
 	}
 	States {
 		Ready:
@@ -190,6 +202,10 @@ class SpotDevastator : SuperShotgun
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobSpeed 1.75;
+		Weapon.BobRangeX 1.2;
+		Weapon.BobRangeY 0.6;
 	}
 	States {
 		Ready:
@@ -228,6 +244,10 @@ class SpotRustyClaws : Fist
 {
 	Default
 	{
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobSpeed 1.75;
+		Weapon.BobRangeX 1.2;
+		Weapon.BobRangeY 0.6;
 		+WEAPON.MELEEWEAPON
 	}
 	States
