@@ -232,9 +232,10 @@ class DeathsheadSuperShotgun : SuperShotgun
 			A_StartSound("weapons/sshotc", CHAN_AUTO);
 		}
 		ADDB IHGFE 2;
-		ADDB A 0 A_GiveInventory("DeathsheadSuperShotgunVeryActive");
 	LeftRealReady:
-		ADDB A 1 A_JumpIf(GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK, "LeftFire");
+		ADDB A 0 A_GiveInventory("DeathsheadSuperShotgunVeryActive");
+		ADDB A 0 A_JumpIf(GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK, "LeftFire");
+		ADDB A 1;
 		Loop;
 	Select:
 		ADDB I 0 A_Overlay(2,"LeftSelect");
