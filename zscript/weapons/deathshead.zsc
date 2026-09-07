@@ -199,6 +199,39 @@ class DeathsheadShotgun : Shotgun
 
 class DeathsheadSuperShotgun : SuperShotgun
 {
+	States
+	{
+	Select:
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Deselect:
+		ADDB EFGHI 2;
+		TNT1 A 1 A_Lower(24);
+		Wait;
+	Ready:
+		ADDB IHGFE 2;
+	RealReady:
+		ADDB A 1 A_WeaponReady;
+		Loop;
+	Fire:
+		ADDB B 2 A_FireShotgun2;
+		ADDB CD 2;
+		ADDB A 0 A_CheckReload;
+		ADDB EFG 2;
+		ADDB H 2 A_OpenShotgun2;
+		ADDB I 2 A_LoadShotgun2;
+		ADDB JK 2 A_CloseShotgun2;
+		ADDB L 2;
+		ADDB A 2 A_ReFire;
+		Goto RealReady;
+	Flash:
+		ADDB I 0 Bright A_Light1;
+		ADDB J 0 Bright A_Light2;
+		Goto LightDone;
+	Spawn:
+		SGN2 A -1;
+		Stop;
+	}
 }
 
 class DeathsheadPlasmaRifle : PlasmaRifle
