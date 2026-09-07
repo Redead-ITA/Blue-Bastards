@@ -1,5 +1,8 @@
 [enu default]
 
+PLAYER_SPOT = "Spot";
+PLAYER_DEATHSHEAD = "Deathshead";
+
 SKILL_BLOODRED = "Bloodred";
 SKILL_BEIGE = "Beige";
 SKILL_LIGHT_BLUE = "Light Blue";
@@ -11,6 +14,8 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 "Because I wouldn't!";
 
 [pl]
+
+PLAYER_DEATHSHEAD = "Trupiogłowy";
 
 SKILL_BLOODRED = "Krwioczerwony";
 SKILL_BEIGE = "Beżowy";
