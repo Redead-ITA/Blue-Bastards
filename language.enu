@@ -1,6 +1,23 @@
 [enu default]
 
-SKILL_DARK_BLUE = "You're going to regret picking this color\n"
-"Are you sureeeee you want to do this?"
-" "
-"Because i wouldn't!";
+SKILL_BLOODRED = "Bloodred";
+SKILL_BEIGE = "Beige";
+SKILL_LIGHT_BLUE = "Light Blue";
+SKILL_BLUE = "Blue";
+SKILL_DARK_BLUE = "Dark Blue";
+DARK_BLUE_SURE = "You're going to regret picking this color\n"
+"Are you sureeeee you want to do this?\n"
+"\n"
+"Because I wouldn't!";
+
+[pl]
+
+SKILL_BLOODRED = "Krwioczerwony";
+SKILL_BEIGE = "Beżowy";
+SKILL_LIGHT_BLUE = "Jasny Niebieski";
+SKILL_BLUE = "Niebieski";
+SKILL_DARK_BLUE = "Ciemny Niebieski";
+DARK_BLUE_SURE = "Pożałujesz wyboru tego koloru\n"
+"Jesteś pewien?\n"
+"\n"
+"Na twoim miejscu bym nie wybrał tego!";
