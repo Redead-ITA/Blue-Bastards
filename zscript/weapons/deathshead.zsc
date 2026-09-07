@@ -197,40 +197,79 @@ class DeathsheadShotgun : Shotgun
 	}
 }
 
+class DeathsheadSuperShotgunActive : Inventory 
+{ 
+	Default
+	{
+		Inventory.MaxAmount 1; 
+	}
+}
+class DeathsheadSuperShotgunVeryActive : DeathsheadSuperShotgunActive {}
 class DeathsheadSuperShotgun : SuperShotgun
 {
-	States
+    States
 	{
-	Select:
-		TNT1 A 1 A_Raise(24);
-		Wait;
-	Deselect:
-		ADDB EFGHI 2;
-		TNT1 A 1 A_Lower(24);
-		Wait;
 	Ready:
 		ADDB IHGFE 2;
 	RealReady:
-		ADDB A 1 A_WeaponReady;
+		ADDB A 0 A_GiveInventory("DeathsheadSuperShotgunActive");
+		ADDB A 0 A_JumpIf(CountInv("DeathsheadSuperShotgunVeryActive") && GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK, "Fire");
+		ADDB A 1 A_WeaponReady(WRF_NOPRIMARY);
+		Goto RealReady;
+	LeftReady:
+		ADDB I 0 {
+			A_OverlayFlags(OverlayID(),PSPF_MIRROR|PSPF_FLIP,1);
+			A_OverlayFlags(OverlayID(),PSPF_ADDWEAPON,0);
+			A_OverlayOffset(OverlayID(),0,32);
+		}
+		ADDB IHGFE 2;
+		ADDB A 0 A_GiveInventory("DeathsheadSuperShotgunVeryActive");
+	LeftRealReady:
+		ADDB A 1 A_JumpIf(GetPlayerInput(INPUT_BUTTONS) & BT_ATTACK, "LeftFire");
 		Loop;
+	Select:
+		ADDB I 0 A_Overlay(2,"LeftSelect");
+		ADDB I 1 A_Raise(24);
+		Wait;
+	LeftSelect:
+		TNT1 A 0 A_OverlayFlags(OverlayID(),PSPF_MIRROR|PSPF_FLIP,1);
+		ADDB I 1 A_JumpIf(CountInv("DeathsheadSuperShotgunActive"),"LeftReady");
+		Wait;
+	Deselect:
+		ADDB A 0 {
+			A_TakeInventory("DeathsheadSuperShotgunActive");
+			A_ZoomFactor(1.0);
+			A_Overlay(2,"LeftDeselect");
+		}
+		ADDB A 1 A_Lower(24);
+		Wait;
+	LeftDeselect:
+		ADDB A 0 A_OverlayFlags(OverlayID(),PSPF_MIRROR|PSPF_FLIP,1);
+		ADDB A 1;
+		Wait;
 	Fire:
-		ADDB B 2 A_FireShotgun2;
-		ADDB CD 2;
+		ADDB B 2 Bright {
+			A_FireBullets(12.6, 8.2, 32, random(2,3));
+			A_StartSound("weapons/sshotf", CHAN_WEAPON);
+			A_GunFlash();
+		}
+		ADDB C 2 Bright;
+		ADDB D 2;
 		ADDB A 0 A_CheckReload;
 		ADDB EFG 2;
 		ADDB H 2 A_OpenShotgun2;
 		ADDB I 2 A_LoadShotgun2;
-		ADDB JK 2 A_CloseShotgun2;
+		ADDB JK 2 A_StartSound("weapons/sshotc", CHAN_WEAPON);
 		ADDB L 2;
-		ADDB A 2 A_ReFire;
 		Goto RealReady;
+	LeftFire:
+		ADDB BC 2 Bright;
+		ADDB DEFGHIJKL 2;
+		Goto LeftRealReady;
 	Flash:
 		ADDB I 0 Bright A_Light1;
 		ADDB J 0 Bright A_Light2;
 		Goto LightDone;
-	Spawn:
-		SGN2 A -1;
-		Stop;
 	}
 }
 
