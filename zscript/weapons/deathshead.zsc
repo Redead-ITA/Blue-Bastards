@@ -207,6 +207,11 @@ class DeathsheadSuperShotgunActive : Inventory
 class DeathsheadSuperShotgunVeryActive : DeathsheadSuperShotgunActive {}
 class DeathsheadSuperShotgun : SuperShotgun
 {
+	Default
+	{
+		Weapon.BobSpeed 1.75;
+		Weapon.BobStyle "InverseSmooth";
+	}
     States
 	{
 	Ready:
@@ -251,7 +256,7 @@ class DeathsheadSuperShotgun : SuperShotgun
 		ADDB B 2 Bright {
 			A_FireBullets(12.6, 8.2, 32, random(2,3));
 			A_StartSound("weapons/shotgun/fire", CHAN_AUTO);
-			A_StartSound("weapons/doubleshotties", CHAN_AUTO, CHANF_DEFAULT, 0.2);
+			A_StartSound("weapons/doubleshotties", CHAN_AUTO, CHANF_DEFAULT, 0.3);
 			A_GunFlash();
 		}
 		ADDB C 2 Bright;
