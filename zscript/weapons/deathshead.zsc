@@ -122,7 +122,7 @@ class DeathsheadMAC10 : Chaingun
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
-        Inventory.PickupMessage "Picked up a MAC-10.";
+        Inventory.PickupMessage "$GOTMAC10";
 	}
 	States
 	{

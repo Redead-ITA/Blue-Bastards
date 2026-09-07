@@ -3,6 +3,9 @@
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
 
+GOTMAC10 "Picked up a MAC-10.";
+GOTDINKYBLASTERAMMO = "Picked up... internals of a Dinky Blaster? WHAT?";
+
 SKILL_BLOODRED = "Bloodred";
 SKILL_BEIGE = "Beige";
 SKILL_LIGHT_BLUE = "Light Blue";
@@ -16,6 +19,9 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 [pl]
 
 PLAYER_DEATHSHEAD = "Trupiogłowy";
+
+GOTMAC10 "Podniesiono MAC-10.";
+GOTDINKYBLASTERAMMO = "Podniesiono... części Dinky Blastera? Że co?";
 
 SKILL_BLOODRED = "Krwioczerwony";
 SKILL_BEIGE = "Beżowy";
