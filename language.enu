@@ -1,6 +1,8 @@
 [enu default]
 
 MNU_CREDITS = "Credits";
+MNU_CHOOSECLASS = "PICK YOUR BLUE BASTARD!";
+MNU_CHOOSESKILL = "HOW TOUGH?";
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
@@ -18,6 +20,8 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 [pl]
 
 MNU_CREDITS = "Podziękowania";
+MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO BĘKARTA!";
+MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 
 PLAYER_DEATHSHEAD = "Trupiogłowy";
 
