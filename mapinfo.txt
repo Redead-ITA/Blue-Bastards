@@ -11,3 +11,50 @@ GameInfo
 	MenuFontColor_Selection = "Sapphire"
 }
 
+
+skill baby
+{
+	AutoUseHealth
+	AmmoFactor = 2
+	DamageFactor = 0.5
+	EasyBossBrain
+	SpawnFilter = Baby
+	Name = "I hate blue!"
+	Key = "i"
+}
+
+skill easy
+{
+	EasyBossBrain
+	SpawnFilter = Easy
+	Name = "Not too much of blue, please."
+	Key = "h"
+}
+
+skill normal
+{
+	SpawnFilter = Normal
+	Key = "h"
+	Name = "Blue is alright, I guess."
+	DefaultSkill
+}
+
+skill hard
+{
+	SpawnFilter = Hard
+	Name = "Kick My Blue Ass Up"
+	Key = "u"
+}
+
+skill nightmare
+{
+	AmmoFactor = 2
+	FastMonsters
+	InstantReaction
+	DisableCheats
+	RespawnTime = 12
+	SpawnFilter = Nightmare
+	Name = "I'm Bluemaxxing."
+	MustConfirm = "Well, are you truly a bluemaxxer?\n Prove it!\n\n Press Y if you're insane \nPress N if you're a pussy"
+	Key = "n"
+}
