@@ -11,3 +11,50 @@ GameInfo
 	MenuFontColor_Selection = "Sapphire"
 }
 
+
+skill baby
+{
+	AutoUseHealth
+	AmmoFactor = 2
+	DamageFactor = 0.5
+	EasyBossBrain
+	SpawnFilter = Baby
+	Name = "Bloodred"
+	Key = "i"
+}
+
+skill easy
+{
+	EasyBossBrain
+	SpawnFilter = Easy
+	Name = "Beige"
+	Key = "h"
+}
+
+skill normal
+{
+	SpawnFilter = Normal
+	Key = "h"
+	Name = "Light Blue"
+	DefaultSkill
+}
+
+skill hard
+{
+	SpawnFilter = Hard
+	Name = "Blue"
+	Key = "u"
+}
+
+skill nightmare
+{
+	AmmoFactor = 2
+	FastMonsters
+	InstantReaction
+	DisableCheats
+	RespawnTime = 12
+	SpawnFilter = Nightmare
+	Name = "Dark Blue"
+	MustConfirm = "$SKILL_DARK_BLUE"
+	Key = "n"
+}
