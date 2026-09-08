@@ -434,3 +434,8 @@ class DeathsheadLevelEnter : DoomWeapon
 		Wait;
 	}
 }
+
+class AceRocketLauncher : RocketLauncher
+{
+	// Leaving it blank.
+}

@@ -324,8 +324,9 @@ class RapidMissileSpot : RocketLauncher
 			SMSL A 0{
 				A_FireProjectile("RapidLauncherMissle");
 				A_Light1();
+				A_SetPitch(self.pitch - 3, WOF_INTERPOLATE);
 			}
-			SMSL BCD 2;
+			SMSL BCD 2 A_SetPitch(self.pitch + 1, WOF_INTERPOLATE);
 			SMSL A 0{
 				A_Light0();
 				A_ReFire();
