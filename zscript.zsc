@@ -6,6 +6,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 {
 	Default
 	{
+		Health 125;
 		Player.DisplayName "$PLAYER_SPOT";
 		Player.SoundClass "spot";
 		Player.Face "SPT";
@@ -20,6 +21,8 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 3, "SpotShotgun", "SpotDevastator";
 		Player.WeaponSlot 4, "SpotChaingun";
 		Player.WeaponSlot 6, "SpotPlasmaRifle";
+		Player.MaxHealth 125;
+		Speed 0.82;
 	}
 	States
 	{
