@@ -41,6 +41,10 @@ weapons/plasmacannon/deploy "sounds/weapons/PLSDRAW.ogg"
 
 weapons/doubleshotties "sounds/weapons/SSHFIRE.ogg"
 
+weapons/weakswing1 "sounds/weapons/knife_slash1.wav"
+weapons/weakswing2 "sounds/weapons/knife_slash2.wav"
+$random weapons/weakswing {weapons/weakswing1 weapons/weakswing2}
+
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
 $playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
