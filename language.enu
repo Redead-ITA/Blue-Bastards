@@ -24,6 +24,7 @@ CREDITS_2 = "Valve, Gearbox, Running with Scissors - Weapon Models";
 CREDITS_3 = "Valve, Running with Scissors, Krinkels, Raven Software - Weapon Sounds";
 CREDITS_4 = "MythoLogic Interactive - Menu Sounds";
 CREDITS_5 = "id Software, Jimmy - Menu Font";
+CREDITS_6 = "Skyblotter Sprites - Reelism 2";
 CREDITS_END = "No dino and moth was harmed during the making of this mod.";
 
 [pl]
@@ -51,4 +52,5 @@ CREDITS_2 = "Valve, Gearbox, Running with Scissors - Modele Broni";
 CREDITS_3 = "Valve, Running with Scissors, Krinkels, Raven Software - Dźwięki Broni";
 CREDITS_4 = "MythoLogic Interactive - Dźwięki Menu";
 CREDITS_5 = "id Software, Jimmy - Czcionka Menu";
+CREDITS_6 = "Sprity Skyblotter - Reelism 2";
 CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia tego moda.";
