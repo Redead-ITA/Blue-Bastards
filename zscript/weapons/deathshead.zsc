@@ -19,7 +19,7 @@ class DeathsheadFist : Fist
 		ADFS E 2 A_StartSound("weapons/fists/deploy");
 		ADFS FGHIJA 2;
 	RealReady:
-		ADFS A 1 A_WeaponReady;
+		ADFS A 1 A_WeaponReady(WRF_ALLOWRELOAD);
 		Wait;
 	Deselect:
 		ADFS A 1 A_Lower(24);
@@ -55,6 +55,11 @@ class DeathsheadFist : Fist
 		}
 		ADGB DE 2;
 		ADGB F 2 A_ReFire;
+		Goto RealReady;
+	Reload:
+		ADFS HG 2;
+		ADFS E 2 A_StartSound("weapons/fists/deploy");
+		ADFS FGHIJ 2;
 		Goto RealReady;
 	}
 }
