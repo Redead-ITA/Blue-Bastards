@@ -304,6 +304,7 @@ class RapidMissileSpot : RocketLauncher
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
+		+WEAPON.NOAUTOFIRE
 	}
 	States {
 		Deselect:
