@@ -377,7 +377,6 @@ class DeathsheadPlasmaRifle : PlasmaRifle
 	}
 }
 
-
 class PlasmaCannonBall : PlasmaBall
 {
 	Default
@@ -392,5 +391,25 @@ class PlasmaCannonBall : PlasmaBall
 		PLSE A 4 Bright A_Explode(random(1,4),64);
 		PLSE BCDE 4 Bright;
 		Stop;
+	}
+}
+
+class DeathsheadLevelEnter : DoomWeapon
+{
+	States
+	{
+	Select:
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Deselect:
+		TNT1 A 1 A_Lower(24);
+		Wait;
+	Ready:
+		ADWD A 2 A_StartSound("weapons/weakswing");
+		ADWD BCDEFGHIJKLMNOPQRST 2;
+		ADWD A 2 A_TakeInventory("DeathsheadLevelEnter");
+	Fire:
+		TNT1 A 1;
+		Wait;
 	}
 }
