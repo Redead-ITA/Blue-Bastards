@@ -1,6 +1,8 @@
 [enu default]
 
+MNU_EXTRAS = "Extras";
 MNU_CREDITS = "Credits";
+MNU_LORE = "Lore";
 MNU_CHOOSECLASS = "PICK YOUR BLUE BASTARD!";
 MNU_CHOOSESKILL = "HOW TOUGH?";
 
@@ -26,9 +28,13 @@ CREDITS_4 = "MythoLogic Interactive - Menu Sounds";
 CREDITS_5 = "id Software, Jimmy - Menu Font";
 CREDITS_END = "No dino and moth was harmed during the making of this mod.";
 
+LORE_1 = "Lorem ipsum I like moths";
+
 [pl]
 
+MNU_EXTRAS = "Dodatki";
 MNU_CREDITS = "Podziękowania";
+MNU_LORE = "Fabuła";
 MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO GÓWNIARZA!";
 MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 
@@ -52,3 +58,5 @@ CREDITS_3 = "Valve, Running with Scissors, Krinkels, Raven Software - Dźwięki 
 CREDITS_4 = "MythoLogic Interactive - Dźwięki Menu";
 CREDITS_5 = "id Software, Jimmy - Czcionka Menu";
 CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia tego moda.";
+
+LORE_1 = "Lorem ipsum lubie ćmy";
