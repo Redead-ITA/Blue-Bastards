@@ -275,32 +275,22 @@ class SpotRustyClaws : Fist
 			CLWI A 1 A_Raise;
 			Loop;
 		Fire:
-			CLWI A 0{
-				int dice = Random(1, 2);
-				if (dice == 1){
-					return ResolveState("Swing_Left");
-				} 
-				else{
-					return ResolveState("Swing_Right");
-				}
-
-			}
-		Swing_Left:
-			CLWL AB 1;
-			CLWL C 1 {
-				int dmg = random(5,20);
-				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/claw/swing");
-			}
-			CLWL DEF 1;
-			goto Ready;
-		Swing_Right:
+			CLWI A 0 A_Jump(128,"FireLeft");
 			CLWR AB 1;
 			CLWR C 1 {
 				int dmg = random(5,20);
 				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/claw/swing");
 			}
 			CLWR DEF 1;
-			goto Ready;
+			Goto Ready;
+		FireLeft:
+			CLWL AB 1;
+			CLWL C 1 {
+				int dmg = random(5,20);
+				A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/claw/swing");
+			}
+			CLWL DEF 1;
+			Goto Ready;
 	}
 }
 
