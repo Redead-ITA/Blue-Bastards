@@ -1,6 +1,8 @@
 [enu default]
 
+MNU_EXTRAS = "Extras";
 MNU_CREDITS = "Credits";
+MNU_LORE = "Lore";
 MNU_CHOOSECLASS = "PICK YOUR BLUE BASTARD!";
 MNU_CHOOSESKILL = "HOW TOUGH?";
 
@@ -27,9 +29,16 @@ CREDITS_5 = "id Software, Jimmy - Menu Font";
 CREDITS_6 = "Skyblotter Sprites - Reelism 2";
 CREDITS_END = "No dino and moth was harmed during the making of this mod.";
 
+LORE_CHARACTERS = "The Blue Bastards";
+LORE_ACE = "Ace Deathshead the Moth Bartender";
+LORE_ACE_1 = "Young, blue polish moth bartender that really likes whiskey and Dr. Gibb.";
+LORE_1 = "Lorem ipsum I like moths";
+
 [pl]
 
+MNU_EXTRAS = "Dodatki";
 MNU_CREDITS = "Podziękowania";
+MNU_LORE = "Fabuła";
 MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO GÓWNIARZA!";
 MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 
@@ -54,3 +63,8 @@ CREDITS_4 = "MythoLogic Interactive - Dźwięki Menu";
 CREDITS_5 = "id Software, Jimmy - Czcionka Menu";
 CREDITS_6 = "Sprity Skyblotter - Reelism 2";
 CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia tego moda.";
+
+LORE_CHARACTERS = "Niebiescy Gówniarze";
+LORE_ACE = "As Trupiogłowy, Barman Ćma";
+LORE_ACE_1 = "Młoda, niebieska ćma polak. Bardzo lubi whisky i Dr. Gibb.";
+LORE_1 = "Lorem ipsum lubie ćmy";

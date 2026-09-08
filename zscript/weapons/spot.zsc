@@ -104,9 +104,9 @@ class DinkyBlaster : Pistol
             A_GunFlash();
             A_PlaySound("weapons/blaster/shoot");
         }
-		DNKB C 3 A_FireBullets(1, 0, 0, 5, "DinkyPuff");
-        DNKB B 4;
-        DNKB A 4;
+		DNKB C 3 A_FireBullets(1, 0, 0, 7, "DinkyPuff");
+        DNKB B 3;
+        DNKB A 3;
         DNKB A 0 A_ReFire;
         Goto Ready;
     Reload:
@@ -179,7 +179,7 @@ class SpotShotgun : Shotgun
 		Fire:
 			SSHT A 0
 			{
-				A_FireBullets(7, 4, 20, 5, "BulletPuff");
+				A_FireBullets(7, 4, 24, 5, "BulletPuff");
 				A_Recoil(1);
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
@@ -233,7 +233,7 @@ class SpotDevastator : SuperShotgun
 		Fire:
 			DVST D 0
 			{
-				A_FireBullets(7, 4, 12, 5, "BulletPuff");
+				A_FireBullets(7, 4, 16, 7, "BulletPuff");
 				A_Recoil(1);
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
