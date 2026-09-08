@@ -45,6 +45,8 @@ weapons/weakswing1 "sounds/weapons/knife_slash1.wav"
 weapons/weakswing2 "sounds/weapons/knife_slash2.wav"
 $random weapons/weakswing {weapons/weakswing1 weapons/weakswing2}
 
+weapon/rocket "sounds/weapons/rocket.wav"
+
 misc/drink "sounds/misc/drink.ogg"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
 misc/glass_break1 "sounds/misc/glass_break1.ogg"
