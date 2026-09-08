@@ -56,5 +56,13 @@ OptionMenu "Credits"
 OptionMenu "Lore"
 {
 	Title "$MNU_LORE"
+	StaticText "$LORE_CHARACTERS"
+	StaticText ""
+	StaticText "$LORE_ACE"
+	StaticText "$LORE_ACE_1"
+	StaticText ""
+	StaticText ""
+	StaticText "$MNU_LORE"
+	StaticText ""
 	StaticText "$LORE_1"
 }

@@ -28,6 +28,9 @@ CREDITS_4 = "MythoLogic Interactive - Menu Sounds";
 CREDITS_5 = "id Software, Jimmy - Menu Font";
 CREDITS_END = "No dino and moth was harmed during the making of this mod.";
 
+LORE_CHARACTERS = "The Blue Bastards";
+LORE_ACE = "Ace Deathshead the Moth Bartender";
+LORE_ACE_1 = "Young, blue polish moth bartender that really likes whiskey and Dr. Gibb.";
 LORE_1 = "Lorem ipsum I like moths";
 
 [pl]
@@ -59,4 +62,7 @@ CREDITS_4 = "MythoLogic Interactive - Dźwięki Menu";
 CREDITS_5 = "id Software, Jimmy - Czcionka Menu";
 CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia tego moda.";
 
+LORE_CHARACTERS = "Niebiescy Gówniarze";
+LORE_ACE = "As Trupiogłowy, Barman Ćma";
+LORE_ACE_1 = "Młoda, niebieska ćma polak. Bardzo lubi whisky i Dr. Gibb.";
 LORE_1 = "Lorem ipsum lubie ćmy";
