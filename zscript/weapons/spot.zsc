@@ -316,7 +316,7 @@ class RapidMissileSpot : RocketLauncher
 			Wait;
 		Ready:
 			SMSR DC 2;
-			SMSR A 0 A_PlaySound("weapons/autoshotgun/deploy");
+			SMSR A 0 A_PlaySound("weapons/missle/deploy");
 			SMSR BA 2;
 		RealReady:
 			SMSL A 1 A_WeaponReady;
