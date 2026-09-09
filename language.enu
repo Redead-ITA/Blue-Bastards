@@ -27,6 +27,7 @@ CREDITS_3 = "Reelism 2, 3D Realms - Weapon Sprites";
 CREDITS_4 = "Valve, Running with Scissors, Krinkels, Raven Software, Reelism 2 - Weapon Sounds";
 CREDITS_5 = "MythoLogic Interactive - Menu Sounds";
 CREDITS_6 = "id Software, Jimmy - Menu Font";
+CREDITS_7 = "3D Realms - Intermission Music";
 CREDITS_END = "No dino and moth was harmed during the making of this mod.";
 
 LORE_CHARACTERS = "The Blue Bastards";
@@ -63,6 +64,7 @@ CREDITS_4 = "Valve, Running with Scissors, Krinkels, Raven Software, Reelism 2 -
 
 CREDITS_5 = "MythoLogic Interactive - Dźwięki Menu";
 CREDITS_6 = "id Software, Jimmy - Czcionka Menu";
+CREDITS_7 = "3D Realms - Muzyka Ekranu Końcowego";
 CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia tego moda.";
 
 LORE_CHARACTERS = "Niebiescy Gówniarze";
