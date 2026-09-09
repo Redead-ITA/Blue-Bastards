@@ -435,7 +435,6 @@ class DeathsheadLevelEnter : DoomWeapon
 	}
 }
 
-class AceRocketLauncher : RocketLauncher
+class DeathsheadRocketLauncher : RocketLauncher
 {
-	// Leaving it blank.
 }

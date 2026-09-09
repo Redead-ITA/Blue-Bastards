@@ -137,7 +137,7 @@ class RocketLauncherReplacement : CustomInventory replaces RocketLauncher
 		Stop;
 		TNT1 A 0 A_GiveInventory("RapidMissileSpot");
 		Stop;
-		TNT1 A 0 A_GiveInventory("AceRocketLauncher");
+		TNT1 A 0 A_GiveInventory("DeathsheadRocketLauncher");
 		Stop;
   }
 }
