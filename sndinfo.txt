@@ -49,6 +49,7 @@ weapons/missle/fire "sounds/weapons/firemissle.ogg"
 weapons/missle/deploy "sounds/weapons/bfg_raise.wav"
 
 weapon/rocket "sounds/weapons/rocket.wav"
+weapon/rocket/load "sounds/weapons/rocklr1b.wav"
 
 misc/drink "sounds/misc/drink.ogg"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
