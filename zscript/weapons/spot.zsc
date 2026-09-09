@@ -353,6 +353,10 @@ class SpotChaingun : Chaingun
 {
 }
 
+class SpotRocketLauncher : RocketLauncher
+{
+}
+
 class SpotPlasmaRifle : PlasmaRifle
 {
 }

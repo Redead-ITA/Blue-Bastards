@@ -333,6 +333,22 @@ class DeathsheadSuperShotgun : SuperShotgun
 	}
 }
 
+class DeathsheadRocketLauncher : RocketLauncher
+{
+	States
+	{
+	Fire:
+		MISG B 16
+		{
+			A_StartSound("weapon/rocket", CHAN_AUTO);
+			A_FireMissile();
+			A_GunFlash();
+		}
+		MISG A 4 A_ReFire;
+		Goto Ready;
+	}
+}
+
 class DeathsheadPlasmaRifle : PlasmaRifle
 {
 	Default

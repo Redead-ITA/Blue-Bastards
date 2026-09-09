@@ -21,6 +21,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 3, "SpotShotgun", "SpotDevastator";
 		Player.WeaponSlot 5, "RapidMissileSpot";
 		Player.WeaponSlot 4, "SpotChaingun";
+		Player.WeaponSlot 5, "SpotRocketLauncher";
 		Player.WeaponSlot 6, "SpotPlasmaRifle";
 		Player.MaxHealth 125;
 		Speed 0.82;
@@ -99,6 +100,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 2, "DeathsheadPistol";
 		Player.WeaponSlot 3, "DeathsheadShotgun", "DeathsheadSuperShotgun";
 		Player.WeaponSlot 4, "DeathsheadMAC10";
+		Player.WeaponSlot 5, "DeathsheadRocketLauncher";
 		Player.WeaponSlot 6, "DeathsheadPlasmaRifle";
 	}
 	States
