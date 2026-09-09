@@ -58,6 +58,10 @@ misc/glass_break2 "sounds/misc/glass_break2.ogg"
 misc/glass_break3 "sounds/misc/glass_break3.ogg"
 misc/glass_break4 "sounds/misc/glass_break4.ogg"
 $random misc/glass_break {misc/glass_break1 misc/glass_break2 misc/glass_break3 misc/glass_break4}
+misc/can_open1 "sounds/misc/can_open1.ogg"
+misc/can_open2 "sounds/misc/can_open2.ogg"
+misc/can_open3 "sounds/misc/can_open3.ogg"
+$random misc/can_open {misc/can_open1 misc/can_open2 misc/can_open3}
 
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
