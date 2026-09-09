@@ -9,6 +9,7 @@ GameInfo
 	MenuFontColor_Header = "Sapphire"
 	MenuFontColor_Highlight = "Sapphire"
 	MenuFontColor_Selection = "Sapphire"
+	IntermissionMusic = "music/d_bonus.ogg" 
 }
 
 
