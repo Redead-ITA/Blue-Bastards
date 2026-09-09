@@ -19,6 +19,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 1, "SpotMallet", "SpotRustyClaws";
 		Player.WeaponSlot 2, "DinkyBlaster";
 		Player.WeaponSlot 3, "SpotShotgun", "SpotDevastator";
+		Player.WeaponSlot 5, "RapidMissileSpot";
 		Player.WeaponSlot 4, "SpotChaingun";
 		Player.WeaponSlot 6, "SpotPlasmaRifle";
 		Player.MaxHealth 125;
