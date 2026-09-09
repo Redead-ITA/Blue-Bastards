@@ -360,3 +360,7 @@ class SpotRocketLauncher : RocketLauncher
 class SpotPlasmaRifle : PlasmaRifle
 {
 }
+
+class SpotBFG : BFG9000
+{
+}

@@ -436,6 +436,10 @@ class PlasmaCannonBall : PlasmaBall
 	}
 }
 
+class DeathsheadBFG : BFG9000
+{
+}
+
 class DeathsheadLevelEnter : DoomWeapon
 {
 	States
