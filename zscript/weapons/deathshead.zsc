@@ -450,3 +450,7 @@ class DeathsheadLevelEnter : DoomWeapon
 		Wait;
 	}
 }
+
+class DeathsheadRocketLauncher : RocketLauncher
+{
+}
