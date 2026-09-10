@@ -1,0 +1,14 @@
+class DrGibbCan : HealthBonus replaces HealthBonus
+{
+	Default
+	{
+		Inventory.PickupSound "misc/can_open";
+		Inventory.PickupMessage "$GOTDRGIBB";
+	}
+	States
+	{
+	Spawn:
+		GIBB A -1;
+		Loop;
+	}
+}

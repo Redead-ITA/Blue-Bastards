@@ -21,7 +21,6 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 "\n"
 "Because I wouldn't!";
 
-
 CREDIT_HEADER = "Credit Where It's Due";
 CREDITS_1 = "Saver310 and Tofi - Nearly Everything";
 CREDITS_2 = "Valve, Gearbox, Running with Scissors - Weapon Models";
@@ -36,6 +35,8 @@ LORE_CHARACTERS = "The Blue Bastards";
 LORE_ACE = "Ace Deathshead the Moth Bartender";
 LORE_ACE_1 = "Young, blue polish moth bartender that really likes whiskey and Dr. Gibb.";
 LORE_1 = "Lorem ipsum I like moths";
+
+GOTDRGIBB = "Picked up a Dr. Gibb can.";
 
 [pl]
 
@@ -74,3 +75,5 @@ LORE_CHARACTERS = "Niebiescy Gówniarze";
 LORE_ACE = "As Trupiogłowy, Barman Ćma";
 LORE_ACE_1 = "Młoda, niebieska ćma polak. Bardzo lubi whisky i Dr. Gibb.";
 LORE_1 = "Lorem ipsum lubie ćmy";
+
+GOTDRGIBB = "Podniesiono puszkę Dr. Gibb.";
