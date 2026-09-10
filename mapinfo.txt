@@ -12,6 +12,9 @@ GameInfo
 	IntermissionMusic = "music/d_bonus.ogg" 
 }
 
+map TITLEMAP lookup "BLUE_BASTARDS"
+{
+}
 
 skill baby
 {

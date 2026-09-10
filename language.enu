@@ -1,5 +1,7 @@
 [enu default]
 
+BLUE_BASTARDS = "Blue Bastards";
+
 MNU_EXTRAS = "Extras";
 MNU_CREDITS = "Credits";
 MNU_LORE = "Lore";
@@ -36,6 +38,8 @@ LORE_ACE_1 = "Young, blue polish moth bartender that really likes whiskey and Dr
 LORE_1 = "Lorem ipsum I like moths";
 
 [pl]
+
+BLUE_BASTARDS = "Niebiescy Gówniarze";
 
 MNU_EXTRAS = "Dodatki";
 MNU_CREDITS = "Podziękowania";
