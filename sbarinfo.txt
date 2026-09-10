@@ -1,5 +1,8 @@
 height 32;
 monospacefonts true, "0";
+InterpolateHealth true, 24;
+InterpolateArmor true, 16;
+LowerHealthCap false;
 
 statusbar fullscreen, fullscreenoffsets // ZDoom HUD
 {

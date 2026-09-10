@@ -54,6 +54,7 @@ weapons/rocket/load "sounds/weapons/rocklr1b.wav"
 weapons/laser/fire "sounds/weapons/myears.ogg"
 
 weapons/bfgq2 "sounds/weapons/bfg__f1y.wav"
+weapons/bfgq2/deploy "sounds/weapons/bfg_deploy.wav"
 
 misc/drink "sounds/misc/drink.ogg"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
@@ -66,6 +67,14 @@ misc/can_open1 "sounds/misc/can_open1.ogg"
 misc/can_open2 "sounds/misc/can_open2.ogg"
 misc/can_open3 "sounds/misc/can_open3.ogg"
 $random misc/can_open {misc/can_open1 misc/can_open2 misc/can_open3}
+misc/ricochet1 "sounds/misc/ric1.wav"
+misc/ricochet2 "sounds/misc/ric2.wav"
+misc/ricochet3 "sounds/misc/ric3.wav"
+misc/ricochet4 "sounds/misc/ric4.wav"
+misc/ricochet5 "sounds/misc/ric5.wav"
+misc/ricochet6 "sounds/misc/RICOCHE2.ogg"
+misc/ricochet7 "sounds/misc/RICOCHE3.ogg"
+$random misc/ricochet {misc/ricochet1 misc/ricochet2 misc/ricochet3 misc/ricochet4 misc/ricochet5 misc/ricochet6 misc/ricochet7}
 
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"

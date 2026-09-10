@@ -179,7 +179,7 @@ class SpotShotgun : Shotgun
 		Fire:
 			SSHT A 0
 			{
-				A_FireBullets(7, 4, 24, 5, "BulletPuff");
+				A_FireBullets(7, 4, 24, 5, "BlueBastardBulletPuff");
 				A_Recoil(1);
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
@@ -233,7 +233,7 @@ class SpotDevastator : SuperShotgun
 		Fire:
 			DVST D 0
 			{
-				A_FireBullets(7, 4, 16, 7, "BulletPuff");
+				A_FireBullets(7, 4, 16, 7, "BlueBastardBulletPuff");
 				A_Recoil(1);
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
