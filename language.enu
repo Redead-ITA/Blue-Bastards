@@ -1,7 +1,7 @@
 [enu default]
 
 BLUE_BASTARDS = "Blue Bastards";
-
+PRESSSTART = "Press ESC to Begin";
 MNU_EXTRAS = "Extras";
 MNU_CREDITS = "Credits";
 MNU_LORE = "Lore";
@@ -40,7 +40,7 @@ LORE_1 = "Lorem ipsum I like moths";
 [pl]
 
 BLUE_BASTARDS = "Niebiescy Gówniarze";
-
+PRESSSTART = "Wciśnij ESC aby Rozpocząć";
 MNU_EXTRAS = "Dodatki";
 MNU_CREDITS = "Podziękowania";
 MNU_LORE = "Fabuła";
