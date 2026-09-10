@@ -12,3 +12,18 @@ class DrGibbCan : HealthBonus replaces HealthBonus
 		Loop;
 	}
 }
+
+class WhiskeyBottle : Stimpack replaces Stimpack
+{
+	Default
+	{
+		Inventory.PickupSound "misc/bottle_open";
+		Inventory.PickupMessage "$GOTWHISKEY";
+	}
+	States
+	{
+	Spawn:
+		GIBB B -1;
+		Loop;
+	}
+}

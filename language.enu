@@ -37,6 +37,7 @@ LORE_ACE_1 = "Young, blue polish moth bartender that really likes whiskey and Dr
 LORE_1 = "Lorem ipsum I like moths";
 
 GOTDRGIBB = "Picked up a Dr. Gibb can.";
+GOTWHISKEY = "Picked up a whiskey.";
 
 [pl]
 
@@ -77,3 +78,4 @@ LORE_ACE_1 = "Młoda, niebieska ćma polak. Bardzo lubi whisky i Dr. Gibb.";
 LORE_1 = "Lorem ipsum lubie ćmy";
 
 GOTDRGIBB = "Podniesiono puszkę Dr. Gibb.";
+GOTWHISKEY = "Podniesiono butelkę whisky.";
