@@ -248,6 +248,8 @@ class DeathsheadSuperShotgun : SuperShotgun
 {
 	Default
 	{
+		Weapon.AmmoUse 4;
+		Weapon.AmmoGive 16;
 		Weapon.BobSpeed 1.75;
 		Weapon.BobStyle "InverseSmooth";
 	}
@@ -296,7 +298,7 @@ class DeathsheadSuperShotgun : SuperShotgun
 		Wait;
 	Fire:
 		ADDB B 2 Bright {
-			A_FireBullets(12.6, 8.2, 32, random(2,3), "BlueBastardBulletPuff");
+			A_FireBullets(12.8, 8.2, 48, random(3,6), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/shotgun/fire", CHAN_AUTO);
 			A_StartSound("weapons/doubleshotties", CHAN_AUTO, CHANF_DEFAULT, 0.3);
 			A_GunFlash();
