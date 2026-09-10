@@ -46,10 +46,10 @@ class DeathsheadFist : Fist
 		ADGB AB 2;
 		ADGB C 2 
 		{
-			int dmg = random(2,32);
+			int dmg = random(2,48);
 			if (FindInventory("PowerStrength"))
 			{
-				dmg *= 3;
+				dmg *= 2;
 			}
 			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/weakswing");
 		}
