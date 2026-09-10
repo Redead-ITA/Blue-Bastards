@@ -75,6 +75,7 @@ misc/ricochet5 "sounds/misc/ric5.wav"
 misc/ricochet6 "sounds/misc/RICOCHE2.ogg"
 misc/ricochet7 "sounds/misc/RICOCHE3.ogg"
 $random misc/ricochet {misc/ricochet1 misc/ricochet2 misc/ricochet3 misc/ricochet4 misc/ricochet5 misc/ricochet6 misc/ricochet7}
+misc/berserk "sounds/weapons/BERSPKUP.ogg"
 
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
