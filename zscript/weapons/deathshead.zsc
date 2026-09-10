@@ -460,11 +460,13 @@ class DeathsheadBFG : BFG9000
 		NBFG A 1 A_WeaponReady;
 		Loop;
 	Fire:
-		NBFG A 10 A_StartSound("weapons/bfgq2", CHAN_AUTO); 
-		NBFG CDBCDBCDB 2 Bright;
+		NBFG A 0 A_StartSound("weapons/bfgq2", CHAN_AUTO); 
+		NBFG AAAAAAAAAA 1 Bright A_WeaponOffset(random(-2.0,2.0), random(32.0,34.0),WOF_INTERPOLATE);
+		NBFG CCDDBBCCD 1 Bright A_WeaponOffset(random(-4.0,4.0), random(32.0,36.0),WOF_INTERPOLATE);
+		NBFG DBBCCDDBB 1 Bright A_WeaponOffset(random(-8.0,8.0), random(32.0,40.0),WOF_INTERPOLATE);
 		NBFG E 2 Bright
 		{
-			A_WeaponOffset(16.0, 16.0, WOF_ADD|WOF_INTERPOLATE);
+			A_WeaponOffset(16.0, 48.0, WOF_INTERPOLATE);
 			if (player == null)
 			{
 				return;
