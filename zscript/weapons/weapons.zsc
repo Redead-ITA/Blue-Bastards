@@ -153,7 +153,7 @@ class BFG9000Replacement : CustomInventory replaces BFG9000
 	States
 	{
 	Spawn:
-		PLAS A -1;
+		BFUG A -1;
 		Stop;
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("SpotMallet", 1, 2);
