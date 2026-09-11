@@ -3,7 +3,7 @@ class ChainsawReplacement : CustomInventory replaces Chainsaw
 	Default
 	{
 		Inventory.PickupMessage "$GOTCHAINSAW";
-		Inventory.PickupSound "misc/w_pkup";
+		Inventory.PickupSound "misc/metalslug";
 		Tag "$TAG_CHAINSAW";
 	}
 	States
@@ -27,7 +27,7 @@ class ShotgunReplacement : CustomInventory replaces Shotgun
 	Default
 	{
 		Inventory.PickupMessage "$GOTSHOTGUN";
-		Inventory.PickupSound "misc/w_pkup";
+		Inventory.PickupSound "misc/shotgun_pkup";
 		Tag "$TAG_SHOTGUN";
 	}
 	States
@@ -51,7 +51,7 @@ class SuperShotgunReplacement : CustomInventory replaces SuperShotgun
 	Default
 	{
 		Inventory.PickupMessage "$GOTSHOTGUN2";
-		Inventory.PickupSound "misc/w_pkup";
+		Inventory.PickupSound "misc/shotgun_pkup";
 		Tag "$TAG_SUPERSHOTGUN";
 	}
 	States
@@ -75,7 +75,7 @@ class ChaingunReplacement : CustomInventory replaces Chaingun
 	Default
 	{
 		Inventory.PickupMessage "$GOTCHAINGUN";
-		Inventory.PickupSound "misc/w_pkup";
+		Inventory.PickupSound "misc/hmg_pkup";
 		Tag "$TAG_CHAINGUN";
 	}
 	States
@@ -99,7 +99,7 @@ class RocketLauncherReplacement : CustomInventory replaces RocketLauncher
 	Default
 	{
 		Inventory.PickupMessage "$GOTLAUNCHER";
-		Inventory.PickupSound "misc/w_pkup";
+		Inventory.PickupSound "misc/rl_pkup";
 		Tag "$TAG_ROCKETLAUNCHER";
 	}
 	States
@@ -123,7 +123,7 @@ class PlasmaRifleReplacement : CustomInventory replaces PlasmaRifle
 	Default
 	{
 		Inventory.PickupMessage "$GOTPLASMA";
-		Inventory.PickupSound "misc/w_pkup";
+		Inventory.PickupSound "misc/laser_pkup";
 		Tag "$TAG_PLASMARIFLE";
 	}
 	States
@@ -147,8 +147,8 @@ class BFG9000Replacement : CustomInventory replaces BFG9000
 	Default
 	{
 		Inventory.PickupMessage "$GOTBFG9000";
-		Inventory.PickupSound "misc/w_pkup";
-		Tag "TAG_BFG9000";
+		Inventory.PickupSound "misc/laser_pkup";
+		Tag "$TAG_BFG9000";
 	}
 	States
 	{

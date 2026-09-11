@@ -77,6 +77,24 @@ misc/ricochet7 "sounds/misc/RICOCHE3.ogg"
 $random misc/ricochet {misc/ricochet1 misc/ricochet2 misc/ricochet3 misc/ricochet4 misc/ricochet5 misc/ricochet6 misc/ricochet7}
 misc/berserk "sounds/weapons/BERSPKUP.ogg"
 
+misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
+misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"
+misc/metalslug/hmg  "sounds/weapons/metalslug_wpnhmg.wav"
+misc/metalslug/rl  "sounds/weapons/metalslug_wpnrl.wav"
+misc/metalslug/shotgun  "sounds/weapons/metalslug_wpnshotgun.wav"
+misc/metalslug/laser  "sounds/weapons/metalslug_wpnlaser.wav"
+$random misc/metalslug {misc/metalslug/generic misc/metalslug/generic misc/metalslug/okay}
+$volume misc/metalslug 0.5
+$alias misc/w_pkup misc/metalslug
+$random misc/hmg_pkup {misc/metalslug misc/metalslug misc/metalslug/hmg}
+$volume misc/hmg_pkup 0.5
+$random misc/rl_pkup {misc/metalslug misc/metalslug misc/metalslug/rl}
+$volume misc/rl_pkup 0.5
+$random misc/shotgun_pkup {misc/metalslug misc/metalslug misc/metalslug/shotgun}
+$volume misc/shotgun_pkup 0.5
+$random misc/laser_pkup {misc/metalslug misc/metalslug misc/metalslug/laser}
+$volume misc/laser_pkup 0.5
+
 // Spot
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
 $playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
