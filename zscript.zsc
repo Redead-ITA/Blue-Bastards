@@ -25,7 +25,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 6, "SpotPlasmaRifle";
 		Player.WeaponSlot 7, "SpotBFG";
 		Player.MaxHealth 125;
-		Speed 0.82;
+		Speed 0.9;
 	}
 	States
 	{
