@@ -198,7 +198,7 @@ class BlueBastardBulletPuff : BulletPuff
 	}
 }
 
-class BlueBastardBerserk : Berserk
+class BlueBastardBerserk : Berserk replaces Berserk
 {
 	Default
 	{
