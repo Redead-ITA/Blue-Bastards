@@ -432,7 +432,8 @@ class PlasmaCannonBall : PlasmaBall
 	States
 	{
 	Death:
-		PLSE A 4 Bright A_Explode(random(1,4),64);
+		PLSE A 0 Bright A_Explode(random(1,10),96,0);
+		PLSE A 4 Bright A_Explode(random(1,5),56,XF_HURTSOURCE);
 		PLSE BCDE 4 Bright;
 		Stop;
 	}
