@@ -141,6 +141,4 @@ $alias menu/clear			menu/cancel
 
 menu/jingle1 "sounds/deathshead/DSMOFNWA.ogg"
 menu/jingle2 "sounds/spot/DSSPTNWA.wav"
-$alias menu/jingle3 weapons/mac10/deploy
-$alias menu/jingle4 weapons/adpistol/deploy
-$random menu/jingle {menu/jingle1 menu/jingle2 menu/jingle3 menu/jingle4}
+$random menu/jingle {menu/jingle1 menu/jingle2 weapons/mac10/deploy weapons/adpistol/deploy misc/ricochet}
