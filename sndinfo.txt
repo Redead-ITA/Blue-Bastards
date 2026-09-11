@@ -56,6 +56,12 @@ weapons/laser/fire "sounds/weapons/myears.ogg"
 weapons/bfgq2 "sounds/weapons/bfg__f1y.wav"
 weapons/bfgq2/deploy "sounds/weapons/bfg_deploy.wav"
 
+weapons/chaingun/fire "sounds/weapons/CHGNSHOT.ogg"
+weapons/chaingun/spin "sounds/weapons/CHAINSPI.ogg"
+weapons/chaingun/spin_start "sounds/weapons/CHAINSTA.ogg"
+weapons/chaingun/spin_stop "sounds/weapons/CHAINSTO.ogg"
+weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
+
 misc/drink "sounds/misc/drink.ogg"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
 misc/glass_break1 "sounds/misc/glass_break1.ogg"

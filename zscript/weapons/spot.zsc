@@ -38,19 +38,19 @@ class SpotMallet : Fist
 		MALL C 1;
 		Goto Hold_Check;
 	Swing:
-		MALL DEF 1 A_SetAngle(self.angle - 4);
+		MALL DEF 1 A_SetAngle(self.angle - 4, SPF_INTERPOLATE);
 		MALL G 0 A_Recoil(-4);
 		MALL G 0;
 		MALL G 1{
 			int dmg = random(15,50);
-			A_SetAngle(self.angle - 4);
+			A_SetAngle(self.angle - 4, SPF_INTERPOLATE);
 			if (FindInventory("PowerStrength"))
 			{
 				dmg *= 10;
 			}
 			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
 		}
-		MALL HIJ 1 A_SetAngle(self.angle - 4);
+		MALL HIJ 1 A_SetAngle(self.angle - 4, SPF_INTERPOLATE);
 		TNT1 A 10;
 		MTCD DCBA 2;
 		Goto Ready;
@@ -179,9 +179,9 @@ class SpotShotgun : Shotgun
 				A_Recoil(1);
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
-				A_SetPitch(self.pitch - 4, WOF_INTERPOLATE);
+				A_SetPitch(self.pitch - 4, SPF_INTERPOLATE);
 			}
-			SSHT DC 2 A_SetPitch(self.pitch + 2, WOF_INTERPOLATE);
+			SSHT DC 2 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
 			SSHT A 6;
 			SSHT EF 2;
 			SSHT A 0 A_PlaySound("weapons/shotgun/pump");
@@ -233,9 +233,9 @@ class SpotDevastator : SuperShotgun
 				A_Recoil(1);
 				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
 				A_GunFlash();
-				A_SetPitch(self.pitch - 3, WOF_INTERPOLATE);
+				A_SetPitch(self.pitch - 3, SPF_INTERPOLATE);
 			}
-			DVST DCB 2 A_SetPitch(self.pitch + 1, WOF_INTERPOLATE);
+			DVST DCB 2 A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
 			DVST A 6;
 			goto RealReady;
 		Flash:
@@ -321,9 +321,9 @@ class RapidMissileSpot : RocketLauncher
 			SMSL A 0{
 				A_FireProjectile("RapidLauncherMissle");
 				A_Light1();
-				A_SetPitch(self.pitch - 3, WOF_INTERPOLATE);
+				A_SetPitch(self.pitch - 3, SPF_INTERPOLATE);
 			}
-			SMSL BCD 2 A_SetPitch(self.pitch + 1, WOF_INTERPOLATE);
+			SMSL BCD 2 A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
 			SMSL A 0{
 				A_Light0();
 				A_ReFire();
@@ -347,6 +347,77 @@ class RapidLauncherMissle : Rocket
 
 class SpotChaingun : Chaingun
 {
+	Default
+	{
+		Weapon.SelectionOrder 700;
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 20;
+		Weapon.AmmoType "Clip";
+		Inventory.PickupMessage "$GOTCHAINGUN";
+		Obituary "$OB_MPCHAINGUN";
+		Tag "$TAG_CHAINGUN";
+
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobSpeed 1.75;
+		Weapon.BobRangeX 1.2;
+		Weapon.BobRangeY 0.6;
+	}
+	States
+	{
+	Deselect:
+		SCGR A 0 A_StopSound(CHAN_6);
+		SCGR ABCD 2;
+		TNT1 A 1 A_Lower(24);
+		Wait;
+	Select:
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Ready:
+		SCGR DC 2;
+		SCGR B 0 A_PlayWeaponSound("weapons/chaingun/deploy");
+		SCGR BA 2;
+	RealReady:
+		SCHG A 1 A_WeaponReady;
+		Loop;
+	Fire:
+		SCGR B 0 A_PlayWeaponSound("weapons/chaingun/spin_start");
+		SCHG ABCD 3;
+		SCHG ABCD 2;
+		SCHG ABCD 1;
+		SCHG A 0 A_PlaySound("weapons/chaingun/spin", CHAN_6, 1, true);
+	RealFire:
+		SCHG A 1{
+			A_FireBullets(4.0,4.0,1,5,"BlueBastardBulletPuff");
+			A_PlayWeaponSound("weapons/chaingun/fire");
+			A_WeaponOffset(Random(-3,3),Random(-3,3) + 36);
+			A_SetPitch(self.pitch - 2, SPF_INTERPOLATE);
+			A_Recoil(0.25);
+
+			int num = Random(1,2);
+			if (num == 1){
+				A_GunFlash("Flash1");
+			}
+			else {
+				A_GunFlash("Flash2");
+			}
+		}
+		SCHG C 1 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		CHGG B 0 A_ReFire("RealFire");
+	RevDown:
+		SCHG A 0 A_StopSound(CHAN_6);
+		SCHG B 0 A_PlayWeaponSound("weapons/chaingun/spin_stop");
+		SCHG ABCD 1;
+		SCHG ABCD 2;
+		SCHG ABCD 3;
+		Goto RealReady;
+	
+	Flash1:
+		SCGF A 1 Bright A_Light1;
+		Goto LightDone;
+	Flash2:
+		SCGF B 1 Bright A_Light1;
+		Goto LightDone;
+	}
 }
 
 class SpotRocketLauncher : RocketLauncher
