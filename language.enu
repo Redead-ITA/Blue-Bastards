@@ -29,15 +29,31 @@ CREDITS_4 = "Valve, Running with Scissors, Krinkels, Raven Software, Reelism 2, 
 CREDITS_5 = "MythoLogic Interactive - Menu Sounds";
 CREDITS_6 = "id Software, Jimmy - Menu Font";
 CREDITS_7 = "3D Realms - Intermission Music";
+CREDITS_8 = "SNK - Weapon Pickup Sounds";
 CREDITS_END = "No dino and moth was harmed during the making of this mod.";
 
 LORE_CHARACTERS = "The Blue Bastards";
 LORE_ACE = "Ace Deathshead the Moth Bartender";
 LORE_ACE_1 = "Young, blue polish moth bartender that really likes whiskey and Dr. Gibb.";
+LORE_ACE_2 = "After getting wasted and playing RTS games in his home";
+LORE_ACE_3 = "Ace found himself in quite the predicament;";
+LORE_ACE_4 = "His reserve of Dr. Gibb and whiskey ran out";
+LORE_ACE_5 = "in the middle of a demonic invasion.";
+LORE_ACE_6 = "Destined to find a six pack, Ace, still wasted, armed up and got to work.";
+LORE_SPOT = "Spot the Dino";
+LORE_SPOT_1 = "Young artist and goober from the island of Neo-Dinosauria.";
+LORE_SPOT_2 = "Usually cheerful and kind (well... used to be before the incident),";
+LORE_SPOT_3 = "but ever since Nessie's disappearance, they are enraged,";
+LORE_SPOT_4 = "and also hungry, hangry, if you will, looking for food scraps";
+LORE_SPOT_5 = "to compenstate for the lack of breakfast.";
 LORE_1 = "Lorem ipsum I like moths";
 
 GOTDRGIBB = "Picked up a Dr. Gibb can.";
 GOTWHISKEY = "Picked up a whiskey.";
+
+QUITMSG1 = "Nessie is still out there... waiting...";
+QUITMSG2 = "Giving up already?";
+QUITMSG3 = "That six pack of Dr. Gibb ain't gonna find itself.";
 
 [pl]
 
@@ -48,6 +64,7 @@ MNU_CREDITS = "Podziękowania";
 MNU_LORE = "Fabuła";
 MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO GÓWNIARZA!";
 MNU_CHOOSESKILL = "JAK NIEBIESKO?";
+MNU_RANDOM = "Losowy";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
@@ -70,6 +87,7 @@ CREDITS_4 = "Valve, Running with Scissors, Krinkels, Raven Software, Reelism 2, 
 CREDITS_5 = "MythoLogic Interactive - Dźwięki Menu";
 CREDITS_6 = "id Software, Jimmy - Czcionka Menu";
 CREDITS_7 = "3D Realms - Muzyka Ekranu Końcowego";
+CREDITS_8 = "SNK - Dźwięki Podnoszenia Broni";
 CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia tego moda.";
 
 LORE_CHARACTERS = "Niebiescy Gówniarze";

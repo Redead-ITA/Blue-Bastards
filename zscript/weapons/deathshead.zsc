@@ -432,7 +432,8 @@ class PlasmaCannonBall : PlasmaBall
 	States
 	{
 	Death:
-		PLSE A 4 Bright A_Explode(random(1,4),64);
+		PLSE A 0 Bright A_Explode(random(1,10),96,0);
+		PLSE A 4 Bright A_Explode(random(1,5),56,XF_HURTSOURCE);
 		PLSE BCDE 4 Bright;
 		Stop;
 	}
@@ -521,7 +522,7 @@ class DeathsheadLevelEnter : DoomWeapon
 		TNT1 A 1 A_Lower(24);
 		Wait;
 	Ready:
-		TNT1 A 0 A_Jump(256,"Ready1","Ready2","Ready3");
+		TNT1 A 0 A_Jump(256,"Ready1","Ready2","Ready3","Ready4");
 	Ready1:
 		ADWD A 2 A_StartSound("misc/bottle_open", CHAN_AUTO);
 		ADWD BCDEFGH 2;
@@ -542,9 +543,12 @@ class DeathsheadLevelEnter : DoomWeapon
 		TNT1 A 0 A_TakeInventory("DeathsheadLevelEnter");
 	Ready3:
 		ADDR A 2 A_StartSound("misc/can_open", CHAN_AUTO);
-		ADDR BCDEFGHIJK 2;
-		ADDR L 2 A_StartSound("misc/drink", CHAN_AUTO);
-		ADDR MNOPHGFEDCBA 2;
+		ADDR BCDEFG 2;
+		ADDR H 2 A_StartSound("misc/drink", CHAN_AUTO);
+		ADDR IJKLMNOPDCBA 2;
+		TNT1 A 0 A_TakeInventory("DeathsheadLevelEnter");
+	Ready4:
+		ADMA ABCDEFGHIJKLDCBA 2;
 		TNT1 A 0 A_TakeInventory("DeathsheadLevelEnter");
 	Fire:
 		TNT1 A 1;
