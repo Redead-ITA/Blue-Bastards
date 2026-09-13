@@ -9,8 +9,12 @@ class ChainsawReplacement : CustomInventory replaces Chainsaw
 	States
 	{
 	Spawn:
-		WEPP A 8;
-		WEPP A 8 Bright;
+		WPN1 A 8;
+		WPN1 A 8 Bright;
+		WPN1 AABC 2;
+		WPN1 DEFG 2 Bright;
+		WPN1 HIJA 2;
+		WPN1 A 8 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("SpotMallet", 1, 2);
@@ -34,8 +38,12 @@ class ShotgunReplacement : CustomInventory replaces Shotgun
 	States
 	{
 	Spawn:
-		WEPP C 8;
-		WEPP C 8 Bright;
+		WPN3 A 8;
+		WPN3 A 8 Bright;
+		WPN3 AABC 2;
+		WPN3 DEFG 2 Bright;
+		WPN3 HIJA 2;
+		WPN3 A 8 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("SpotMallet", 1, 2);
@@ -59,8 +67,12 @@ class SuperShotgunReplacement : CustomInventory replaces SuperShotgun
 	States
 	{
 	Spawn:
-		WEPP D 8;
-		WEPP D 8 Bright;
+		WPNS A 8;
+		WPNS A 8 Bright;
+		WPNS AABC 2;
+		WPNS DEFG 2 Bright;
+		WPNS HIJA 2;
+		WPNS A 8 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("SpotMallet", 1, 2);
@@ -84,8 +96,12 @@ class ChaingunReplacement : CustomInventory replaces Chaingun
 	States
 	{
 	Spawn:
-		WEPP E 8;
-		WEPP E 8 Bright;
+		WPN4 A 8;
+		WPN4 A 8 Bright;
+		WPN4 AABC 2;
+		WPN4 DEFG 2 Bright;
+		WPN4 HIJA 2;
+		WPN4 A 8 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("SpotMallet", 1, 2);
@@ -109,8 +125,12 @@ class RocketLauncherReplacement : CustomInventory replaces RocketLauncher
 	States
 	{
 	Spawn:
-		WEPP F 8;
-		WEPP F 8 Bright;
+		WPN5 A 8;
+		WPN5 A 8 Bright;
+		WPN5 AABC 2;
+		WPN5 DEFG 2 Bright;
+		WPN5 HIJA 2;
+		WPN5 A 8 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("SpotMallet", 1, 2);
@@ -134,8 +154,12 @@ class PlasmaRifleReplacement : CustomInventory replaces PlasmaRifle
 	States
 	{
 	Spawn:
-		WEPP G 8;
-		WEPP G 8 Bright;
+		WPN6 A 8;
+		WPN6 A 8 Bright;
+		WPN6 AABC 2;
+		WPN6 DEFG 2 Bright;
+		WPN6 HIJA 2;
+		WPN6 A 8 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("SpotMallet", 1, 2);
@@ -159,8 +183,12 @@ class BFG9000Replacement : CustomInventory replaces BFG9000
 	States
 	{
 	Spawn:
-		WEPP H 8;
-		WEPP H 8 Bright;
+		WPN7 A 8;
+		WPN7 A 8 Bright;
+		WPN7 AABC 2;
+		WPN7 DEFG 2 Bright;
+		WPN7 HIJA 2;
+		WPN7 A 8 Bright;
 		Loop;
 	Pickup:
 		TNT1 A 0 A_JumpIfInventory("SpotMallet", 1, 2);

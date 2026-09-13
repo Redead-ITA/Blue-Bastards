@@ -4,3 +4,437 @@ Graphic M_DOOM, 640, 384
 	YScale 5
 	Patch "graphics/m_doom.png", 0, -24
 }
+
+// todo: find a better way to do this
+Sprite WPN1A0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsa0.png", 0, 0
+}
+Sprite WPN1B0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsb0.png", 0, 0
+}
+Sprite WPN1C0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsc0.png", 0, 0
+}
+Sprite WPN1D0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsd0.png", 0, 0
+}
+Sprite WPN1E0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppse0.png", 0, 0
+}
+Sprite WPN1F0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsf0.png", 0, 0
+}
+Sprite WPN1G0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsg0.png", 0, 0
+}
+Sprite WPN1H0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsh0.png", 0, 0
+}
+Sprite WPN1I0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsi0.png", 0, 0
+}
+Sprite WPN1J0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppa0.png", 0, 0
+	Sprite "sprites/pickups/wppsj0.png", 0, 0
+}
+
+
+Sprite WPN3A0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsa0.png", 0, 0
+}
+Sprite WPN3B0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsb0.png", 0, 0
+}
+Sprite WPN3C0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsc0.png", 0, 0
+}
+Sprite WPN3D0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsd0.png", 0, 0
+}
+Sprite WPN3E0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppse0.png", 0, 0
+}
+Sprite WPN3F0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsf0.png", 0, 0
+}
+Sprite WPN3G0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsg0.png", 0, 0
+}
+Sprite WPN3H0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsh0.png", 0, 0
+}
+Sprite WPN3I0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsi0.png", 0, 0
+}
+Sprite WPN3J0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppc0.png", 0, 0
+	Sprite "sprites/pickups/wppsj0.png", 0, 0
+}
+
+
+Sprite WPNSA0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsa0.png", 0, 0
+}
+Sprite WPNSB0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsb0.png", 0, 0
+}
+Sprite WPNSC0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsc0.png", 0, 0
+}
+Sprite WPNSD0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsd0.png", 0, 0
+}
+Sprite WPNSE0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppse0.png", 0, 0
+}
+Sprite WPNSF0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsf0.png", 0, 0
+}
+Sprite WPNSG0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsg0.png", 0, 0
+}
+Sprite WPNSH0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsh0.png", 0, 0
+}
+Sprite WPNSI0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsi0.png", 0, 0
+}
+Sprite WPNSJ0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppd0.png", 0, 0
+	Sprite "sprites/pickups/wppsj0.png", 0, 0
+}
+
+
+Sprite WPN4A0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsa0.png", 0, 0
+}
+Sprite WPN4B0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsb0.png", 0, 0
+}
+Sprite WPN4C0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsc0.png", 0, 0
+}
+Sprite WPN4D0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsd0.png", 0, 0
+}
+Sprite WPN4E0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppse0.png", 0, 0
+}
+Sprite WPN4F0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsf0.png", 0, 0
+}
+Sprite WPN4G0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsg0.png", 0, 0
+}
+Sprite WPN4H0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsh0.png", 0, 0
+}
+Sprite WPN4I0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsi0.png", 0, 0
+}
+Sprite WPN4J0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppe0.png", 0, 0
+	Sprite "sprites/pickups/wppsj0.png", 0, 0
+}
+
+
+Sprite WPN5A0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsa0.png", 0, 0
+}
+Sprite WPN5B0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsb0.png", 0, 0
+}
+Sprite WPN5C0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsc0.png", 0, 0
+}
+Sprite WPN5D0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsd0.png", 0, 0
+}
+Sprite WPN5E0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppse0.png", 0, 0
+}
+Sprite WPN5F0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsf0.png", 0, 0
+}
+Sprite WPN5G0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsg0.png", 0, 0
+}
+Sprite WPN5H0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsh0.png", 0, 0
+}
+Sprite WPN5I0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsi0.png", 0, 0
+}
+Sprite WPN5J0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppf0.png", 0, 0
+	Sprite "sprites/pickups/wppsj0.png", 0, 0
+}
+
+
+Sprite WPN6A0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsa0.png", 0, 0
+}
+Sprite WPN6B0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsb0.png", 0, 0
+}
+Sprite WPN6C0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsc0.png", 0, 0
+}
+Sprite WPN6D0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsd0.png", 0, 0
+}
+Sprite WPN6E0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppse0.png", 0, 0
+}
+Sprite WPN6F0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsf0.png", 0, 0
+}
+Sprite WPN6G0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsg0.png", 0, 0
+}
+Sprite WPN6H0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsh0.png", 0, 0
+}
+Sprite WPN6I0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsi0.png", 0, 0
+}
+Sprite WPN6J0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppg0.png", 0, 0
+	Sprite "sprites/pickups/wppsj0.png", 0, 0
+}
+
+
+Sprite WPN7A0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsa0.png", 0, 0
+}
+Sprite WPN7B0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsb0.png", 0, 0
+}
+Sprite WPN7C0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsc0.png", 0, 0
+}
+Sprite WPN7D0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsd0.png", 0, 0
+}
+Sprite WPN7E0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppse0.png", 0, 0
+}
+Sprite WPN7F0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsf0.png", 0, 0
+}
+Sprite WPN7G0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsg0.png", 0, 0
+}
+Sprite WPN7H0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsh0.png", 0, 0
+}
+Sprite WPN7I0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsi0.png", 0, 0
+}
+Sprite WPN7J0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/wepph0.png", 0, 0
+	Sprite "sprites/pickups/wppsj0.png", 0, 0
+}
