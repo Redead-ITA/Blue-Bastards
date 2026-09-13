@@ -474,3 +474,52 @@ class SpotPlasmaRifle : PlasmaRifle
 class SpotBFG : BFG9000
 {
 }
+
+class SpotLevelEnter : DoomWeapon
+{
+	States
+	{
+	Deselect:
+		TNT1 A 1 A_Lower(24);
+		Wait;
+	Select:
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Ready:
+		TNT1 A 1 A_Jump(256, "Ready1", "Ready2", "Ready3");
+	Ready1:
+		SPHN A 0 A_PlaySound("weapons/generic/draw");
+		SPHN ABCD 4;
+		SPHN E 60 A_PlaySound("misc/phone/sorry");
+		// anyone who writes clean code will kill me.
+		SPHN EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 1 {
+			A_WeaponOffset(Random(-2,2),Random(-2,2)+15, WOF_INTERPOLATE);
+		}
+		SPHN FGH 4;
+		SPHN A 0 A_PlaySound("weapons/mallet/miss");
+		SPHN IJKLM 1;
+		TNT1 A 0 A_PlaySound("misc/phone/break", CHAN_6);
+		TNT1 A 0 A_QuakeEx(0.2,0.2,0.2, 35, 0, QF_RELATIVE);
+		TNT1 A 0 A_TakeInventory("SpotLevelEnter");
+		Goto Fire;
+	Ready2:
+		SVDK A 0 A_PlaySound("weapons/generic/draw");
+		SVDK AB 2;
+		SVDK A 0 A_PlaySound("misc/drink_alt");
+		SVDK CD 2;
+		SVDK EFGFEFGFE 3;
+		SVDK DCBA 2;
+		SPDB ABCDEDCBABCDEDCBA 2;
+		TNT1 A 0 A_TakeInventory("SpotLevelEnter");
+		Goto Fire;
+	Ready3:
+		SCRK ABCDE 2;
+		SCRK F 2 A_PlaySound("weapons/fists/deploy");
+		SCRK EDCBA 2;
+		TNT1 A 0 A_TakeInventory("SpotLevelEnter");
+		Goto Fire;
+	Fire:
+		TNT1 A 1;
+		Wait;
+	}
+}

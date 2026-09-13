@@ -14,6 +14,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.ColorRange 192, 207;
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.Portrait "PRT_SPOT";
+		Player.StartItem "SpotLevelEnter";
 		Player.StartItem "DinkyBlaster";
 		Player.StartItem "SpotMallet";
 		Player.StartItem "DinkyBlasterAmmo", 10;
