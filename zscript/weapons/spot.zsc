@@ -491,7 +491,7 @@ class SpotLevelEnter : DoomWeapon
 		SPHN E 60 A_PlaySound("misc/phone/sorry");
 		// anyone who writes clean code will kill me.
 		SPHN EEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 1 {
-			A_WeaponOffset(Random(-2,2),Random(-2,2), WOF_INTERPOLATE);
+			A_WeaponOffset(Random(-2,2),Random(-2,2)+15, WOF_INTERPOLATE);
 		}
 		SPHN FGH 4;
 		SPHN A 0 A_PlaySound("weapons/mallet/miss");
