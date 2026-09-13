@@ -62,6 +62,13 @@ weapons/chaingun/spin_start "sounds/weapons/CHAINSTA.ogg"
 weapons/chaingun/spin_stop "sounds/weapons/CHAINSTO.ogg"
 weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
 
+weapons/chainsaw1 "sounds/weapons/Chainsaw-1.wav"
+weapons/chainsaw2 "sounds/weapons/Chainsaw-2.wav"
+weapons/chainsaw3 "sounds/weapons/Chainsaw-3.wav"
+weapons/chainsaw4 "sounds/weapons/Chainsaw-4.wav"
+$random weapons/chainsaw {weapons/chainsaw1 weapons/chainsaw2 weapons/chainsaw3 weapons/chainsaw4}
+$volume weapons/chainsaw 0.25
+
 misc/drink "sounds/misc/drink.ogg"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
 misc/glass_break1 "sounds/misc/glass_break1.ogg"
