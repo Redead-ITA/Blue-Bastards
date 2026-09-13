@@ -261,3 +261,11 @@ class BlueBastardBulletPuff : BulletPuff
 		Stop;
 	}
 }
+
+class BlueBastardBulletPuffSaw : BlueBastardBulletPuff
+{
+	Default
+	{
+		+EXTREMEDEATH
+	}
+}
