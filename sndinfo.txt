@@ -12,10 +12,12 @@ weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
 weapons/blaster/shoot "sounds/weapons/plasma_2fire3.wav"
 weapons/blaster/reload "sounds/weapons/bfg_reload.wav"
 
-weapons/adpistol1 "sounds/weapons/pistol_fire.wav"
-weapons/adpistol2 "sounds/weapons/pistol_fire (2).wav"
-$random weapons/adpistol {weapons/adpistol1 weapons/adpistol2}
-$limit weapons/adpistol 2 
+weapons/adpistol1 "sounds/weapons/adpistol1.ogg"
+weapons/adpistol2 "sounds/weapons/adpistol2.ogg"
+weapons/adpistol3 "sounds/weapons/adpistol3.ogg"
+weapons/adpistol4 "sounds/weapons/adpistol4.ogg"
+$random weapons/adpistol {weapons/adpistol1 weapons/adpistol2 weapons/adpistol3 weapons/adpistol4}
+$limit weapons/adpistol 3 
 weapons/adpistol/deploy "sounds/weapons/usp_slideback.wav"
 
 weapons/mac1 "sounds/weapons/MicroUzi-Single1.wav"
