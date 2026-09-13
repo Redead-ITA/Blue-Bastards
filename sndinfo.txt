@@ -12,10 +12,12 @@ weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
 weapons/blaster/shoot "sounds/weapons/plasma_2fire3.wav"
 weapons/blaster/reload "sounds/weapons/bfg_reload.wav"
 
-weapons/adpistol1 "sounds/weapons/pistol_fire.wav"
-weapons/adpistol2 "sounds/weapons/pistol_fire (2).wav"
-$random weapons/adpistol {weapons/adpistol1 weapons/adpistol2}
-$limit weapons/adpistol 2 
+weapons/adpistol1 "sounds/weapons/adpistol1.ogg"
+weapons/adpistol2 "sounds/weapons/adpistol2.ogg"
+weapons/adpistol3 "sounds/weapons/adpistol3.ogg"
+weapons/adpistol4 "sounds/weapons/adpistol4.ogg"
+$random weapons/adpistol {weapons/adpistol1 weapons/adpistol2 weapons/adpistol3 weapons/adpistol4}
+$limit weapons/adpistol 3 
 weapons/adpistol/deploy "sounds/weapons/usp_slideback.wav"
 
 weapons/mac1 "sounds/weapons/MicroUzi-Single1.wav"
@@ -63,6 +65,13 @@ weapons/chaingun/spin "sounds/weapons/CHAINSPI.ogg"
 weapons/chaingun/spin_start "sounds/weapons/CHAINSTA.ogg"
 weapons/chaingun/spin_stop "sounds/weapons/CHAINSTO.ogg"
 weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
+
+weapons/chainsaw1 "sounds/weapons/Chainsaw-1.wav"
+weapons/chainsaw2 "sounds/weapons/Chainsaw-2.wav"
+weapons/chainsaw3 "sounds/weapons/Chainsaw-3.wav"
+weapons/chainsaw4 "sounds/weapons/Chainsaw-4.wav"
+$random weapons/chainsaw {weapons/chainsaw1 weapons/chainsaw2 weapons/chainsaw3 weapons/chainsaw4}
+$volume weapons/chainsaw 0.3
 
 misc/drink "sounds/misc/drink.ogg"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"
