@@ -515,7 +515,7 @@ class SpotLevelEnter : DoomWeapon
 	Ready3:
 		SCRK ABCDE 2;
 		SCRK F 2 A_PlaySound("weapons/fists/deploy");
-		SCRK EDCBA 2;============
+		SCRK EDCBA 2;
 		TNT1 A 0 A_TakeInventory("SpotLevelEnter");
 		Goto Fire;
 	Fire:
