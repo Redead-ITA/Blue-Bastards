@@ -34,12 +34,13 @@ CREDITS_END = "No dino and moth was harmed during the making of this mod.";
 
 LORE_CHARACTERS = "The Blue Bastards";
 LORE_ACE = "Ace Deathshead the Moth Bartender";
-LORE_ACE_1 = "Young, blue polish moth bartender that really likes whiskey and Dr. Gibb.";
-LORE_ACE_2 = "After getting wasted and playing RTS games in his home";
-LORE_ACE_3 = "Ace found himself in quite the predicament;";
-LORE_ACE_4 = "His reserve of Dr. Gibb and whiskey ran out";
-LORE_ACE_5 = "in the middle of a demonic invasion.";
-LORE_ACE_6 = "Destined to find a six pack, Ace, still wasted, armed up and got to work.";
+LORE_ACE_1 = "Young (aged 24), blue polish moth bartender.";
+LORE_ACE_2 = "Really likes whiskey and Dr. Gibb.";
+LORE_ACE_3 = "After getting wasted and playing RTS games in his home";
+LORE_ACE_4 = "Ace found himself in quite the predicament;";
+LORE_ACE_5 = "His reserve of Dr. Gibb and whiskey ran out";
+LORE_ACE_6 = "in the middle of a demonic invasion.";
+LORE_ACE_7 = "Destined to find a six pack, Ace, still wasted, armed up and got to work.";
 LORE_SPOT = "Spot the Dino";
 LORE_SPOT_1 = "Young artist (aged 23) and goober from the island of Neo-Dinosauria.";
 LORE_SPOT_2 = "Usually cheerful and kind (well... used to be before the incident),";
@@ -94,15 +95,20 @@ CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia t
 
 LORE_CHARACTERS = "Niebiescy Gówniarze";
 LORE_ACE = "As Trupiogłowy, Barman Ćma";
-LORE_ACE_1 = "Młoda, niebieska ćma polak. Bardzo lubi whisky i Dr. Gibb.";
-LORE_1 = "Lorem ipsum lubie ćmy";
-
+LORE_ACE_1 = "Młoda (w. 24), niebieska ćma polak.";
+LORE_ACE_2 = "Bardzo lubi whisky i Dr. Gibb.";
+LORE_ACE_3 = "Po najebaniu się i graniu gier RTS w swoim domu";
+LORE_ACE_4 = "As miał bardzo duży kłopot;";
+LORE_ACE_5 = "Jego strategiczna rezerwa Dr. Gibb wyczerpała";
+LORE_ACE_6 = "się w środku demonicznej inwazji.";
+LORE_ACE_7 = "As, nadal upity, wziął spluwy i zabrał się za robotę.";
 LORE_SPOT = "Dinuś Spot";
 LORE_SPOT_1 = "Młody Arysta (w. 23) i Goober z Wyspy Neo-Dinosauri.";
 LORE_SPOT_2 = "Zazwyczaj wesoły i miły (no cóż... przed incydentem...).";
 LORE_SPOT_3 = "Ale od czasu zniknięcia Nessie.. on zacząl być wściekly,";
 LORE_SPOT_4 = "oraz głodny, albo wściekly z głodu, jeśli tak wolisz, szukająć resztek jedzenia";
 LORE_SPOT_5 = "aby zrekompensować to... że zapomiał zjeść śniadania.";
+LORE_1 = "Lorem ipsum lubie ćmy";
 
 GOTDRGIBB = "Podniesiono puszkę Dr. Gibb.";
 GOTWHISKEY = "Podniesiono butelkę whisky.";
