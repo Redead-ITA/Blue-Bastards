@@ -111,6 +111,7 @@ $playersound	spot	male	*pain25			   "sounds/spot/DSSPTPAI.wav"
 $playersound	spot	male	*usefail	   "sounds/spot/DSSPTNWA.wav"
 $playersound	spot	male	*grunt	   "sounds/spot/DSSPTOOF.wav"
 $playersounddup	spot	male	*land		*grunt
+$playersound    spot    male    *jump   "sounds/spot/foley_dbljump-03.ogg"
 
 // Deathshead
 $playersound	deathshead	male	*death		"sounds/deathshead/DSMOFDIE.ogg"
