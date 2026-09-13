@@ -50,6 +50,8 @@ LORE_1 = "Lorem ipsum I like moths";
 
 GOTDRGIBB = "Picked up a Dr. Gibb can.";
 GOTWHISKEY = "Picked up a whiskey.";
+GOTGLASSDRGIBB = "Picked up a glass of Dr. Gibb.";
+GOTGLASSWHISKEY = "Picked up a glass of whiskey.";
 
 QUITMSG1 = "Nessie is still out there... waiting...";
 QUITMSG2 = "Giving up already?";
@@ -104,3 +106,5 @@ LORE_SPOT_5 = "aby zrekompensować to... że zapomiał zjeść śniadania.";
 
 GOTDRGIBB = "Podniesiono puszkę Dr. Gibb.";
 GOTWHISKEY = "Podniesiono butelkę whisky.";
+GOTGLASSDRGIBB = "Podniesiono szklankę Dr. Gibb.";
+GOTGLASSWHISKEY = "Podniesiono szklankę whiskey.";
