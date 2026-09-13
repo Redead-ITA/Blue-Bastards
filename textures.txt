@@ -68,6 +68,68 @@ Sprite WPN1J0, 24, 24
 }
 
 
+Sprite WPN2A0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsa0.png", 0, 0
+}
+Sprite WPN2B0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsb0.png", 0, 0
+}
+Sprite WPN2C0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsc0.png", 0, 0
+}
+Sprite WPN2D0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsd0.png", 0, 0
+}
+Sprite WPN2E0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppse0.png", 0, 0
+}
+Sprite WPN2F0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsf0.png", 0, 0
+}
+Sprite WPN2G0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsg0.png", 0, 0
+}
+Sprite WPN2H0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsh0.png", 0, 0
+}
+Sprite WPN2I0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsi0.png", 0, 0
+}
+Sprite WPN2J0, 24, 24
+{
+	Offset 12, 20
+	Sprite "sprites/pickups/weppb0.png", 0, 0
+	Sprite "sprites/pickups/wppsj0.png", 0, 0
+}
+
+
 Sprite WPN3A0, 24, 24
 {
 	Offset 12, 20
