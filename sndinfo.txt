@@ -65,7 +65,7 @@ weapons/chaingun/spin_stop "sounds/weapons/CHAINSTO.ogg"
 weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
 
 misc/drink "sounds/misc/drink.ogg"
-misc/drink_alt "sounds/misc/drink_hardtime.ogg"
+misc/drink_alt "sounds/misc/drink_hardtime.wav"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
 misc/glass_break1 "sounds/misc/glass_break1.ogg"
 misc/glass_break2 "sounds/misc/glass_break2.ogg"
