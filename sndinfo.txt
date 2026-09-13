@@ -56,6 +56,8 @@ weapons/laser/fire "sounds/weapons/myears.ogg"
 weapons/bfgq2 "sounds/weapons/bfg__f1y.wav"
 weapons/bfgq2/deploy "sounds/weapons/bfg_deploy.wav"
 
+weapons/generic/draw "sounds/weapons/draw_generic.wav"
+
 weapons/chaingun/fire "sounds/weapons/CHGNSHOT.ogg"
 weapons/chaingun/spin "sounds/weapons/CHAINSPI.ogg"
 weapons/chaingun/spin_start "sounds/weapons/CHAINSTA.ogg"
@@ -82,6 +84,9 @@ misc/ricochet6 "sounds/misc/RICOCHE2.ogg"
 misc/ricochet7 "sounds/misc/RICOCHE3.ogg"
 $random misc/ricochet {misc/ricochet1 misc/ricochet2 misc/ricochet3 misc/ricochet4 misc/ricochet5 misc/ricochet6 misc/ricochet7}
 misc/berserk "sounds/weapons/BERSPKUP.ogg"
+
+misc/phone/sorry "sounds/misc/weresorry.ogg"
+misc/phone/break "sounds/misc/phone_break.ogg"
 
 misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
 misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"
