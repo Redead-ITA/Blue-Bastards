@@ -15,11 +15,11 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.Portrait "PRT_SPOT";
 		Player.StartItem "SpotLevelEnter";
-		Player.StartItem "DinkyBlaster";
+		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotMallet";
-		Player.StartItem "DinkyBlasterAmmo", 10;
+		Player.StartItem "Clip", 50;
 		Player.WeaponSlot 1, "SpotMallet", "SpotRustyClaws";
-		Player.WeaponSlot 2, "DinkyBlaster";
+		Player.WeaponSlot 2, "SpotExpress600";
 		Player.WeaponSlot 3, "SpotShotgun", "SpotDevastator";
 		Player.WeaponSlot 4, "SpotChaingun";
 		Player.WeaponSlot 5, "RapidMissileSpot";
