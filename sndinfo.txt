@@ -5,6 +5,8 @@ weapons/mallet/miss "sounds/weapons/PUNCHMIS.wav"
 
 weapons/claw/swing "sounds/weapons/fists_raise_fists_01.wav"
 weapons/claw/impact "sounds/weapons/claw_impact.ogg"
+weapons/claw/hitwall "sounds/weapons/knife_hitwall1.wav"
+$limit weapons/claw/hitwall 0
 
 weapons/shotgun/pump "sounds/weapons/shotgunpump1.ogg"
 weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
