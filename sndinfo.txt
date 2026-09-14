@@ -68,7 +68,7 @@ weapons/chaingun/spin_start "sounds/weapons/CHAINSTA.ogg"
 weapons/chaingun/spin_stop "sounds/weapons/CHAINSTO.ogg"
 weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
 
-weapons/express600/prefire "sounds/weapons/shotgun_empty.wav"
+weapons/express600/prefire "sounds/weapons/revolver_hammer.wav"
 weapons/express600/fire "sounds/weapons/bigfuckenmagnum.ogg"
 
 weapons/chainsaw1 "sounds/weapons/Chainsaw-1.wav"
