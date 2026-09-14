@@ -18,10 +18,14 @@ GameInfo
 	QuitMessages = "$QUITMSG1", "$QUITMSG2", "$QUITMSG3"
 	SwapMenu = False
 	NoRandomPlayerClass = False
+	DimColor = "00 00 c0"
+	DimAmount = 0.5
+	BlurAmount = 0.25
 }
 
 map TITLEMAP lookup "BLUE_BASTARDS"
 {
+	Sky1 = "FIRESK00"
 }
 
 skill baby
