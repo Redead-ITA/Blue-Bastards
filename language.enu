@@ -22,15 +22,14 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 "Because I wouldn't!";
 
 CREDIT_HEADER = "Credit Where It's Due";
-CREDITS_1 = "Saver310 and Tofi - Nearly Everything";
-CREDITS_2 = "Valve, id Software, Running with Scissors, Gearbox - Weapon Models";
-CREDITS_3 = "Reelism 2, 3D Realms, NTMAi - Weapon Sprites";
-CREDITS_4 = "Valve, id Software, Running with Scissors, Raven Software, Reelism 2, SNK - Weapon Sounds";
-CREDITS_5 = "MythoLogic Interactive - Menu Sounds";
-CREDITS_6 = "id Software, Jimmy - Menu Font";
-CREDITS_7 = "3D Realms - Intermission Music";
-CREDITS_8 = "SNK - Weapon Pickup Sounds";
-CREDITS_9 = "Magmacow - Gore Sounds";
+CREDITS_ALMOST_EVERYTHING = "Nearly Everything";
+CREDITS_WEAPON_MODELS = "Weapon Models";
+CREDITS_WEAPON_SPRITES = "Weapon Sprites";
+CREDITS_WEAPON_SOUNDS = "Weapon Sounds";
+CREDITS_MENU_SOUNDS = "Menu Sounds";
+CREDITS_MENU_FONT = "Menu Font";
+CREDITS_INTERMISSION_MUSIC = "Intermission Music";
+CREDITS_GORE_SOUNDS = "Gore Sounds";
 CREDITS_END = "No dino and moth was harmed during the making of this mod.";
 
 LORE_CHARACTERS = "The Blue Bastards";
@@ -84,15 +83,14 @@ DARK_BLUE_SURE = "Pożałujesz wyboru tego koloru\n"
 "Na twoim miejscu bym nie wybierał tego!";
 
 CREDIT_HEADER = "Podziękowania, gdzie się należą";
-CREDITS_1 = "Saver310 i Tofi - Prawie Wszystko";
-CREDITS_2 = "Valve, id Software, Running with Scissors, Gearbox - Modele Broni";
-CREDITS_3 = "Reelism 2, 3D Realms, NTMAi - Sprity Broni";
-CREDITS_4 = "Valve, id Software, Running with Scissors, Raven Software, Reelism 2, SNK - Dźwięki Broni";
-CREDITS_5 = "MythoLogic Interactive - Dźwięki Menu";
-CREDITS_6 = "id Software, Jimmy - Czcionka Menu";
-CREDITS_7 = "3D Realms - Muzyka Ekranu Końcowego";
-CREDITS_8 = "SNK - Dźwięki Podnoszenia Broni";
-CREDITS_9 = "Magmacow - Dźwięki Krwii";
+CREDITS_ALMOST_EVERYTHING = "Prawie Wszystko";
+CREDITS_WEAPON_MODELS = "Modele Broni";
+CREDITS_WEAPON_SPRITES = "Sprity Broni";
+CREDITS_WEAPON_SOUNDS = "Dźwięki Broni";
+CREDITS_MENU_SOUNDS = "Dźwięki Menu";
+CREDITS_MENU_FONT = "Czcionka Menu";
+CREDITS_INTERMISSION_MUSIC = "Muzyka Ekranu Końcowego";
+CREDITS_GORE_SOUNDS = "Dźwięki Krwii";
 CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia tego moda.";
 
 LORE_CHARACTERS = "Niebiescy Gówniarze";
