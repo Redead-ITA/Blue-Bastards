@@ -9,7 +9,7 @@ GameInfo
 	MenuFontColor_Header = "Sapphire"
 	MenuFontColor_Highlight = "Sapphire"
 	MenuFontColor_Selection = "Sapphire"
-	IntermissionMusic = "music/d_bonus.ogg" 
+	IntermissionMusic = "music/BONUS.VOC" 
 	InfoPage = "CREDIT"
 	QuitSound = "menu/jingle"
 	QuitMessages = "$QUITMSG1", "$QUITMSG2", "$QUITMSG3"
