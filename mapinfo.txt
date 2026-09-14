@@ -11,6 +11,7 @@ GameInfo
 	MenuFontColor_Header = "Sapphire"
 	MenuFontColor_Highlight = "Sapphire"
 	MenuFontColor_Selection = "Sapphire"
+	TitleMusic = "music/PSXTITLE.OGG"
 	IntermissionMusic = "music/BONUS.VOC" 
 	InfoPage = "CREDIT"
 	QuitSound = "menu/jingle"
