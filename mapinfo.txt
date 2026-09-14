@@ -1,5 +1,7 @@
 GameInfo
 {
+	CursorPic = "graphics/cursor.png"
+	DrawReadThis = False
 	ForceTextInMenus = True
 	PlayerClasses = "Spot", "Deathshead"
 	MenuFontColor_Title = "Sapphire"
@@ -9,10 +11,13 @@ GameInfo
 	MenuFontColor_Header = "Sapphire"
 	MenuFontColor_Highlight = "Sapphire"
 	MenuFontColor_Selection = "Sapphire"
-	IntermissionMusic = "music/d_bonus.ogg" 
+	TitleMusic = "music/PSXTITLE.OGG"
+	IntermissionMusic = "music/BONUS.VOC" 
 	InfoPage = "CREDIT"
 	QuitSound = "menu/jingle"
 	QuitMessages = "$QUITMSG1", "$QUITMSG2", "$QUITMSG3"
+	SwapMenu = False
+	NoRandomPlayerClass = False
 }
 
 map TITLEMAP lookup "BLUE_BASTARDS"

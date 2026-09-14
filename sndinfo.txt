@@ -68,7 +68,7 @@ weapons/chaingun/spin_start "sounds/weapons/CHAINSTA.ogg"
 weapons/chaingun/spin_stop "sounds/weapons/CHAINSTO.ogg"
 weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
 
-weapons/express600/prefire "sounds/weapons/shotgun_empty.wav"
+weapons/express600/prefire "sounds/weapons/revolver_hammer.wav"
 weapons/express600/fire "sounds/weapons/bigfuckenmagnum.ogg"
 
 weapons/chainsaw1 "sounds/weapons/Chainsaw-1.wav"
@@ -162,4 +162,7 @@ $alias menu/clear			menu/cancel
 
 menu/jingle1 "sounds/deathshead/DSMOFNWA.ogg"
 menu/jingle2 "sounds/spot/DSSPTNWA.wav"
-$random menu/jingle {menu/jingle1 menu/jingle2 weapons/mac10/deploy weapons/adpistol/deploy misc/ricochet}
+// taken from https://github.com/odamex/odamex/commit/43d660f4f489042a68feddab7d5c67d8f7417231
+menu/jingle3 "sounds/menu/dspljoin.wav"
+menu/jingle4 "sounds/menu/dsplpart.wav"
+$random menu/jingle {menu/jingle1 menu/jingle2 menu/jingle3 menu/jingle4 weapons/mac10/deploy weapons/adpistol/deploy misc/ricochet weapons/chaingun/deploy misc/metalslug/generic}
