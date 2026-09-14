@@ -81,7 +81,7 @@ SKILL_DARK_BLUE = "Ciemny Niebieski";
 DARK_BLUE_SURE = "Pożałujesz wyboru tego koloru\n"
 "Jesteś pewien?\n"
 "\n"
-"Na twoim miejscu bym nie wybrał tego!";
+"Na twoim miejscu bym nie wybierał tego!";
 
 CREDIT_HEADER = "Podziękowania, gdzie się należą";
 CREDITS_1 = "Saver310 i Tofi - Prawie Wszystko";
