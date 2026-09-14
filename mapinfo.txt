@@ -1,5 +1,7 @@
 GameInfo
 {
+	CursorPic = "graphics/cursor.png"
+	DrawReadThis = False
 	ForceTextInMenus = True
 	PlayerClasses = "Spot", "Deathshead"
 	MenuFontColor_Title = "Sapphire"
@@ -13,6 +15,8 @@ GameInfo
 	InfoPage = "CREDIT"
 	QuitSound = "menu/jingle"
 	QuitMessages = "$QUITMSG1", "$QUITMSG2", "$QUITMSG3"
+	SwapMenu = False
+	NoRandomPlayerClass = False
 }
 
 map TITLEMAP lookup "BLUE_BASTARDS"
