@@ -217,19 +217,19 @@ class DeathsheadShotgun : Shotgun
 		ADSG A 1 A_WeaponReady;
 		Loop;
 	Fire:
-		ADSG B 2 Bright
+		ADSG B 1 Bright
 		{
 			A_FireBullets (6, 6, 12, random(2,5), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/autoshotgun", CHAN_AUTO);
 			A_GunFlash();
 		}
-		ADSG C 1 Bright;
+		ADSG C 2 Bright;
 		ADSG D 2 Bright;
 		ADSG EFA 2 A_ReFire;
 		Goto RealReady;
 	Flash:
-		ADSG N 2 Bright A_Light1;
-		ADSG O 1 Bright A_Light2;
+		ADSG N 1 Bright A_Light1;
+		ADSG O 2 Bright A_Light2;
 		ADSG P 2 Bright A_Light2;
 		Goto LightDone;
 	}
