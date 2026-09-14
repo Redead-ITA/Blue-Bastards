@@ -51,7 +51,7 @@ class DeathsheadFist : Fist
 			{
 				dmg *= 2;
 			}
-			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/weakswing");
+			A_CustomPunch(dmg, norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/weakswing");
 		}
 		ADGB DE 2;
 		ADGB F 2 A_ReFire;

@@ -269,3 +269,19 @@ class BlueBastardBulletPuffSaw : BlueBastardBulletPuff
 		+EXTREMEDEATH
 	}
 }
+
+
+class BlueBastardBulletPuffStab : BlueBastardBulletPuff
+{
+	States
+	{
+	Crash:
+		TNT1 A 0 
+		{
+			scale = default.scale*random(1.0,1.5);
+			A_StartSound("weapons/claw/hitwall",CHAN_AUTO,CHANF_DEFAULT,0.8);
+		}
+		TNT1 A 0 A_Jump(256,"Puff1","Puff2");
+		Stop;
+	}
+}
