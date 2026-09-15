@@ -613,7 +613,7 @@ class SpotNuke : Actor
 			Loop;
 		Death:
 			MISL B 0{
-				A_QuakeEx( 3, 3, 3, 60, 0, 3000 );
+				A_QuakeEx( 3, 3, 3, 90, 0, 3000 );
 				RadiusAttack(target,400,300);
 				A_Light(20);
 			} 
