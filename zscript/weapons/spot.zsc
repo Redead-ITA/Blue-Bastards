@@ -556,6 +556,7 @@ class SpotBFG : BFG9000
 			SFTM A 1 A_WeaponReady;
 			Loop;
 		Fire:
+			SFTM A 0 A_PlaySound("weapons/nuke/alarm");
 			SFTM AAAAAAAAAAAAAAA 1 {
 				A_WeaponOffset(Random(-3,3),Random(-3,3) + 35);
 			}
@@ -564,13 +565,20 @@ class SpotBFG : BFG9000
 			}
 			SFTM BC 2;
 			STMF D 0{
-				A_FireBFG();
-				A_SetPitch(self.pitch - 8, SPF_INTERPOLATE);
-				A_PlaySound("weapons/rocket");
+				A_QuakeEx(0.2,0.2,0.2, 15, 0, QF_RELATIVE, "");
+				A_FireProjectile("SpotNuke");
+				A_Recoil(4);
+				A_SetPitch(self.pitch - 8);
+				A_PlaySound("weapons/nuke");
+			}
+			SFTM DDDD 1 {
+				A_WeaponOffset(Random(-3,3),Random(-3,3) + 35);
+				A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
 			}
 			SFTM DDDDDDDDDDDD 1 {
 				A_WeaponOffset(Random(-3,3),Random(-3,3) + 35);
 			}
+
 			SFTM EFG 3;
 			TNT1 A 50;
 			SFMR ABC 3;
@@ -579,6 +587,73 @@ class SpotBFG : BFG9000
 			Goto RealReady;
 		Spawn:
 			BFUG A -1;
+			Stop;
+	}
+}
+
+class SpotNuke : Actor
+{
+	Default
+	{
+		Radius 32;
+		Height 32;
+		Speed 40;
+		Damage 150;
+		Projectile;
+		DeathSound "weapons/nuke/explode";
+		+DEHEXPLOSION
+		+ROCKETTRAIL
+		+ZDOOMTRANS
+		+EXTREMEDEATH
+	}
+
+	States
+	{
+		Spawn:
+			SNUK A 1;
+			Loop;
+		Death:
+			MISL B 0{
+				A_QuakeEx(0.3,0.3,0.3, 60, 0, 3000, "");
+				RadiusAttack(target,400,300);
+				A_Light(20);
+			} 
+			// OMFG
+			MISL BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB 0{
+				A_SpawnItemEx("NukeFlame",0,0,0, random(-32,32),random(-32,32),0);
+			}
+			MISL B 8 Bright A_Explode;
+			MISL C 6 Bright A_Light(10);
+			MISL D 4 Bright A_Light(0);
+			Stop;
+	}
+}
+
+class NukeFlame : Actor
+{
+	Default
+	{
+		Radius 32;
+		Height 16;
+		Speed 40;
+		Damage 150;
+		DeathSound "weapons/nuke/explode";
+		+RANDOMIZE
+		+ROCKETTRAIL
+		+ZDOOMTRANS
+		+EXTREMEDEATH
+	}
+
+	States
+	{
+		Spawn:
+			FIRE ABABBBABBB 1;
+		Death:
+			FIRE BCBCDCDCDEDED 2 bright{
+				A_Fire();
+				RadiusAttack(target,30,128);
+			}
+			FIRE FEFEFGHGHGH 1 bright A_Fire;
 			Stop;
 	}
 }
