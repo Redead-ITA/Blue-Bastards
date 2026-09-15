@@ -532,12 +532,11 @@ class SpotBFG : BFG9000
 		Weapon.AmmoGive 40;
 		Weapon.AmmoType "Cell";
 		+WEAPON.NOAUTOFIRE;
-		Inventory.PickupMessage "$GOTBFG9000";
-		Tag "$TAG_BFG9000";
 
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
+		Weapon.BobStyle "InverseSmooth";
 	}
 	States
 	{
