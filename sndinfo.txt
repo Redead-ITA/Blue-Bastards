@@ -160,6 +160,8 @@ menu/slam "sounds/menu/LogoSlam.wav"
 menu/cancel "sounds/menu/MenuCancel.wav"
 menu/move "sounds/menu/MenuMove.wav"
 menu/ok "sounds/menu/MenuOK.wav"
+menu/buy "sounds/menu/1250_S_StoreBuy.wav"
+menu/tick "sounds/menu/1246_S_Menu2.wav"
 $alias menu/activate		menu/slam
 $alias menu/backup			menu/ok
 $alias menu/prompt			menu/ok
@@ -169,6 +171,13 @@ $alias menu/invalid			menu/cancel
 $alias menu/dismiss			menu/ok
 $alias menu/choose			menu/ok
 $alias menu/clear			menu/cancel
+
+$alias intermission/tick menu/tick
+$alias intermission/cooptotal menu/buy
+$alias intermission/nextstage menu/buy
+$alias intermission/paststats misc/metalslug/generic
+$alias intermission/pastcoopstats misc/metalslug/generic
+$alias intermission/pastdmstats	menu/buy
 
 menu/jingle1 "sounds/deathshead/DSMOFNWA.ogg"
 menu/jingle2 "sounds/spot/DSSPTNWA.wav"
