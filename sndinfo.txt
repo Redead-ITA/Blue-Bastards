@@ -82,6 +82,8 @@ weapons/chainsaw4 "sounds/weapons/Chainsaw-4.wav"
 $random weapons/chainsaw {weapons/chainsaw1 weapons/chainsaw2 weapons/chainsaw3 weapons/chainsaw4}
 $volume weapons/chainsaw 0.3
 
+weapons/deagle/deploy "sounds/weapons/de_deploy.wav"
+
 misc/drink "sounds/misc/drink.ogg"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
