@@ -659,15 +659,13 @@ class NukeFlame : Actor
 	States
 	{
 		Spawn:
-			NFRL A 2;
-			NFRL B 2;
-			NFRL C 2;
+			NFRL A 0;
 		Death:
 			NFRL ABCDEFGHIJKLABCDEFGHIJKL 2 bright{
 				A_Fire();
 				RadiusAttack(target,30,64);
 			}
-			NFRD ABCDEFGHIJKLMNO 1 bright A_Fire;
+			NFRD ABCDEFGHIJKLMNO 2 bright A_Fire;
 			Stop;
 	}
 }
