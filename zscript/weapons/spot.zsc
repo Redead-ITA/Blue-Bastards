@@ -93,7 +93,7 @@ class SpotExpress600 : Pistol
         BREV A 2
         {   
             A_GunFlash();
-			A_FireBullets(4,0,0,24);
+			A_FireBullets(4,0,0,24, "BlueBastardBulletPuff");
             A_PlaySound("weapons/express600/fire", CHAN_WEAPON);
 			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
         }
