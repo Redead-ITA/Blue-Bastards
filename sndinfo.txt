@@ -86,6 +86,9 @@ $volume weapons/chainsaw 0.3
 
 weapons/deagle/deploy "sounds/weapons/de_deploy.wav"
 
+weapons/sg550 "sounds/weapons/sg550-1.wav"
+weapons/sg550/deploy "sounds/weapons/sg550-deploy.wav"
+
 misc/drink "sounds/misc/drink.ogg"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
