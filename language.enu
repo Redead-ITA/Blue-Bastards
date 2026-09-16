@@ -55,6 +55,15 @@ GOTWHISKEY = "Picked up a whiskey.";
 GOTGLASSDRGIBB = "Picked up a glass of Dr. Gibb.";
 GOTGLASSWHISKEY = "Picked up a glass of whiskey.";
 
+GOTCHAINSAW = "Chainsaw! (Slot 1)";
+GOTPISTOL = "Pistol! (Slot 2)";
+GOTSHOTGUN = "Shotgun! (Slot 3)";
+GOTSHOTGUN2 = "Super Shotgun! (Slot 3)";
+GOTCHAINGUN = "Heavy Machine Gun! (Slot 4)";
+GOTLAUNCHER = "Rocket Launcher! (Slot 5)";
+GOTPLASMA = "Laser Gun! (Slot 6)";
+GOTBFG9000 = "What the !@#%* is this! (Slot 7)";
+
 QUITMSG1 = "Nessie is still out there... waiting...";
 QUITMSG2 = "Giving up already?";
 QUITMSG3 = "That six pack of Dr. Gibb ain't gonna find itself.";
@@ -116,3 +125,12 @@ GOTDRGIBB = "Podniesiono puszkę Dr. Gibb.";
 GOTWHISKEY = "Podniesiono butelkę whisky.";
 GOTGLASSDRGIBB = "Podniesiono szklankę Dr. Gibb.";
 GOTGLASSWHISKEY = "Podniesiono szklankę whiskey.";
+
+GOTCHAINSAW = "Piła! (Slot 1)";
+GOTPISTOL = "Pistolet! (Slot 2)";
+GOTSHOTGUN = "Strzelba! (Slot 3)";
+GOTSHOTGUN2 = "Super Strzelba! (Slot 3)";
+GOTCHAINGUN = "Ciężki Karabin Maszynowy! (Slot 4)";
+GOTLAUNCHER = "Wyrzutnia Rakiet! (Slot 5)";
+GOTPLASMA = "Karabin Laserowy! (Slot 6)";
+GOTBFG9000 = "Co to !@#%* jest! (Slot 7)";
