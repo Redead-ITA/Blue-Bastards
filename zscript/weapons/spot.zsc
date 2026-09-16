@@ -201,7 +201,7 @@ class SpotShotgun : Shotgun
 {
 	Default{
 		Weapon.AmmoType "Shell";
-		Weapon.AmmoUse 2;
+		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobSpeed 1.75;
@@ -217,18 +217,21 @@ class SpotShotgun : Shotgun
 			TNT1 A 1 A_Raise(24);
 			Wait;
 		Ready:
-			SSHR ED 2;
-			SSHR A 0 A_PlaySound("weapons/shotgun/pump");
-			SSHR CBA 2;
+			TNT1 A 0 A_PlaySound("weapons/generic/draw");
+			SSHR EDCBA 2;
+			SSHT BCD 2;
+			SSHT A 0 A_PlaySound("weapons/shotgun/pump");
+			SSHT EF 2;
+			SSHT EDCBA 2;
 		RealReady:
 			SSHT A 1 A_WeaponReady;
 			Loop;
 		Fire:
 			SSTF A 0
 			{
-				A_FireBullets(7, 4, 24, 5, "BlueBastardBulletPuff");
+				A_FireBullets(7, 4, 25, 5, "BlueBastardBulletPuff");
 				A_Recoil(1);
-				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
+				A_PlaySound("weapons/ks23/fire", CHAN_WEAPON);
 				A_GunFlash();
 				A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
 			}

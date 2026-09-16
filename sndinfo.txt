@@ -11,6 +11,8 @@ $limit weapons/claw/hitwall 0
 weapons/shotgun/pump "sounds/weapons/shotgunpump1.ogg"
 weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
 
+weapons/ks23/fire "sounds/weapons/ks23.wav"
+
 weapons/blaster/shoot "sounds/weapons/plasma_2fire3.wav"
 weapons/blaster/reload "sounds/weapons/bfg_reload.wav"
 
