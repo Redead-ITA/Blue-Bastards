@@ -93,7 +93,7 @@ class SpotExpress600 : Pistol
         BREV A 2
         {   
             A_GunFlash();
-			A_FireBullets(4,0,0,24);
+			A_FireBullets(4,0,0,24, "BlueBastardBulletPuff");
             A_PlaySound("weapons/express600/fire", CHAN_WEAPON);
 			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
         }
@@ -201,7 +201,7 @@ class SpotShotgun : Shotgun
 {
 	Default{
 		Weapon.AmmoType "Shell";
-		Weapon.AmmoUse 2;
+		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobSpeed 1.75;
@@ -210,39 +210,45 @@ class SpotShotgun : Shotgun
 	}
 	States {
 		Deselect:
-			SHT2 ABCD 2;
+			SSHR ABCDE 2;
 			TNT1 A 1 A_Lower(24);
 			Wait;
 		Select:
 			TNT1 A 1 A_Raise(24);
 			Wait;
 		Ready:
-			SHT2 DC 2;
-			SHT2 A 0 A_PlaySound("weapons/shotgun/pump");
-			SHT2 BA 2;
+			TNT1 A 0 A_PlaySound("weapons/generic/draw");
+			SSHR EDCBA 2;
+			SSHT BCD 2;
+			SSHT A 0 A_PlaySound("weapons/shotgun/pump");
+			SSHT EF 2;
+			SSHT EDCBA 2;
 		RealReady:
 			SSHT A 1 A_WeaponReady;
 			Loop;
 		Fire:
-			SSHT A 0
+			SSTF A 0
 			{
-				A_FireBullets(7, 4, 24, 5, "BlueBastardBulletPuff");
+				A_FireBullets(7, 4, 25, 5, "BlueBastardBulletPuff");
 				A_Recoil(1);
-				A_PlaySound("weapons/shotgun/fire", CHAN_WEAPON);
+				A_PlaySound("weapons/ks23/fire", CHAN_WEAPON);
 				A_GunFlash();
-				A_SetPitch(self.pitch - 4, SPF_INTERPOLATE);
+				A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
 			}
-			SSHT DC 2 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+			SSTF CBAA 1{
+				A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+				A_WeaponOffset(Random(-2,2),Random(-2,2) + 36);
+			}
 			SSHT A 6;
-			SSHT EF 2;
+			SSHT BCD 2;
 			SSHT A 0 A_PlaySound("weapons/shotgun/pump");
-			SSHT GHIJKL 2;
-			SSHT KJIHGFE 2;
+			SSHT EF 2;
+			SSHT EDCBA 2;
 			SSHT A 0 A_ReFire;
 			goto RealReady;
 		Flash:
-			SSMF A 2 Bright A_Light2;
-			SSMF B 2 Bright A_Light1;
+			SHTF A 1 Bright A_Light2;
+			SHTF B 1 Bright A_Light1;
 			TNT1 A 1 A_Light0;
 			stop;
 		Spawn:

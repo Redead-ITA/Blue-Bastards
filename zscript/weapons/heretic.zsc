@@ -1,0 +1,55 @@
+class GauntletsReplacement : RandomSpawner replaces Gauntlets
+{
+	Default
+	{
+		DropItem "ChainsawReplacement";
+	}
+}
+
+class GoldWandReplacement : RandomSpawner replaces GoldWand
+{
+	Default
+	{
+		DropItem "PistolReplacement";
+	}
+}
+
+class CrossbowReplacement : RandomSpawner replaces Crossbow
+{
+	Default
+	{
+		DropItem "ShotgunReplacement";
+	}
+}
+
+class BlasterReplacement : RandomSpawner replaces Blaster
+{
+	Default
+	{
+		DropItem "ChaingunReplacement";
+	}
+}
+
+class PhoenixRodReplacement : RandomSpawner replaces PhoenixRod
+{
+	Default
+	{
+		DropItem "RocketLauncherReplacement";
+	}
+}
+
+class SkullRodReplacement : RandomSpawner replaces SkullRod
+{
+	Default
+	{
+		DropItem "PlasmaRifleReplacement";
+	}
+}
+
+class MaceReplacement : RandomSpawner replaces Mace
+{
+	Default
+	{
+		DropItem "BFG9000Replacement";
+	}
+}

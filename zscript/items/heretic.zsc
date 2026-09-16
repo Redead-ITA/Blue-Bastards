@@ -1,0 +1,127 @@
+class BagOfHoldingReplacement : RandomSpawner replaces BagOfHolding
+{
+	Default
+	{
+		DropItem "BlueBastardBackpack";
+	}
+}
+
+class BlasterAmmoReplacement : Clip replaces BlasterAmmo
+{
+	States
+	{
+	Spawn:
+		AMB1 ABC 4;
+		Loop;
+	}
+}
+
+class BlasterHeftyReplacement : ClipBox replaces BlasterHefty
+{
+	States
+	{
+	Spawn:
+		AMB2 ABC 4;
+		Loop;
+	}
+}
+
+class CrossbowAmmoReplacement : Shell replaces CrossbowAmmo
+{
+	States
+	{
+	Spawn:
+		AMC1 A -1;
+		Stop;
+	}
+}
+
+class CrossbowHeftyReplacement : ShellBox replaces CrossbowHefty
+{
+	States
+	{
+	Spawn:
+		AMC2 ABC 5;
+		Loop;
+	}
+}
+
+class GoldWandAmmoReplacement : Clip replaces GoldWandAmmo
+{
+	States
+	{
+	Spawn:
+		AMG1 A -1;
+		Stop;
+	}
+}
+
+class GoldWandHeftyReplacement : ClipBox replaces GoldWandHefty
+{
+	States
+	{
+	Spawn:
+		AMG2 ABC 4;
+		Loop;
+	}
+}
+
+class MaceAmmoReplacement : Cell replaces MaceAmmo
+{
+	States
+	{
+	Spawn:
+		AMM1 A -1;
+		Stop;
+	}
+}
+
+class MaceHeftyReplacement : CellPack replaces MaceHefty
+{
+	States
+	{
+	Spawn:
+		AMM2 A -1;
+		Stop;
+	}
+}
+
+class PhoenixRodAmmoReplacement : RocketAmmo replaces PhoenixRodAmmo
+{
+	States
+	{
+	Spawn:
+		AMP1 ABC 4;
+		Loop;
+	}
+}
+
+class PhoenixRodHeftyReplacement : RocketBox replaces PhoenixRodHefty
+{
+	States
+	{
+	Spawn:
+		AMP2 ABC 4;
+		Loop;
+	}
+}
+
+class SkullRodAmmoReplacement : Cell replaces SkullRodAmmo
+{
+	States
+	{
+	Spawn:
+		AMS1 AB 5;
+		Loop;
+	}
+}
+
+class SkullRodHeftyReplacement : CellPack replaces SkullRodHefty
+{
+	States
+	{
+	Spawn:
+		AMS2 AB 5;
+		Loop;
+	}
+}

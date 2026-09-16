@@ -11,6 +11,8 @@ $limit weapons/claw/hitwall 0
 weapons/shotgun/pump "sounds/weapons/shotgunpump1.ogg"
 weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
 
+weapons/ks23/fire "sounds/weapons/ks23.wav"
+
 weapons/blaster/shoot "sounds/weapons/plasma_2fire3.wav"
 weapons/blaster/reload "sounds/weapons/bfg_reload.wav"
 
@@ -81,6 +83,8 @@ weapons/chainsaw3 "sounds/weapons/Chainsaw-3.wav"
 weapons/chainsaw4 "sounds/weapons/Chainsaw-4.wav"
 $random weapons/chainsaw {weapons/chainsaw1 weapons/chainsaw2 weapons/chainsaw3 weapons/chainsaw4}
 $volume weapons/chainsaw 0.3
+
+weapons/deagle/deploy "sounds/weapons/de_deploy.wav"
 
 misc/drink "sounds/misc/drink.ogg"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"

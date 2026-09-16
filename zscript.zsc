@@ -1,6 +1,4 @@
-#include "zscript/weapons/deathshead.zsc"
-#include "zscript/weapons/spot.zsc"
-#include "zscript/weapons/weapons.zsc"
+#include "zscript/weapons.zsc"
 #include "zscript/items.zsc"
 
 class Spot : DoomPlayer replaces DoomPlayer
