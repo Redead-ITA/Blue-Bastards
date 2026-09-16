@@ -544,16 +544,19 @@ class DeathsheadSG550 : Pistol
 	Fire:
 		ADAS B 1 Bright
 		{
-			A_FireBullets (1, 1, -1, random(20,50), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
+			A_FireBullets (1, 1, -1, random(20,40), "BlueBastardBulletPuff", FBF_USEAMMO|FBF_NORANDOM);
 			A_StartSound("weapons/sg550", CHAN_AUTO);
 			A_GunFlash();
+			A_WeaponOffset(10.0, 50.0);
 		}
-		ADAS CD 2 Bright;
+		ADAS C 2 Bright A_WeaponOffset(4.0, 40.0);
+		ADAS D 2 Bright A_WeaponOffset(0.0, 32.0);
 		ADAS EA 2;
 		ADAS A 2 A_ReFire;
 		Goto RealReady;
 	Flash:
-		TNT1 A 1 Bright A_Light1;
+		ADAS N 1 Bright A_Light1;
+		ADAS OP 2 Bright A_Light1;
 		Goto LightDone;
 	}
 }
