@@ -645,7 +645,9 @@ class SpotBFG : BFG9000
 			}
 
 			SFTM EFG 3;
-			TNT1 A 50;
+			TNT1 A 15;
+			TNT1 A 0 A_PlaySound("weapons/nuke/load", CHAN_AUTO);
+			TNT1 A 35;
 			SFMR ABC 3;
 			SFMR A 0 A_PlaySound("weapons/missle/deploy");
 			SFMR DEF 3;
