@@ -347,7 +347,7 @@ class SpotRustyClaws : Fist
 	}
 }
 
-class RapidMissileSpot : RocketLauncher
+class SpotRocketLauncher : RocketLauncher
 {
 		Default{
 		Weapon.AmmoType "RocketAmmo";
@@ -361,14 +361,14 @@ class RapidMissileSpot : RocketLauncher
 	}
 	States {
 		Deselect:
-			SMSR ABCD 2;
+			SMSR ABCDE 2;
 			TNT1 A 1 A_Lower(24);
 			Wait;
 		Select:
 			TNT1 A 1 A_Raise(24);
 			Wait;
 		Ready:
-			SMSR DC 2;
+			SMSR EDC 2;
 			SMSR A 0 A_PlaySound("weapons/missle/deploy");
 			SMSR BA 2;
 		RealReady:
@@ -376,13 +376,27 @@ class RapidMissileSpot : RocketLauncher
 			Loop;
 		Fire:
 			SMSL A 0{
-				A_FireProjectile("RapidLauncherMissle");
-				A_Light1();
-				A_SetPitch(self.pitch - 3, SPF_INTERPOLATE);
+				A_FireProjectile("NapalmRocket", 1, true, -10, -10);
+				A_FireProjectile("NapalmRocket", 1, true, -10, 10);
+				A_FireProjectile("NapalmRocket", -1, true, 10, -10);
+				A_FireProjectile("NapalmRocket", -1, true, 10, 10);
+				A_Light(4);
+				A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
 			}
-			SMSL BCD 2 A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
-			SMSL A 0{
-				A_Light0();
+			SMSL BC 1{
+				A_Light(2);
+				A_WeaponOffset(Random(-2,2),Random(-2,2) + 36);
+				A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+			}
+			SMSL DDDDDDDDDDDD 1{
+				A_WeaponOffset(Random(-4,4),Random(-4,4) + 36);
+			}
+			SMSL DDDDDDD 2{
+				A_WeaponOffset(Random(-2,2),Random(-2,2) + 36);
+			}
+			SMSL A 0 A_Light0();
+			SMSL DEF 2;
+			SMSL A 0{;
 				A_ReFire();
 			}
 			goto RealReady;
@@ -392,13 +406,62 @@ class RapidMissileSpot : RocketLauncher
 	}
 }
 
-class RapidLauncherMissle : Rocket
+// not as rapid anymore :(
+class NapalmRocket : Rocket
 {
 	Default{
-		Scale 0.5;
-		Speed 32;
+		Scale 1;
+		Speed 24;
 		Damage 16;
-		SeeSound "weapons/missle/fire";
+		SeeSound "weapons/nuke";
+		DeathSound "weapons/nuke/explode";
+	}
+
+		States
+	{
+		Spawn:
+			MISL A 1;
+			Loop;
+		Death:
+			MISL B 0{
+				A_QuakeEx( 3, 3, 3, 20, 0, 500 );
+			} 
+			// Napalm
+			MISL BBBB 0{
+				A_SpawnItemEx("NapalmFlame",0,0,0, random(-16,16),random(-16,16),0);
+			}
+			MISL B 8 Bright A_Explode;
+			MISL C 6 Bright;
+			MISL D 4 Bright;
+			Stop;
+	}
+}
+
+class NapalmFlame : Actor
+{
+	Default
+	{
+		Radius 16;
+		Height 8;
+		Scale 1.0;
+		Speed 40;
+		Damage 75;
+		DeathSound "weapons/nuke/explode";
+		+RANDOMIZE
+		+ROCKETTRAIL
+		+ZDOOMTRANS
+	}
+
+	States
+	{
+		Spawn:
+			NFRL A 0;
+		Death:
+			NFRL ABCDEFGHIJKL 2 bright{
+				RadiusAttack(target,15,32);
+			}
+			NFRD ABCDEFGHIJKLMNO 2 bright RadiusAttack(target,15,32);
+			Stop;
 	}
 }
 
@@ -477,9 +540,6 @@ class SpotChaingun : Chaingun
 	}
 }
 
-class SpotRocketLauncher : RocketLauncher
-{
-}
 
 class SpotPlasmaRifle : PlasmaRifle
 {
@@ -605,7 +665,7 @@ class SpotNuke : Actor
 		Speed 40;
 		Damage 150;
 		Projectile;
-		DeathSound "weapons/nuke/explode";
+		//DeathSound "weapons/nuke/explode";
 		+DEHEXPLOSION
 		+ROCKETTRAIL
 		+ZDOOMTRANS
@@ -621,14 +681,20 @@ class SpotNuke : Actor
 			MISL B 0{
 				A_QuakeEx( 3, 3, 3, 90, 0, 3000 );
 				RadiusAttack(target,400,300);
-				A_Light(20);
+				A_PlaySound("weapons/nuke/explode", CHAN_AUTO, 1, false, 0.02);
 			} 
 			// OMFG
-			MISL BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB 0{
+			MISL BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB 0{
 				A_SpawnItemEx("NukeFlame",0,0,0, random(-32,32),random(-32,32),0);
 			}
 			MISL B 8 Bright A_Explode;
+			MISL BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB 0{
+				A_SpawnItemEx("NukeFlame",0,0,0, random(-48,48),random(-48,48),0);
+			}
 			MISL C 6 Bright A_Light(10);
+			MISL BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB 0{
+				A_SpawnItemEx("NukeFlame",0,0,0, random(-64,64),random(-64,64),0);
+			}
 			MISL D 4 Bright A_Light(0);
 			Stop;
 	}
@@ -640,6 +706,7 @@ class NukeFlame : Actor
 	{
 		Radius 32;
 		Height 16;
+		Scale 2.0;
 		Speed 40;
 		Damage 150;
 		DeathSound "weapons/nuke/explode";
@@ -652,13 +719,13 @@ class NukeFlame : Actor
 	States
 	{
 		Spawn:
-			FIRE ABABBBABBB 1;
+			NFRL A 0;
 		Death:
-			FIRE BCBCDCDCDEDED 2 bright{
+			NFRL ABCDEFGHIJKLABCDEFGHIJKL 2 bright{
 				A_Fire();
 				RadiusAttack(target,30,64);
 			}
-			FIRE FEFEFGHGHGH 1 bright A_Fire;
+			NFRD ABCDEFGHIJKLMNO 2 bright RadiusAttack(target,30,64);
 			Stop;
 	}
 }
