@@ -60,7 +60,7 @@ weapons/rocket/load "sounds/weapons/rocklr1b.wav"
 weapons/nuke "sounds/weapons/rocketfire1.wav"
 weapons/nuke/explode "sounds/weapons/1956_exploz1.ogg"
 $limit weapons/nuke/explode 0 
-weapons/nuke/alarm "sounds/weapons/alarm.mp3"
+weapons/nuke/alarm "sounds/weapons/nukealarm.ogg"
 
 weapons/laser/fire "sounds/weapons/myears.ogg"
 
