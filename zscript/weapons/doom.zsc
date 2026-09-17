@@ -2,7 +2,7 @@ class ChainsawReplacement : CustomInventory replaces Chainsaw
 {
 	Default
 	{
-		Inventory.PickupMessage "$GOTCHAINSAW";
+		Inventory.PickupMessage "$GOTSLOT1";
 		Inventory.PickupSound "misc/metalslug";
 		Tag "$TAG_CHAINSAW";
 	}
@@ -31,7 +31,7 @@ class PistolReplacement : CustomInventory replaces Pistol
 {
 	Default
 	{
-		Inventory.PickupMessage "$PICKUP_PISTOL_DROPPED";
+		Inventory.PickupMessage "$GOTSLOT2";
 		Inventory.PickupSound "misc/metalslug";
 		Tag "$TAG_PISTOL";
 	}
@@ -60,7 +60,7 @@ class ShotgunReplacement : CustomInventory replaces Shotgun
 {
 	Default
 	{
-		Inventory.PickupMessage "$GOTSHOTGUN";
+		Inventory.PickupMessage "$GOTSLOT3";
 		Inventory.PickupSound "misc/shotgun_pkup";
 		Tag "$TAG_SHOTGUN";
 	}
@@ -89,7 +89,7 @@ class SuperShotgunReplacement : CustomInventory replaces SuperShotgun
 {
 	Default
 	{
-		Inventory.PickupMessage "$GOTSHOTGUN2";
+		Inventory.PickupMessage "$GOTSLOT3PLUS";
 		Inventory.PickupSound "misc/shotgun_pkup";
 		Tag "$TAG_SUPERSHOTGUN";
 	}
@@ -118,7 +118,7 @@ class ChaingunReplacement : CustomInventory replaces Chaingun
 {
 	Default
 	{
-		Inventory.PickupMessage "$GOTCHAINGUN";
+		Inventory.PickupMessage "$GOTSLOT4";
 		Inventory.PickupSound "misc/hmg_pkup";
 		Tag "$TAG_CHAINGUN";
 	}
@@ -150,7 +150,7 @@ class RocketLauncherReplacement : CustomInventory replaces RocketLauncher
 {
 	Default
 	{
-		Inventory.PickupMessage "$GOTLAUNCHER";
+		Inventory.PickupMessage "$GOTSLOT5";
 		Inventory.PickupSound "misc/rl_pkup";
 		Tag "$TAG_ROCKETLAUNCHER";
 	}
@@ -179,7 +179,7 @@ class PlasmaRifleReplacement : CustomInventory replaces PlasmaRifle
 {
 	Default
 	{
-		Inventory.PickupMessage "$GOTPLASMA";
+		Inventory.PickupMessage "$GOTSLOT6";
 		Inventory.PickupSound "misc/laser_pkup";
 		Tag "$TAG_PLASMARIFLE";
 	}
@@ -208,7 +208,7 @@ class BFG9000Replacement : CustomInventory replaces BFG9000
 {
 	Default
 	{
-		Inventory.PickupMessage "$GOTBFG9000";
+		Inventory.PickupMessage "$GOTSLOT7";
 		Inventory.PickupSound "misc/laser_pkup";
 		Tag "$TAG_BFG9000";
 	}
