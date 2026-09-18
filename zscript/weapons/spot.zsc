@@ -61,7 +61,7 @@ class SpotMallet : Fist
 		MALL HIJ 1 A_SetAngle(self.angle - 4, SPF_INTERPOLATE);
 		TNT1 A 10;
 		MTCD EDCBA 3;
-		Goto Ready;
+		Goto RealReady;
 	}
 }
 
