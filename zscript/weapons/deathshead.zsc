@@ -617,7 +617,12 @@ class DeathsheadM4 : Chaingun
 {
 	Default
 	{
+		Weapon.AmmoType1 "Clip";
+		Weapon.AmmoType2 "RocketAmmo";
+		Weapon.AmmoUse1 1;
+		Weapon.AmmoUse2 1;
 		Weapon.BobRangeY 0.5;
+		Weapon.BobStyle "InverseSmooth";
 	}
 	States
 	{
@@ -645,6 +650,11 @@ class DeathsheadM4 : Chaingun
 		ADM4 C 2 Bright A_WeaponOffset(0.0, 32.0,WOF_INTERPOLATE);
 		ADM4 DE 2 A_ReFire;
 		Goto RealReady;
+	AltFire:
+		ADM4 B 2 A_FireProjectile("DeathsheadM4Grenade",0,true,0,0,0,-6);
+		ADM4 CDEA 2;
+		ADM4 A 14 A_WeaponReady(WRF_NOSECONDARY);
+		Goto RealReady;
 	Flash:
 		ADM4 L 1 Bright A_Light1;
 		ADM4 M 2 Bright A_Light2;
@@ -652,6 +662,16 @@ class DeathsheadM4 : Chaingun
 	Spawn:
 		ADMC A -1;
 		Stop;
+	}
+}
+
+class DeathsheadM4Grenade : Grenade
+{
+	Default
+	{
+		BounceType "None";
+		SeeSound "weapons/m4/grenade";
+		DeathSound "weapons/rocklx";
 	}
 }
 

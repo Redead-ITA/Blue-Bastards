@@ -93,6 +93,9 @@ weapons/sg550/deploy "sounds/weapons/sg550-deploy.wav"
 weapons/sg550/zoom "sounds/weapons/zoom.wav"
 
 weapons/m4 "sounds/weapons/m4a1_unsil-1.ogg"
+weapons/m4/grenade1 "sounds/weapons/glauncher.wav"
+weapons/m4/grenade2 "sounds/weapons/glauncher2.wav"
+$random weapons/m4/grenade {weapons/m4/grenade1 weapons/m4/grenade2}
 
 misc/drink "sounds/misc/drink.ogg"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"
