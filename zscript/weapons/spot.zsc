@@ -7,7 +7,7 @@ class SpotMallet : Fist
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
-		Tag "Comically Sized Mallet";
+		Tag "$SPOT_MALLET";
 		//Weapon.WeaponScaleX 0.75;
 		//Weapon.WeaponScaleY 0.8;
 	}
@@ -76,7 +76,7 @@ class SpotExpress600 : Pistol
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
-		Tag ".600 Nitro Express Revolver";
+		Tag "$SPOT_REV";
     }
 
 	States
@@ -217,7 +217,7 @@ class SpotShotgun : Shotgun
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
-		Tag "KS-23";
+		Tag "$SPOT_KS23";
 	}
 	States {
 		Deselect:
@@ -278,7 +278,7 @@ class SpotDevastator : SuperShotgun
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
-		Tag "Devastator";
+		Tag "$SPOT_DEV";
 	}
 	States {
 		Deselect:
@@ -328,7 +328,7 @@ class SpotRustyClaws : Fist
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
 		+WEAPON.MELEEWEAPON
-		Tag "TO BE REPLACED";
+		Tag "$SPOT_CHAINSAW";
 	}
 	States
 	{
@@ -373,7 +373,7 @@ class SpotRocketLauncher : RocketLauncher
 		Weapon.BobRangeY 0.6;
 		+WEAPON.NOAUTOFIRE
 
-		Tag "M202 Incendiary Launcher";
+		Tag "$SPOT_ROCKET";
 	}
 	States {
 		Deselect:
@@ -498,7 +498,7 @@ class SpotChaingun : Chaingun
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
 
-		Tag "''Portable'' Naval Gun";
+		Tag "$SPOT_NAVAL";
 	}
 	States
 	{
@@ -550,7 +550,7 @@ class SpotPlasmaRifle : PlasmaRifle
 		Weapon.BobRangeY 0.6;
 		+WEAPON.NOAUTOFIRE
 
-		Tag "Laser Gun";
+		Tag "$SPOT_LASER";
 	}
 	States {
 		Deselect:
@@ -603,7 +603,7 @@ class SpotBFG : BFG9000
 		Weapon.BobRangeY 0.6;
 		Weapon.BobStyle "InverseSmooth";
 
-		Tag '"Moff Obliterator" Mark M07H';
+		Tag "$SPOT_MOFFOBLI";
 	}
 	States
 	{
