@@ -754,7 +754,7 @@ class SpotLevelEnter : DoomWeapon
 		SCRK EDCBA 2;
 		Goto Fire;
 	Fire:
-		TNT1 A 0 A_TakeInventory("SpotLevelEnter");
+		TNT1 A 1 A_TakeInventory("SpotLevelEnter");
 		Wait;
 	}
 }
