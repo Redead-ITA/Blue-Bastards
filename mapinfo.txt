@@ -23,6 +23,12 @@ GameInfo
 	BlurAmount = 0.25
 }
 
+defaultmap
+{
+	exitpic = "$IN_INTER"
+	enteranim = "$IN_INTER"
+}
+
 map TITLEMAP lookup "BLUE_BASTARDS"
 {
 }
