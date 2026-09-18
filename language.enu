@@ -2,6 +2,9 @@
 
 BLUE_BASTARDS = "Blue Bastards";
 PRESSSTART = "Press ESC to Begin";
+MNU_MODOPTIONS = "Mod Options";
+MNU_SKIPINTROS = "Skip Character Intros";
+MNU_SKIPINTROS_DESC = "Skips the introductory animations when you enter a level or respawn.";
 MNU_EXTRAS = "Extras";
 MNU_CREDITS = "Credits";
 MNU_LORE = "Lore";
@@ -72,6 +75,9 @@ QUITMSG3 = "That six pack of Dr. Gibb ain't gonna find itself.";
 
 BLUE_BASTARDS = "Niebiescy Gówniarze";
 PRESSSTART = "Wciśnij ESC aby Rozpocząć";
+MNU_MODOPTIONS = "Ustawienia Moda";
+MNU_SKIPINTROS = "Pomiń Intro Postaci";
+MNU_SKIPINTROS_DESC = "Pomija animacje kiedy wchodzisz na poziom lub się respawnujesz.";
 MNU_EXTRAS = "Dodatki";
 MNU_CREDITS = "Podziękowania";
 MNU_LORE = "Fabuła";

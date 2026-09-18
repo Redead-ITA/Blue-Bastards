@@ -9,6 +9,7 @@ ListMenu "MainMenuTextOnly"
 	StaticPatch 96, 1, "M_DOOM"
 	Position 97, 72
 	TextItem "$MNU_NEWGAME", "n", "PlayerclassMenu"
+	TextItem "$MNU_MODOPTIONS", "b", "ModOptionsMenu"
 	TextItem "$MNU_OPTIONS", "o", "OptionsMenu"
 	TextItem "$MNU_LOADGAME", "l", "LoadGameMenu"
 	TextItem "$MNU_SAVEGAME", "s", "SaveGameMenu"
@@ -30,6 +31,13 @@ ListMenu "SkillMenu"
 {
 	StaticTextCentered 160, 15, "$MNU_CHOOSESKILL"
 	Position 48, 63
+}
+
+OptionMenu "ModOptionsMenu"
+{
+	Title "$MNU_MODOPTIONS"
+	Option "$MNU_SKIPINTROS", "skip_intros", "OnOff"
+	StaticText "$MNU_SKIPINTROS_DESC"
 }
 
 ListMenu "Extras"
