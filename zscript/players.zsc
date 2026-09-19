@@ -5,6 +5,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Health 125;
 		Player.DisplayName "$PLAYER_SPOT";
 		Player.SoundClass "spot";
+		Player.ScoreIcon "FACESPOT";
 		Player.Face "SPT";
 		Player.ColorRange 192, 207;
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
@@ -83,6 +84,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 	{
 		Player.DisplayName "$PLAYER_DEATHSHEAD";
 		Player.SoundClass "deathshead";
+		Player.ScoreIcon "FACEACE";
 		Player.Face "MOF";
 		Player.DamageScreenColor "37732b";
 		Player.ColorRange 192, 207;
