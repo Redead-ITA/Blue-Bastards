@@ -63,6 +63,8 @@ $limit weapons/nuke/explode 0
 weapons/nuke/alarm "sounds/weapons/nukealarm.ogg"
 weapons/nuke/load "sounds/weapons/nuke_in.ogg"
 
+
+
 weapons/laser/fire "sounds/weapons/myears.ogg"
 
 weapons/bfgq2 "sounds/weapons/bfg__f1y.wav"
@@ -78,6 +80,10 @@ weapons/chaingun/deploy "sounds/weapons/REVUP.ogg"
 
 weapons/express600/prefire "sounds/weapons/revolver_hammer.wav"
 weapons/express600/fire "sounds/weapons/bigfuckenmagnum.ogg"
+
+weapons/chainsaw/pull "sounds/weapons/chainsaw_pull.ogg"
+weapons/chainsaw/idle "sounds/weapons/chainsaw_idle.ogg"
+weapons/chainsaw/attack "sounds/weapons/chainsaw_attack.ogg"
 
 weapons/chainsaw1 "sounds/weapons/Chainsaw-1.wav"
 weapons/chainsaw2 "sounds/weapons/Chainsaw-2.wav"

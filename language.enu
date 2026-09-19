@@ -71,7 +71,7 @@ QUITMSG1 = "Nessie is still out there... waiting...";
 QUITMSG2 = "Giving up already?";
 QUITMSG3 = "That six pack of Dr. Gibb ain't gonna find itself.";
 
-SPOT_CHAINSAW = "TO BE REPLACED";
+SPOT_CHAINSAW = "Chainsaw";
 SPOT_MALLET = "Comically Sized Mallet";
 SPOT_REV = ".600 Nitro Express Revolver";
 SPOT_KS23 = "KS-23";
@@ -154,7 +154,7 @@ GOTSLOT5 = "Wyrzutnia Rakiet! (Slot 5)";
 GOTSLOT6 = "Karabin Laserowy! (Slot 6)";
 GOTSLOT7 = "Co to !@#%* jest! (Slot 7)";
 
-SPOT_CHAINSAW = "DO WYMIANY!";
+SPOT_CHAINSAW = "Piła Łancuhowa";
 SPOT_MALLET = "Komicznie Wielki Młot";
 SPOT_REV = "Rewolwer Nitro Express .600";
 SPOT_KS23 = "KS-23";
