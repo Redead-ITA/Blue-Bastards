@@ -143,7 +143,8 @@ class DeathsheadPistol : Pistol
 		ADPS EA 2 A_WeaponReady(WRF_NOSWITCH);
 		Goto RealReady;
 	Flash:
-		ADPS MNO 1 Bright A_Light1;
+		ADPS M 2 Bright A_Light2;
+		ADPS N 2 Bright A_Light1;
 		Goto LightDone;
  	Spawn:
 		ADPS A -1;
