@@ -324,6 +324,7 @@ class SpotRocketLauncher : RocketLauncher
 				A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
 			}
 			SMSL DDDDDDDDDDDD 1{
+				A_Light0();
 				A_WeaponOffset(Random(-4,4),Random(-4,4) + 36);
 			}
 			SMSL DDDDDDD 2{
