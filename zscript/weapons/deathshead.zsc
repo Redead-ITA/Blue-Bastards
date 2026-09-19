@@ -110,8 +110,8 @@ class DeathsheadPistol : Pistol
 {
 	Default
 	{
-		Weapon.BobRangeX 0.75;
-		Weapon.BobSpeed 2;
+		Weapon.BobRangeX 0.5;
+		Weapon.BobSpeed 1.5;
 		Weapon.BobStyle "InverseSmooth";
 		+WEAPON.NOAUTOFIRE
 		Tag "$ACE_PISTOL";
@@ -202,7 +202,7 @@ class DeathsheadShotgun : Shotgun
 {
 	Default
 	{
-		Weapon.BobRangeX 0.75;
+		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_AUTOSHOTGUN";
 	}
@@ -341,9 +341,9 @@ class DeathsheadRocketLauncher : RocketLauncher
 {
 	Default
 	{
-		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
+		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_ROCKET";
 	}
 	States
@@ -381,6 +381,8 @@ class DeathsheadPlasmaRifle : PlasmaRifle
 {
 	Default
 	{
+		Weapon.BobRangeX 1.25;
+		Weapon.BobRangeY 0.75;
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
@@ -449,9 +451,9 @@ class DeathsheadBFG : BFG9000
 {
 	Default
 	{
-		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
+		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_BFG";
 	}
 	States
