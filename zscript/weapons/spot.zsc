@@ -744,6 +744,10 @@ class NukeFlame : Actor
 
 class SpotLevelEnter : DoomWeapon
 {
+	Default
+	{
+		Tag " ";
+	}
 	States
 	{
 	Select:

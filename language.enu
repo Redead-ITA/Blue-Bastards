@@ -51,7 +51,22 @@ LORE_SPOT_2 = "Usually cheerful and kind (well... used to be before the incident
 LORE_SPOT_3 = "but ever since Nessie's disappearance, they are enraged,";
 LORE_SPOT_4 = "and also hungry, hangry, if you will, looking for food scraps";
 LORE_SPOT_5 = "to compenstate for the lack of breakfast.";
-LORE_1 = "Lorem ipsum I like moths";
+LORE_1 = "Spot returns home to notice that Nessie has gone missing.";
+LORE_2 = "Spot tries calling her to no avail. He tries calling others";
+LORE_3 = "in vain, no signal, everything has gone to shit.";
+LORE_4 = "Meanwhile, Deathshead is furious at the lack of Dr. Gibb";
+LORE_5 = "and drunkenly mashes buttons at his answering machine to";
+LORE_6 = "try to find someone willing to sell him a six pack.";
+LORE_7 = "*click*";
+LORE_8 = "Deathshead: Blehhh... Hello?";
+LORE_9 = "Spot: Uh... H-H-Hello? Please tell me that you've seen Nessie, please!";
+LORE_10 = "Deathshead: Need... Dr. Gibb...";
+LORE_11 = "The phone hangs up, and shortly after Spot hears banging at the door.";
+LORE_12 = "Suddenly, a demon’s head gets smashed into the door, ripping it from the hinges.";
+LORE_13 = "In the hallway Deathshead rips the demon’s spine off and stares at Spot next.";
+LORE_14 = "Spot: Please don’t hurt me! I beg of you!";
+LORE_15 = "Deathshead: Urghhh... Give me a fucken' drink...";
+
 
 GOTDRGIBB = "Picked up a Dr. Gibb can.";
 GOTWHISKEY = "Picked up a whiskey.";
@@ -80,9 +95,6 @@ SPOT_ROCKET = "M202 Incendiary Launcher";
 SPOT_NAVAL = "''Portable'' Naval Gun";
 SPOT_LASER = "Laser Gun";
 SPOT_MOFFOBLI = "''Moff Obliterator'' Mark M07H";
-
-
-
 
 [pl]
 
@@ -138,7 +150,21 @@ LORE_SPOT_2 = "Zazwyczaj wesoły i miły (no cóż... przed incydentem...).";
 LORE_SPOT_3 = "Ale od czasu zniknięcia Nessie.. on zacząl być wściekly,";
 LORE_SPOT_4 = "oraz głodny, albo wściekly z głodu, jeśli tak wolisz, szukająć resztek jedzenia";
 LORE_SPOT_5 = "aby zrekompensować to... że zapomiał zjeść śniadania.";
-LORE_1 = "Lorem ipsum lubie ćmy";
+LORE_1 = "Spot wraca do domu aby dowiedzieć się że Nessie zaginęła.";
+LORE_2 = "Spot próbuje się dodzwonić do Nessie, brak sygnału.";
+LORE_3 = "Próbuje jeszcze zadzwonić po pogotowie, brak sygnału.";
+LORE_4 = "Tymczasem, As jest wkurwiony z powodu braku Dr. Gibba";
+LORE_5 = "i napierdala po pijaku w telefon aby się dodzwonić do";
+LORE_6 = "kogoś kto by mu mógł sprzedać sześciopak Dr. Gibb.";
+LORE_7 = "*klik*";
+LORE_8 = "As: Błehhh... Halo?";
+LORE_9 = "Spot: H-H-Halo? Powiedz mi że widziałeś Nessie, proszę!";
+LORE_10 = "As: Potrzebny... Gibb...";
+LORE_11 = "Numer się rozłącza, a chwilę póżniej Spot słyszy jakby trzaskanie.";
+LORE_12 = "Nagle głowa demona zostaje roztrzaskana na drzwiach, urywając je.";
+LORE_13 = "W korytarzu Trupiogłowy rozrywa głowę demona, a potem patrzy na Spota.";
+LORE_14 = "Spot: Proszę, nie krzywdź mnie!";
+LORE_15 = "Deathshead: Uchhh... Daj mi kurwa drinka...";
 
 GOTDRGIBB = "Podniesiono puszkę Dr. Gibb.";
 GOTWHISKEY = "Podniesiono butelkę whisky.";
