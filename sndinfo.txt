@@ -64,6 +64,8 @@ weapons/nuke/alarm "sounds/weapons/nukealarm.ogg"
 weapons/nuke/load "sounds/weapons/nuke_in.ogg"
 
 
+weapons/laser/start "sounds/weapons/laserwindup.ogg"
+weapons/laser/stop "sounds/weapons/laserstop.ogg"
 
 weapons/laser/fire "sounds/weapons/myears.ogg"
 
