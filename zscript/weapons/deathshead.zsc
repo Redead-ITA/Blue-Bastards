@@ -5,6 +5,7 @@ class DeathsheadFist : Fist
 		Weapon.BobStyle "Smooth";
 		Weapon.BobRangeX 1.5;
 		+WEAPON.NOALERT
+		Tag "$ACE_FISTS";
 	}
 	States
 	{
@@ -70,6 +71,7 @@ class DeathsheadChainsaw : Chainsaw
 	{
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobRangeX 0.5;
+		Tag "$ACE_CHAINSAW";
 	}
 	States
 	{
@@ -112,6 +114,7 @@ class DeathsheadPistol : Pistol
 		Weapon.BobSpeed 2;
 		Weapon.BobStyle "InverseSmooth";
 		+WEAPON.NOAUTOFIRE
+		Tag "$ACE_PISTOL";
 	}
 	States
 	{
@@ -157,7 +160,7 @@ class DeathsheadMAC10 : Chaingun
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
-        Inventory.PickupMessage "Picked up a MAC-10.";
+		Tag "$ACE_MAC10";
 	}
 	States
 	{
@@ -201,6 +204,7 @@ class DeathsheadShotgun : Shotgun
 	{
 		Weapon.BobRangeX 0.75;
 		Weapon.BobStyle "InverseSmooth";
+		Tag "$ACE_AUTOSHOTGUN";
 	}
 	States
 	{
@@ -251,6 +255,7 @@ class DeathsheadSuperShotgun : SuperShotgun
 		Weapon.AmmoGive 16;
 		Weapon.BobSpeed 1.75;
 		Weapon.BobStyle "InverseSmooth";
+		Tag "$ACE_SAWNOFFS";
 	}
     States
 	{
@@ -339,6 +344,7 @@ class DeathsheadRocketLauncher : RocketLauncher
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
+		Tag "$ACE_ROCKET";
 	}
 	States
 	{
@@ -379,6 +385,7 @@ class DeathsheadPlasmaRifle : PlasmaRifle
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
 		Weapon.AmmoUse 5;
+		Tag "$ACE_PLASMA";
 	}
 	States
 	{
@@ -445,6 +452,7 @@ class DeathsheadBFG : BFG9000
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
+		Tag "$ACE_BFG";
 	}
 	States
 	{
@@ -534,6 +542,7 @@ class DeathsheadSG550 : Pistol
 		Weapon.BobRangeX 1.25;
 		Weapon.BobStyle "InverseSmooth";
 		+WEAPON.NOALERT
+		Tag "$ACE_SG550";
 	}
 	States
 	{
@@ -623,6 +632,7 @@ class DeathsheadM4 : Chaingun
 		Weapon.AmmoUse2 1;
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
+		Tag "$ACE_M4";
 	}
 	States
 	{
@@ -677,6 +687,10 @@ class DeathsheadM4Grenade : Grenade
 
 class DeathsheadLevelEnter : DoomWeapon
 {
+	Default
+	{
+		Tag " ";
+	}
 	States
 	{
 	Select:
