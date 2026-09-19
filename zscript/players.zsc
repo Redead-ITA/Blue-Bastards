@@ -1,0 +1,156 @@
+class Spot : DoomPlayer replaces DoomPlayer
+{
+	Default
+	{
+		Health 125;
+		Player.DisplayName "$PLAYER_SPOT";
+		Player.SoundClass "spot";
+		Player.Face "SPT";
+		Player.ColorRange 192, 207;
+		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
+		Player.Portrait "PRT_SPOT";
+		Player.StartItem "SpotLevelEnter";
+		Player.StartItem "SpotExpress600";
+		Player.StartItem "SpotMallet";
+		Player.StartItem "Clip", 50;
+		Player.WeaponSlot 1, "SpotMallet", "SpotRustyClaws";
+		Player.WeaponSlot 2, "SpotExpress600";
+		Player.WeaponSlot 3, "SpotShotgun", "SpotDevastator";
+		Player.WeaponSlot 4, "SpotChaingun";
+		Player.WeaponSlot 5, "SpotRocketLauncher";
+		Player.WeaponSlot 6, "SpotPlasmaRifle";
+		Player.WeaponSlot 7, "SpotBFG";
+		Player.MaxHealth 125;
+		Speed 0.9;
+	}
+	States
+	{
+	Spawn:
+		SPOT A -1;
+		Loop;
+	See:
+		SPOT ABCD 4;
+		Loop;
+	Missile:
+		SPOT E 12;
+		Goto Spawn;
+	Melee:
+		SPOT F 6 BRIGHT;
+		Goto Missile;
+	Pain:
+		SPOT G 4;
+		SPOT G 4 A_Pain;
+		Goto Spawn;
+	Death:
+		SPOT H 0 A_PlayerSkinCheck("AltSkinDeath");
+	Death1:
+		SPOT H 10;
+		SPOT I 10 A_PlayerScream;
+		SPOT J 10 A_NoBlocking;
+		SPOT KLM 10;
+		SPOT N -1;
+		Stop;
+	XDeath:
+		SPOT O 0 A_PlayerSkinCheck("AltSkinXDeath");
+	XDeath1:
+		SPOT O 5;
+		SPOT P 5 A_XScream;
+		SPOT Q 5 A_NoBlocking;
+		SPOT RSTUV 5;
+		SPOT W -1;
+		Stop;
+	AltSkinDeath:
+		SPOT H 6;
+		SPOT I 6 A_PlayerScream;
+		SPOT JK 6;
+		SPOT L 6 A_NoBlocking;
+		SPOT MNO 6;
+		SPOT P -1;
+		Stop;
+	AltSkinXDeath:
+		SPOT Q 5 A_PlayerScream;
+		SPOT R 0 A_NoBlocking;
+		SPOT R 5 A_SkullPop;
+		SPOT STUVWX 5;
+		SPOT Y -1;
+		Stop;
+	}
+}
+
+class Deathshead : DoomPlayer replaces DoomPlayer
+{
+	Default
+	{
+		Player.DisplayName "$PLAYER_DEATHSHEAD";
+		Player.SoundClass "deathshead";
+		Player.Face "MOF";
+		Player.DamageScreenColor "37732b";
+		Player.ColorRange 192, 207;
+		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
+		Player.Portrait "PRT_ACE";
+		BloodColor "37732b";
+		Player.StartItem "DeathsheadLevelEnter";
+		Player.StartItem "DeathsheadPistol";
+		Player.StartItem "DeathsheadFist";
+		Player.StartItem "Clip", 50;
+		Player.WeaponSlot 1, "DeathsheadFist", "DeathsheadChainsaw";
+		Player.WeaponSlot 2, "DeathsheadPistol";
+		Player.WeaponSlot 3, "DeathsheadShotgun", "DeathsheadSuperShotgun";
+		Player.WeaponSlot 4, "DeathsheadSG550", "DeathsheadMAC10", "DeathsheadM4";
+		Player.WeaponSlot 5, "DeathsheadRocketLauncher";
+		Player.WeaponSlot 6, "DeathsheadPlasmaRifle";
+		Player.WeaponSlot 7, "DeathsheadBFG";
+	}
+	States
+	{
+	Spawn:
+		MOFF A -1;
+		Loop;
+	See:
+		MOFF ABCD 4;
+		Loop;
+	Missile:
+		MOFF E 12;
+		Goto Spawn;
+	Melee:
+		MOFF F 6 BRIGHT;
+		Goto Missile;
+	Pain:
+		MOFF G 4;
+		MOFF G 4 A_Pain;
+		Goto Spawn;
+	Death:
+		MOFF H 0 A_PlayerSkinCheck("AltSkinDeath");
+	Death1:
+		MOFF H 10;
+		MOFF I 10 A_PlayerScream;
+		MOFF J 10 A_NoBlocking;
+		MOFF KLM 10;
+		MOFF N -1;
+		Stop;
+	XDeath:
+		MOFF O 0 A_PlayerSkinCheck("AltSkinXDeath");
+	XDeath1:
+		MOFF O 5;
+		MOFF P 5 A_XScream;
+		MOFF Q 5 A_NoBlocking;
+		MOFF RSTUV 5;
+		MOFF W -1;
+		Stop;
+	AltSkinDeath:
+		MOFF H 6;
+		MOFF I 6 A_PlayerScream;
+		MOFF JK 6;
+		MOFF L 6 A_NoBlocking;
+		MOFF MNO 6;
+		MOFF P -1;
+		Stop;
+	AltSkinXDeath:
+		MOFF Q 5 A_PlayerScream;
+		MOFF R 0 A_NoBlocking;
+		MOFF R 5 A_SkullPop;
+		MOFF STUVWX 5;
+		MOFF Y -1;
+		Stop;
+	}
+}
