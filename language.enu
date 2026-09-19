@@ -86,6 +86,18 @@ QUITMSG1 = "Nessie is still out there... waiting...";
 QUITMSG2 = "Giving up already?";
 QUITMSG3 = "That six pack of Dr. Gibb ain't gonna find itself.";
 
+ACE_CHAINSAW = "''The Great Communicator''";
+ACE_FISTS = "Drunkards' Fists";
+ACE_PISTOL = "SIG Sauer P228";
+ACE_AUTOSHOTGUN = "AA-12 Autoshotty";
+ACE_SAWNOFFS = "Dual Sawn Offs";
+ACE_M4 = "M16A1 Carbine";
+ACE_MAC10 = "MAC-10";
+ACE_SG550 = "SIG SG 550 SR";
+ACE_ROCKET = "Missile Launcher Mark W4N6";
+ACE_PLASMA = "Heavy Plasma Cannon";
+ACE_BFG = "BFG-Nine-Kay Plus-Plus";
+
 SPOT_CHAINSAW = "Chainsaw";
 SPOT_MALLET = "Comically Sized Mallet";
 SPOT_REV = ".600 Nitro Express Revolver";
@@ -179,6 +191,18 @@ GOTSLOT4 = "Ciężki Karabin Maszynowy! (Slot 4)";
 GOTSLOT5 = "Wyrzutnia Rakiet! (Slot 5)";
 GOTSLOT6 = "Karabin Laserowy! (Slot 6)";
 GOTSLOT7 = "Co to !@#%* jest! (Slot 7)";
+
+ACE_CHAINSAW = "Piła Łancuchowa";
+ACE_FISTS = "Pięści Pijaka";
+ACE_PISTOL = "SIG Sauer P228";
+ACE_AUTOSHOTGUN = "Autostrzelba AA-12";
+ACE_SAWNOFFS = "Podwójne Dubeltówki";
+ACE_M4 = "Karabin M16A1";
+ACE_MAC10 = "MAC-10";
+ACE_SG550 = "SIG SG 550 SR";
+ACE_ROCKET = "Wyrzutnia Rakiet Mark. W4N6";
+ACE_PLASMA = "Ciężkie Działo Plazmowe";
+ACE_BFG = "BFG-Dziewięć-Ka Plus-Plus";
 
 SPOT_CHAINSAW = "Piła Łancuhowa";
 SPOT_MALLET = "Komicznie Wielki Młot";
