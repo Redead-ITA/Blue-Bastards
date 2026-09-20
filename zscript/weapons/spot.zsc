@@ -215,7 +215,7 @@ class SpotShotgunClassic : SuperShotgun
 		Fire:
 			SHT2 A 0
 			{
-				A_FireBullets(7, 4, 32, 5, "BlueBastardBulletPuff");
+				A_FireBullets(12, 6, 32, 5, "BlueBastardBulletPuff");
 				A_Recoil(4);
 				A_PlaySound("weapons/ks23/fire", CHAN_WEAPON);
 				A_GunFlash();
