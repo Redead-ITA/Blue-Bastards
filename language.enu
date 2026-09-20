@@ -87,7 +87,7 @@ QUITMSG2 = "Giving up already?";
 QUITMSG3 = "That six pack of Dr. Gibb ain't gonna find itself.";
 
 ACE_CHAINSAW = "''The Great Communicator''";
-ACE_FISTS = "Drunkards' Fists";
+ACE_FISTS = "Drunkard's Fists";
 ACE_PISTOL = "SIG Sauer P228";
 ACE_AUTOSHOTGUN = "AA-12 Autoshotty";
 ACE_SAWNOFFS = "Dual Sawn Offs";
