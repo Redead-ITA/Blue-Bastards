@@ -67,12 +67,10 @@ LORE_13 = "In the hallway Deathshead rips the demon’s spine off and stares at 
 LORE_14 = "Spot: Please don’t hurt me! I beg of you!";
 LORE_15 = "Deathshead: Urghhh... Give me a fucken' drink...";
 
-
 GOTDRGIBB = "Picked up a Dr. Gibb can.";
 GOTWHISKEY = "Picked up a whiskey.";
 GOTGLASSDRGIBB = "Picked up a glass of Dr. Gibb.";
 GOTGLASSWHISKEY = "Picked up a glass of whiskey.";
-
 GOTVODKA = "Picked up some vodka.";
 GOTMCAN = "Picked up a Can of... something.";
 GOTCHICKEN = "Picked up a wholeass chicken.";
@@ -187,7 +185,6 @@ GOTDRGIBB = "Podniesiono puszkę Dr. Gibb.";
 GOTWHISKEY = "Podniesiono butelkę whisky.";
 GOTGLASSDRGIBB = "Podniesiono szklankę Dr. Gibb.";
 GOTGLASSWHISKEY = "Podniesiono szklankę whiskey.";
-
 GOTVODKA = "Podniesiono Wódkę.";
 GOTMCAN = "Podniesiono Puszkę... czegoś.";
 GOTCHICKEN = "Podniesiono całego kurczaka.";
@@ -200,6 +197,10 @@ GOTSLOT4 = "Ciężki Karabin Maszynowy! (Slot 4)";
 GOTSLOT5 = "Wyrzutnia Rakiet! (Slot 5)";
 GOTSLOT6 = "Karabin Laserowy! (Slot 6)";
 GOTSLOT7 = "Co to !@#%* jest! (Slot 7)";
+
+QUITMSG1 = "Nessie czeka...";
+QUITMSG2 = "Już się poddajesz?";
+QUITMSG3 = "Sześciopak Dr. Gibb sam się nie znajdzie.";
 
 ACE_CHAINSAW = "Piła Łańcuchowa";
 ACE_FISTS = "Pięści Pijaka";
