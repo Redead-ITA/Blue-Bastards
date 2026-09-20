@@ -15,7 +15,7 @@ NOTE: An iwad (the game data for Doom, Doom 2, etc.) is required to play the mod
 You can also use Doom Launchers like [Doom Runner](https://github.com/Youda008/DoomRunner), [QZDL](https://github.com/lcferrum/qzdl) etc. to make setup a bit easier.
 
 # Feedback and Bug reporting
-Currently use issues for feedback and bug reports, as this project doesn't have anything else currently. 
+Currently use issues for feedback and bug reports, as this project doesn't have any other contact currently.
 
 # Contributing
 You can contribute by either giving us some feedback (see above), making an issue or making a pull request.
