@@ -18,4 +18,4 @@ You can also use Doom Launchers like [Doom Runner](https://github.com/Youda008/D
 Currently use issues for feedback and bug reports, as this project doesn't have anything else currently. 
 
 # Contributing
-To come
+You can contribute by either giving us some feedback (see above), making an issue or making a pull request.
