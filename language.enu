@@ -184,7 +184,7 @@ GOTWHISKEY = "Podniesiono butelkę whisky.";
 GOTGLASSDRGIBB = "Podniesiono szklankę Dr. Gibb.";
 GOTGLASSWHISKEY = "Podniesiono szklankę whiskey.";
 
-GOTSLOT1 = "Piła! (Slot 1)";
+GOTSLOT1 = "Piła Łańcuchowa! (Slot 1)";
 GOTSLOT2 = "Pistolet! (Slot 2)";
 GOTSLOT3 = "Strzelba! (Slot 3)";
 GOTSLOT3PLUS = "Super Strzelba! (Slot 3)";
@@ -193,7 +193,7 @@ GOTSLOT5 = "Wyrzutnia Rakiet! (Slot 5)";
 GOTSLOT6 = "Karabin Laserowy! (Slot 6)";
 GOTSLOT7 = "Co to !@#%* jest! (Slot 7)";
 
-ACE_CHAINSAW = "Piła Łancuchowa";
+ACE_CHAINSAW = "Piła Łańcuchowa";
 ACE_FISTS = "Pięści Pijaka";
 ACE_PISTOL = "SIG Sauer P228";
 ACE_AUTOSHOTGUN = "Autostrzelba AA-12";
@@ -205,7 +205,7 @@ ACE_ROCKET = "Wyrzutnia Rakiet Mark. W4N6";
 ACE_PLASMA = "Ciężkie Działo Plazmowe";
 ACE_BFG = "BFG-Dziewięć-Ka Plus-Plus";
 
-SPOT_CHAINSAW = "Piła Łancuhowa";
+SPOT_CHAINSAW = "Piła Łańcuchowa";
 SPOT_MALLET = "Komicznie Wielki Młot";
 SPOT_REV = "Rewolwer Nitro Express .600";
 SPOT_KS23 = "KS-23";

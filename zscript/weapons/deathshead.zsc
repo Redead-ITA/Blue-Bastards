@@ -5,6 +5,7 @@ class DeathsheadFist : Fist
 		Weapon.BobStyle "Smooth";
 		Weapon.BobRangeX 1.5;
 		+WEAPON.NOALERT
+		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_FISTS";
 	}
 	States
@@ -175,7 +176,6 @@ class DeathsheadMAC10 : Chaingun
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
 		Tag "$ACE_MAC10";
-
 		+INVENTORY.UNDROPPABLE
 	}
 	States
@@ -221,7 +221,6 @@ class DeathsheadShotgun : Shotgun
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_AUTOSHOTGUN";
-
 		+INVENTORY.UNDROPPABLE
 	}
 	States
@@ -273,7 +272,6 @@ class DeathsheadSuperShotgun : SuperShotgun
 		Weapon.BobSpeed 1.75;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_SAWNOFFS";
-
 		+INVENTORY.UNDROPPABLE;
 	}
     States
@@ -364,7 +362,6 @@ class DeathsheadRocketLauncher : RocketLauncher
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_ROCKET";
-
 		+INVENTORY.UNDROPPABLE
 	}
 	States
@@ -409,7 +406,6 @@ class DeathsheadPlasmaRifle : PlasmaRifle
 		Weapon.WeaponScaleY 1.08;
 		Weapon.AmmoUse 5;
 		Tag "$ACE_PLASMA";
-
 		+INVENTORY.UNDROPPABLE
 	}
 	States
@@ -478,7 +474,6 @@ class DeathsheadBFG : BFG9000
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_BFG";
-
 		+INVENTORY.UNDROPPABLE
 	}
 	States
@@ -664,7 +659,6 @@ class DeathsheadM4 : Chaingun
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_M4";
-
 		+INVENTORY.UNDROPPABLE
 	}
 	States
