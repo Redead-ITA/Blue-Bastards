@@ -69,6 +69,7 @@ class DeathsheadChainsaw : Chainsaw
 {
 	Default
 	{
+		Weapon.UpSound "";
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobRangeX 0.5;
 		Tag "$ACE_CHAINSAW";
@@ -76,17 +77,21 @@ class DeathsheadChainsaw : Chainsaw
 	States
 	{
 	Select:
-		ADCS I 1 A_Raise(24);
+		ADCS N 1 A_Raise(24);
 		Wait;
 	Deselect:
 		TNT1 A 0 A_StopSound(6);
 		TNT1 A 0 A_StopSound(7);
 		TNT1 A 0 A_StartSound("weapons/sawidle", 7, CHANF_DEFAULT, 0.75);
-		ADCS MLKJI 2;
-		TNT1 I 1 A_Lower(24);
+		ADCS KLMN 2;
+		TNT1 A 1 A_Lower(24);
 		Wait;
 	Ready:
-		ADCS IJKLM 2;
+		ADCS N 2 A_StartSound("weapons/generic/draw", CHAN_AUTO);
+		ADCS OPQRSTU 2;
+		ADCS V 2 A_StartSound("weapons/chainsaw/start", CHAN_AUTO);
+		ADCS W 2 A_StartSound("weapons/sawup", CHAN_AUTO);
+		ADCS XYZ[D 2;
 	RealReady:
 		TNT1 A 0 A_StopSound(6);
 		TNT1 A 0 A_StopSound(7);
@@ -95,13 +100,19 @@ class DeathsheadChainsaw : Chainsaw
 		Loop;
 	Fire:
 		TNT1 A 0 A_StartSound("weapons/sawfull", 6, CHANF_LOOPING, 0.75);
+		ADCS E 1;
 	Hold:
-		ADCS E 0 A_Saw("","weapons/chainsaw",2,"BlueBastardBulletPuffSaw");
-		ADCS EFGH 1
+		ADCS F 0 A_Saw("","weapons/chainsaw",2,"BlueBastardBulletPuffSaw");
+		ADCS FG 1
 		{
 			A_WeaponOffset(random(-2.0,2.0), random(32.0,40.0),WOF_INTERPOLATE);
 		}
-		ADCS A 0 A_ReFire;
+		ADCS H 0 A_Saw("","weapons/chainsaw",2,"BlueBastardBulletPuffSaw");
+		ADCS HI 1
+		{
+			A_WeaponOffset(random(-2.0,2.0), random(32.0,40.0),WOF_INTERPOLATE);
+		}
+		ADCS J 1 A_ReFire;
 		Goto RealReady;
 	}
 }
