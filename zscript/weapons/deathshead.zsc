@@ -173,8 +173,6 @@ class DeathsheadMAC10 : Chaingun
 		Weapon.BobRangeX 0.5;
 		Weapon.BobSpeed 1.5;
 		Weapon.BobStyle "InverseSmooth";
-		Weapon.WeaponScaleX 0.9;
-		Weapon.WeaponScaleY 1.08;
 		Tag "$ACE_MAC10";
 		+INVENTORY.UNDROPPABLE
 	}
