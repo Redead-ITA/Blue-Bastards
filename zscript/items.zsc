@@ -46,7 +46,7 @@ class WhiskeyGlass : HealthBonus
 	}
 }
 
-class WhiskeyBottle : Stimpack replaces Stimpack
+class WhiskeyBottle : Stimpack
 {
 	Default
 	{
@@ -57,6 +57,61 @@ class WhiskeyBottle : Stimpack replaces Stimpack
 	{
 	Spawn:
 		GIBB B -1;
+		Loop;
+	}
+}
+
+class VodkaBottle : Stimpack
+{
+	Default
+	{
+		Inventory.PickupSound "misc/bottle_open";
+		Inventory.PickupMessage "$GOTVODKA";
+	}
+	States
+	{
+	Spawn:
+		IVDK A -1;
+		Loop;
+	}
+}
+
+class MysteryCan : Stimpack
+{
+	Default
+	{
+		Inventory.PickupSound "misc/can_open";
+		Inventory.PickupMessage "$GOTMCAN";
+	}
+	States
+	{
+	Spawn:
+		FCAN A -1;
+		Loop;
+	}
+}
+
+class ChickenHeal : Medikit
+{
+	Default
+	{
+		Inventory.PickupSound "misc/gulp";
+		Inventory.PickupMessage "$GOTCHICKEN";
+	}
+	States
+	{
+	Spawn:
+		CHIK ABCDEF 3;
+		Loop;
+	}
+}
+
+class Medkit_Mslug : Medikit
+{
+	States
+	{
+	Spawn:
+		MDKT A -1;
 		Loop;
 	}
 }

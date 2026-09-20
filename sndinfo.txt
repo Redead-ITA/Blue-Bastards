@@ -110,6 +110,7 @@ weapons/m4/grenade2 "sounds/weapons/glauncher2.wav"
 $random weapons/m4/grenade {weapons/m4/grenade1 weapons/m4/grenade2}
 
 misc/drink "sounds/misc/drink.ogg"
+misc/gulp "sounds/misc/gulp.wav"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"
 misc/bottle_open "sounds/misc/bottle_open1.ogg"
 misc/glass_break1 "sounds/misc/glass_break1.ogg"

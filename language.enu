@@ -73,6 +73,10 @@ GOTWHISKEY = "Picked up a whiskey.";
 GOTGLASSDRGIBB = "Picked up a glass of Dr. Gibb.";
 GOTGLASSWHISKEY = "Picked up a glass of whiskey.";
 
+GOTVODKA = "Picked up some vodka.";
+GOTMCAN = "Picked up a Can of... something.";
+GOTCHICKEN = "Picked up a wholeass chicken.";
+
 GOTSLOT1 = "Chainsaw! (Slot 1)";
 GOTSLOT2 = "Pistol! (Slot 2)";
 GOTSLOT3 = "Shotgun! (Slot 3)";
@@ -183,6 +187,10 @@ GOTDRGIBB = "Podniesiono puszkę Dr. Gibb.";
 GOTWHISKEY = "Podniesiono butelkę whisky.";
 GOTGLASSDRGIBB = "Podniesiono szklankę Dr. Gibb.";
 GOTGLASSWHISKEY = "Podniesiono szklankę whiskey.";
+
+GOTVODKA = "Podniesiono Wódkę.";
+GOTMCAN = "Podniesiono Puszkę... czegoś.";
+GOTCHICKEN = "Podniesiono całego kurczaka.";
 
 GOTSLOT1 = "Piła Łańcuchowa! (Slot 1)";
 GOTSLOT2 = "Pistolet! (Slot 2)";

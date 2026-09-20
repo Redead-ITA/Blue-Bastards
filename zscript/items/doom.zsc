@@ -8,6 +8,25 @@ class HealthBonusSpawner : RandomSpawner replaces HealthBonus
     }
 }
 
+class StimPackSpawner : RandomSpawner replaces StimPack
+{
+    Default
+    {
+        DropItem "WhiskeyBottle";
+        DropItem "VodkaBottle";
+		DropItem "MysteryCan";
+    }
+}
+
+class MedikitSpawner : RandomSpawner replaces Medikit
+{
+    Default
+    {
+        DropItem "ChickenHeal";
+        DropItem "Medkit_Mslug";
+    }
+}
+
 class BlueBastardBerserk : Berserk replaces Berserk
 {
 	Default
