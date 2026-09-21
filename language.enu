@@ -35,7 +35,7 @@ CREDITS_MENU_MUSIC = "Menu Music";
 CREDITS_INTERMISSION_MUSIC = "Intermission Music";
 CREDITS_GORE_SOUNDS = "Gore Sounds";
 CREDITS_MISC_SOUNDS = "Misc. Sounds";
-CREDITS_END = "No dino and moth was harmed during the making of this mod.";
+CREDITS_END = "No dino or moth was harmed during the making of this mod.";
 
 LORE_CHARACTERS = "The Blue Bastards";
 LORE_ACE = "Ace Deathshead the Moth Bartender";
@@ -150,7 +150,7 @@ CREDITS_MENU_MUSIC = "Muzyka Menu";
 CREDITS_INTERMISSION_MUSIC = "Muzyka Ekranu Końcowego";
 CREDITS_GORE_SOUNDS = "Dźwięki Krwii";
 CREDITS_MISC_SOUNDS = "Inne Dźwięki";
-CREDITS_END = "Żaden dinozaur ani ćma została skrzywdzona podczas tworzenia tego moda.";
+CREDITS_END = "Żaden dinozaur ani ćma nie została skrzywdzona podczas tworzenia tego moda.";
 
 LORE_CHARACTERS = "Niebiescy Gówniarze";
 LORE_ACE = "As Trupiogłowy, Barman Ćma";
