@@ -109,6 +109,8 @@ weapons/m4/grenade1 "sounds/weapons/glauncher.wav"
 weapons/m4/grenade2 "sounds/weapons/glauncher2.wav"
 $random weapons/m4/grenade {weapons/m4/grenade1 weapons/m4/grenade2}
 
+weapons/dryfire "sounds/weapons/DRYFIRE.ogg"
+
 misc/drink "sounds/misc/drink.ogg"
 misc/gulp "sounds/misc/gulp.wav"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"
