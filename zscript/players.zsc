@@ -83,7 +83,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 {
 	Default
 	{
-		Player.CrouchSprite "";
+		Player.CrouchSprite "MOFC";
 		Player.DisplayName "$PLAYER_DEATHSHEAD";
 		Player.SoundClass "deathshead";
 		Player.ScoreIcon "FACEACE";
