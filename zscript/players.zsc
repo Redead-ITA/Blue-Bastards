@@ -3,12 +3,12 @@ class Spot : DoomPlayer replaces DoomPlayer
 	Default
 	{
 		Health 125;
-		Player.CrouchSprite "";
 		Player.DisplayName "$PLAYER_SPOT";
 		Player.SoundClass "spot";
 		Player.ScoreIcon "FACESPOT";
 		Player.Face "SPT";
 		Player.ColorRange 192, 207;
+		Player.CrouchSprite "SPCR";
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.Portrait "PRT_SPOT";
 		Player.StartItem "SpotLevelEnter";

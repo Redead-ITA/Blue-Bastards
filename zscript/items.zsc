@@ -86,7 +86,7 @@ class MysteryCan : Stimpack
 	States
 	{
 	Spawn:
-		FCAN A -1;
+		MCAN A -1;
 		Loop;
 	}
 }
