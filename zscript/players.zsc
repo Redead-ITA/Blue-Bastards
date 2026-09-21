@@ -3,6 +3,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 	Default
 	{
 		Health 125;
+		Player.CrouchSprite "";
 		Player.DisplayName "$PLAYER_SPOT";
 		Player.SoundClass "spot";
 		Player.ScoreIcon "FACESPOT";
@@ -83,6 +84,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 {
 	Default
 	{
+		Player.CrouchSprite "";
 		Player.DisplayName "$PLAYER_DEATHSHEAD";
 		Player.SoundClass "deathshead";
 		Player.ScoreIcon "FACEACE";
