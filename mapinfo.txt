@@ -26,7 +26,7 @@ GameInfo
 defaultmap
 {
 	exitpic = "$IN_INTER"
-	enteranim = "$IN_INTER"
+	enterpic = "$IN_INTER"
 }
 
 map TITLEMAP lookup "BLUE_BASTARDS"
