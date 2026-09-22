@@ -118,5 +118,9 @@ statusbar inventoryfullscreen // ZDoom HUD overlay.
 
 mugshot "xdeath"
 {
-	XDTH0 -1;
+	XDTH0 3;
+	XDTH1 3;
+	XDTH2 3;
+	XDTH3 3;
+	XDTH4 -1;
 }
