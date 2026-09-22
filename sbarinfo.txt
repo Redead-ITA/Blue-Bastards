@@ -102,7 +102,7 @@ statusbar normal // Standard Doom Status bar
     }
     drawselectedinventory alternateonempty, INDEXFONT, 143, 168
     {
-        drawmugshot 5, 143, 168;
+        drawmugshot 5, xdeathface, 143, 168;
     }
 }
 
@@ -114,4 +114,9 @@ statusbar inventory // Standard bar overlay (ZDoom Addition)
 statusbar inventoryfullscreen // ZDoom HUD overlay.
 {
     drawinventorybar Doom, translucent, 7, INDEXFONT, 50, 170;
+}
+
+mugshot "xdeath"
+{
+	XDTH0 -1;
 }
