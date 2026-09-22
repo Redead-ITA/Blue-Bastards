@@ -44,6 +44,7 @@ weapons/fists/deploy "sounds/weapons/KNUCKLED.ogg"
 
 weapons/plasmacannon "sounds/weapons/65_wea_shotgun_alt.wav"
 weapons/plasmacannon/deploy "sounds/weapons/PLSDRAW.ogg"
+weapons/railgun "sounds/weapons/railgf1a.wav"
 
 weapons/doubleshotties "sounds/weapons/SSHFIRE.ogg"
 
