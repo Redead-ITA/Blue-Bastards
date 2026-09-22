@@ -43,7 +43,6 @@ class BlueBastardBulletPuffSaw : BlueBastardBulletPuff
 	}
 }
 
-
 class BlueBastardBulletPuffStab : BlueBastardBulletPuff
 {
 	States
@@ -56,5 +55,13 @@ class BlueBastardBulletPuffStab : BlueBastardBulletPuff
 		}
 		TNT1 A 0 A_Jump(256,"Puff1","Puff2");
 		Stop;
+	}
+}
+
+class BlueBastardKickPuff : BulletPuff
+{
+	Default
+	{
+		AttackSound "weapons/kick";
 	}
 }

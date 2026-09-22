@@ -112,6 +112,8 @@ SPOT_NAVAL = "''Portable'' Naval Gun";
 SPOT_LASER = "Laser Gun";
 SPOT_MOFFOBLI = "''Moff Obliterator'' Mark M07H";
 
+KICKYDICKY = "Kick";
+
 [pl]
 
 BLUE_BASTARDS = "Niebiescy Gówniarze";
@@ -226,3 +228,5 @@ SPOT_ROCKET = "Podpalająca Wyrzutnia M202";
 SPOT_NAVAL = "''Przenośne'' Działo morskie";
 SPOT_LASER = "Karabin Laserowy";
 SPOT_MOFFOBLI = "''Ćma Obliterator'' Mark. CM4";
+
+KICKYDICKY = "Kop";

@@ -112,6 +112,12 @@ $random weapons/m4/grenade {weapons/m4/grenade1 weapons/m4/grenade2}
 
 weapons/dryfire "sounds/weapons/DRYFIRE.ogg"
 
+weapons/kick/miss "sounds/weapons/KICK.ogg"
+weapons/kick1 "sounds/weapons/KICKHIT1.ogg"
+weapons/kick2 "sounds/weapons/KICKHIT2.ogg"
+weapons/kick3 "sounds/weapons/KICKHIT3.ogg"
+$random weapons/kick {weapons/kick1 weapons/kick2 weapons/kick3}
+
 misc/drink "sounds/misc/drink.ogg"
 misc/gulp "sounds/misc/gulp.wav"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"

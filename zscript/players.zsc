@@ -96,6 +96,7 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.StartItem "DeathsheadLevelEnter";
 		Player.StartItem "DeathsheadPistol";
 		Player.StartItem "DeathsheadFist";
+		Player.StartItem "DeathsheadKicky";
 		Player.StartItem "Clip", 50;
 		Player.WeaponSlot 1, "DeathsheadFist", "DeathsheadChainsaw";
 		Player.WeaponSlot 2, "DeathsheadPistol";

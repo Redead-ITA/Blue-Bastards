@@ -1,0 +1,3 @@
+addkeysection "" BlueBastardActions
+addmenukey "$KICKYDICKY" "pukename kick"
+defaultbind Q "pukename kick"

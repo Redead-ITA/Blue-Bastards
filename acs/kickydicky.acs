@@ -1,0 +1,8 @@
+#library "KickyDicky"
+#include "zcommon.acs"
+
+Script "Kick" (void)
+{
+	if (CheckInventory("DeathsheadFist"))
+		UseInventory("DeathsheadKicky");
+} 
