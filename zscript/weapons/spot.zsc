@@ -772,3 +772,28 @@ class SpotLevelEnter : DoomWeapon
 		Wait;
 	}
 }
+
+class SpotKicky : CustomInventory
+{
+    States
+    {
+    Use:
+        TNT1 A 0 A_Overlay(-2,"Kicky",1);
+        TNT1 A 0 A_OverlayOffset(-2,0,16);
+        Fail;
+    Kicky:
+        SKCK A 2 A_StartSound("weapons/kick/miss",CHAN_AUTO);
+		SKCK BC 2;
+        SKCK D 2 {
+			int dmg = random(8,16);
+			A_OverlayOffset(-2,Random(-4,4),Random(-4,4) + 16);
+			if (FindInventory("PowerStrength"))
+			{
+				dmg *= 5;
+			}
+			A_CustomPunch(dmg, norandom:true, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
+		}
+        SKCK EFGHA 2;
+        Stop;
+    }
+}
