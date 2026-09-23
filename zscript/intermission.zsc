@@ -7,6 +7,8 @@ class BlueBastards_StatusScreen : DoomStatusScreen
 		// Hackiest piece of shit code you'll ever see.
 		TextureID animated_bg = TexMan.CheckForTexture("bbt00001", TexMan.Type_MiscPatch);
 		Vector2 texture_size = TexMan.GetScaledSize(animated_bg);
+
+		// Magic number aah.
 		Screen.DrawTexture(animated_bg, true, -64 + (-32 * 6) - 10,0, DTA_Bottom320x200, True);
 	}
 	override void drawStats (void)
