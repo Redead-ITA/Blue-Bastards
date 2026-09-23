@@ -778,7 +778,7 @@ class SpotKicky : CustomInventory
     States
     {
     Use:
-		TNT1 A 0{
+		TNT1 A 0 {
 			int kick_type = random(1,2);
 			if (kick_type == 1){
 				A_Overlay(-2,"Kicky",1);
@@ -793,10 +793,10 @@ class SpotKicky : CustomInventory
         SKCK A 1 A_StartSound("weapons/kick/miss",CHAN_AUTO);
 		SKCK BC 1;
         SKCK D 2 {
-			int dmg = random(8,16);
+			int dmg = random(10,20);
 			if (FindInventory("PowerStrength"))
 			{
-				dmg *= 5;
+				dmg *= 6;
 			}
 			A_CustomPunch(dmg, norandom:true, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
 		}
@@ -806,10 +806,10 @@ class SpotKicky : CustomInventory
 		SRDH A 1 A_StartSound("weapons/kick/miss",CHAN_AUTO);
 		SRDH B 1;
         SRDH C 2 {
-			int dmg = random(8,16);
+			int dmg = random(10,20);
 			if (FindInventory("PowerStrength"))
 			{
-				dmg *= 5;
+				dmg *= 6;
 			}
 			A_CustomPunch(dmg, norandom:true, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
 		}
