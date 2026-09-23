@@ -1,3 +1,23 @@
+class SpotFirstTimePump_KS : CustomInventory
+{
+	States
+	{
+		Use:
+			TNT1 A -1;
+			Stop;
+	}
+}
+
+class SpotFirstTimePump_Classic : CustomInventory
+{
+	States
+	{
+		Use:
+			TNT1 A -1;
+			Stop;
+	}
+}
+
 class SpotMallet : Fist
 {
 	Default
@@ -149,6 +169,10 @@ class SpotShotgun : Shotgun
 		Ready:
 			TNT1 A 0 A_PlaySound("weapons/generic/draw");
 			SSHR EDCBA 2;
+			SSHR A 0 A_JumpIfInventory("SpotFirstTimePump_KS", 1, "Pump");
+			goto RealReady;
+		Pump:
+			SSHT A 0 A_TakeInventory("SpotFirstTimePump_KS");
 			SSHT BCD 2;
 			SSHT A 0 A_PlaySound("weapons/shotgun/pump");
 			SSHT EF 2;
@@ -209,6 +233,10 @@ class SpotShotgunClassic : SuperShotgun
 		Ready:
 			TNT1 A 0 A_PlaySound("weapons/generic/draw");
 			SH2R EDCBA 2;
+			SH2R A 0 A_JumpIfInventory("SpotFirstTimePump_Classic", 1, "Pump");
+			Goto RealReady;
+		Pump:
+			SH2C B 0 A_TakeInventory("SpotFirstTimePump_Classic");
 			SH2C BCD 3;
 			SSHT A 0 A_PlaySound("weapons/shotgun/pump");
 			SH2C EF 3;
