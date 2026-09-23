@@ -29,7 +29,7 @@ class SpotMallet : Fist
 		MALL A 1 A_WeaponReady;
 		Loop;
 	Fire:
-		MALL BCD 2 A_SetAngle(self.angle + 4, SPF_INTERPOLATE);
+		MALL BBCCDD 1 A_SetAngle(self.angle + 2, SPF_INTERPOLATE);
 		MALL D 2;
 		Goto Hold_Check;
 	Hold_Check:
