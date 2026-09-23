@@ -1,3 +1,9 @@
+texture bbt00001
+pic 1 tics 2
+pic 2 tics 2
+pic 3 tics 2
+pic 2 tics 2
+
 texture FIRESK00
 pic 1 tics 2
 pic 2 tics 2
