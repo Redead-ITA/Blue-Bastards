@@ -71,7 +71,7 @@ class SpotExpress600 : Pistol
 {
     Default
     {
-        Weapon.AmmoUse 4;
+        Weapon.AmmoUse 5;
         Weapon.AmmoType "Clip";
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobSpeed 1.75;
