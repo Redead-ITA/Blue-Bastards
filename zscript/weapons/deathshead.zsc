@@ -758,14 +758,15 @@ class DeathsheadKicky : CustomInventory
 		ADKK B 2;
         ADKK C 2
 		{
-			int dmg = random(8,16);
+			int dmg = random(10,20);
 			if (FindInventory("PowerStrength"))
 			{
-				dmg *= 5;
+				dmg *= 6;
 			}
 			A_CustomPunch(dmg, norandom:true, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
 		}
-        ADKK DEFGHI 2;
+        ADKK DEFA 2;
+		TNT1 A 2;
         Stop;
     }
 }
