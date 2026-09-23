@@ -11,24 +11,19 @@ class DeathsheadFist : Fist
 	States
 	{
 	Select:
-		TNT1 A 1 A_Raise(24);
+		ADFK A 1 A_Raise(24);
 		Wait;
 	Deselect:
-		ADFS A 1 A_Lower(24);
+		ADFK KL 2;
+		ADFK L 1 A_Lower(24);
 		Wait;
 	Ready:
-		ADFS HG 2;
-		ADFS E 2 A_StartSound("weapons/fists/deploy");
-		ADFS FGHIJA 2;
+		ADFK ABCD 2;
+		ADFK E 2 A_StartSound("weapons/fists/deploy");
+		ADFK FGHIJ 2;
 	RealReady:
 		ADFS A 1 A_WeaponReady(WRF_ALLOWRELOAD);
 		Wait;
-	Deselect:
-		ADFS A 1 A_Lower(24);
-		Loop;
-	Select:
-		ADFS A 1 A_Raise(24);
-		Loop;
 	Fire:
 		ADFS A 0 A_Jump(256, "FireRight", "FireLeft");
 	FireRight:
@@ -76,9 +71,9 @@ class DeathsheadFist : Fist
 		ADGB F 2 A_ReFire;
 		Goto RealReady;
 	Reload:
-		ADFS HG 2;
-		ADFS E 2 A_StartSound("weapons/fists/deploy");
-		ADFS FGHIJ 2;
+		ADFK CD 2;
+		ADFK E 2 A_StartSound("weapons/fists/deploy");
+		ADFK FGHIJ 2;
 		Goto RealReady;
 	}
 }
@@ -846,9 +841,9 @@ class DeathsheadLevelEnter : DoomWeapon
 		TNT1 A 2 A_StartSound("misc/glass_break", CHAN_AUTO);
 		Goto Fire;
 	Ready2:
-		ADFS HG 2;
-		ADFS E 2 A_StartSound("weapons/fists/deploy");
-		ADFS FGHKLM 2;
+		ADFK ABCD 2;
+		ADFK E 2 A_StartSound("weapons/fists/deploy");
+		ADFK FGHIJKL 2;
 		Goto Fire;
 	Ready3:
 		ADDR A 2 A_StartSound("misc/can_open", CHAN_AUTO);
