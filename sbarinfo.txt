@@ -122,5 +122,6 @@ mugshot "xdeath"
 	XDTH1 3;
 	XDTH2 3;
 	XDTH3 3;
-	XDTH4 -1;
+	XDTH4 3;
+	XDTH5 -1;
 }
