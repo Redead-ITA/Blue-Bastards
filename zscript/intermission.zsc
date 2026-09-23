@@ -2,11 +2,11 @@
 // It should be animated once i implement this.
 class BlueBastards_StatusScreen : DoomStatusScreen
 {
-	override void Drawer (void)
+	override void drawStats (void)
 	{	
 		// Hackiest piece of shit code you'll ever see.
 		TextureID what_the_fuck = TexMan.CheckForTexture("bbt00001", TexMan.Type_MiscPatch);
 		DrawTexture(what_the_fuck,0,0);
-		Super.Drawer();
+		Super.drawStats();
 	}
 }
