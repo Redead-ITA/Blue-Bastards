@@ -111,7 +111,11 @@ class SpotExpress600 : Pistol
 			A_SetPitch(self.pitch - 6, SPF_INTERPOLATE);
         }
 		BREV C 0 A_Recoil(1);
-		BREV CDE 2 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		BREV CD 2 A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+		BREV E 2{
+			A_SetPitch(self.pitch + 2, SPF_INTERPOLATE);
+			A_ReFire();
+		}
         Goto RealReady;
     Flash:
         REVF A 2 Bright A_Light1;
@@ -555,7 +559,7 @@ class SpotPlasmaRifle : PlasmaRifle
 			Loop;
 		Fire:
 			LASR A 0 A_PlaySound("weapons/laser/start", CHAN_6, 1, false);
-			LASR BBBBBBBBB 1 A_WeaponOffset(Random(-1,1),Random(-1,1) + 40);
+			LASR B 2;
 			LASR A 0 A_PlaySound("weapons/laser/fire", CHAN_6, 1, true);
 		RealFire:
 			LSRF ABC 1 Bright {
@@ -687,6 +691,7 @@ class SpotNuke : Actor
 				A_SpawnItemEx("NukeFlame",0,0,0, random(-64,64),random(-64,64),0);
 			}
 			MISL D 4 Bright A_Light(0);
+			
 			Stop;
 	}
 }
