@@ -2,11 +2,16 @@
 // It should be animated once i implement this.
 class BlueBastards_StatusScreen : DoomStatusScreen
 {
+	void draw_the_doods(void)
+	{
+		// Hackiest piece of shit code you'll ever see.
+		TextureID animated_bg = TexMan.CheckForTexture("bbt00001", TexMan.Type_MiscPatch);
+		Vector2 texture_size = TexMan.GetScaledSize(animated_bg);
+		Screen.DrawTexture(animated_bg, true, (texture_size.x / 2) / -32.0,0, DTA_320x200, True);
+	}
 	override void drawStats (void)
 	{	
-		// Hackiest piece of shit code you'll ever see.
-		TextureID what_the_fuck = TexMan.CheckForTexture("bbt00001", TexMan.Type_MiscPatch);
-		DrawTexture(what_the_fuck,0,0);
+		draw_the_doods();
 		Super.drawStats();
 	}
 }
