@@ -1,10 +1,17 @@
 #library "KickyDicky"
 #include "zcommon.acs"
 
-Script "Kick" (void)
+Script "Kick" ENTER
 {
-	if (CheckInventory("DeathsheadFist"))
-		UseInventory("DeathsheadKicky");
-	if (CheckInventory("SpotMallet"))
-		UseInventory("SpotKicky");
+    While(true)
+    {
+        if(GetPlayerInput(-1,INPUT_OLDBUTTONS)&BT_ZOOM)
+        {
+			if (CheckInventory("DeathsheadFist"))
+				UseInventory("DeathsheadKicky");
+			if (CheckInventory("SpotMallet"))
+				UseInventory("SpotKicky");
+		}
+        Delay(1);
+    }
 } 
