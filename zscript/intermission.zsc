@@ -1,0 +1,26 @@
+// Probably the worst way possible to do animated background but idgaf.
+// It should be animated once i implement this.
+class BlueBastards_StatusScreen : DoomStatusScreen
+{
+	void draw_the_doods(void)
+	{
+		// Hackiest piece of shit code you'll ever see.
+		TextureID animated_bg = TexMan.CheckForTexture("bbt00001", TexMan.Type_MiscPatch);
+		Vector2 texture_size = TexMan.GetScaledSize(animated_bg);
+
+		// Magic number aah.
+		Screen.DrawTexture(animated_bg, true, -64 + (-32 * 6) - 10,0, DTA_Bottom320x200, True);
+	}
+	override void drawStats (void)
+	{	
+		draw_the_doods();
+		Super.drawStats();
+	}
+
+	// I'm sure it will be okay.
+	override void DrawEL (void)
+	{	
+		draw_the_doods();
+		Super.DrawEL();
+	}
+}

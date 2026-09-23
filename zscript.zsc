@@ -1,3 +1,6 @@
+version "5.0.0"
+
 #include "zscript/players.zsc"
 #include "zscript/weapons.zsc"
 #include "zscript/items.zsc"
+#include "zscript/intermission.zsc"
