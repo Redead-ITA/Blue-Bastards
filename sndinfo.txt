@@ -165,12 +165,12 @@ $random misc/laser_pkup {misc/metalslug misc/metalslug misc/metalslug/laser}
 $volume misc/laser_pkup 0.5
 
 // Spot
-$playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
-$playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
-$playersound	spot	male	*pain100		   "sounds/spot/DSSPTPAI.wav"
-$playersound	spot	male	*pain75			   "sounds/spot/DSSPTPAI.wav"
-$playersound	spot	male	*pain50			   "sounds/spot/DSSPTPAI.wav"
-$playersound	spot	male	*pain25			   "sounds/spot/DSSPTPAI.wav"
+$playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.ogg"
+$playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.ogg"
+$playersound	spot	male	*pain100		   "sounds/spot/DSSPTPAI.ogg"
+$playersound	spot	male	*pain75			   "sounds/spot/DSSPTPAI.ogg"
+$playersound	spot	male	*pain50			   "sounds/spot/DSSPTPAI.ogg"
+$playersound	spot	male	*pain25			   "sounds/spot/DSSPTPAI.ogg"
 $playersound	spot	male	*usefail	   "sounds/spot/DSSPTNWA.wav"
 $playersound	spot	male	*grunt	   "sounds/spot/DSSPTOOF.wav"
 $playersounddup	spot	male	*land		*grunt
