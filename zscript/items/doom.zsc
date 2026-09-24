@@ -5,6 +5,10 @@ class HealthBonusSpawner : RandomSpawner replaces HealthBonus
         DropItem "DrGibbCan";
         DropItem "DrGibbGlass";
         DropItem "WhiskeyGlass";
+		DropItem "HalfPigInABlanket";
+		DropItem "HalfBurger";
+		DropItem "MreBiscuit";
+		DropItem "ChipCrumb";
     }
 }
 

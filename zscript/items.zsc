@@ -20,7 +20,67 @@ class BlueBastardHealthBonus : HealthBonus
 		return false;
 	}
 }
-	
+
+class HalfPigInABlanket : BlueBastardHealthBonus
+{
+	Default
+	{
+		Inventory.PickupSound "misc/eat";
+		Inventory.PickupMessage "$GOTLASTBLANKET";
+	}
+	States
+	{
+	Spawn:
+		PBNK A -1;
+		Loop;
+	}
+}
+
+class HalfBurger : BlueBastardHealthBonus
+{
+	Default
+	{
+		Inventory.PickupSound "misc/eat";
+		Inventory.PickupMessage "$GOTHALFBURGER";
+	}
+	States
+	{
+	Spawn:
+		BURG A -1;
+		Loop;
+	}
+}
+
+class MreBiscuit : BlueBastardHealthBonus
+{
+	Default
+	{
+		Inventory.PickupSound "misc/eat";
+		Inventory.PickupMessage "$GOTLASTMREBISCUIT";
+	}
+	States
+	{
+	Spawn:
+		BSCT A -1;
+		Loop;
+	}
+}
+
+class ChipCrumb : BlueBastardHealthBonus
+{
+	Default
+	{
+		Inventory.PickupSound "misc/eat";
+		Inventory.PickupMessage "$GOTCRUMBS";
+	}
+	States
+	{
+	Spawn:
+		CHIP A -1;
+		Loop;
+	}
+}
+
 class DrGibbCan : BlueBastardHealthBonus
 {
 	Default

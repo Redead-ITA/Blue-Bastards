@@ -146,6 +146,11 @@ misc/zippo/close "sounds/misc/zippo_close.ogg"
 misc/phone/sorry "sounds/misc/weresorry.ogg"
 misc/phone/break "sounds/misc/phone_break.ogg"
 
+misc/eat1 "sounds/misc/eating_1.ogg"
+misc/eat2 "sounds/misc/eating_2.ogg"
+misc/eat3 "sounds/misc/eating_3.ogg"
+$random misc/eat {misc/eat1 misc/eat2 misc/eat3}
+
 misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
 misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"
 misc/metalslug/hmg  "sounds/weapons/metalslug_wpnhmg.wav"
