@@ -130,7 +130,7 @@ MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO GÓWNIARZA!";
 MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 MNU_RANDOM = "Losowy";
 MNU_SPOTALT_VOICE = "Użyj alternatywnego głosu Spota";
-MNU_SPOTALT_VOICE_DESC = "Używa lekko twardszego głosu zamiast domyślnego, jeśli uważasz, że jest domyśliny jest za słodki.";
+MNU_SPOTALT_VOICE_DESC = "Używa nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt słodki.";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
