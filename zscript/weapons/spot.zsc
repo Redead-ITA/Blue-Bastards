@@ -600,7 +600,7 @@ class SpotM249: Chaingun
 			A_GunFlash("Flash");
 		}
 		SM24 BC 1{
-			A_WeaponOffset(Random(-2,2),Random(-2,2) + 36);
+			//A_WeaponOffset(Random(-2,2),Random(-2,2) + 36);
 			A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
 		}
 		SM24 DE 2 A_ReFire();
