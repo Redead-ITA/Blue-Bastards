@@ -10,6 +10,8 @@ MNU_CREDITS = "Credits";
 MNU_LORE = "Lore";
 MNU_CHOOSECLASS = "PICK YOUR BLUE BASTARD!";
 MNU_CHOOSESKILL = "HOW TOUGH?";
+MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
+MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
@@ -131,6 +133,8 @@ MNU_LORE = "Fabuła";
 MNU_CHOOSECLASS = "WYBIERZ NIEBIESKIEGO GÓWNIARZA!";
 MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 MNU_RANDOM = "Losowy";
+MNU_SPOTALT_VOICE = "Użyj alternatywnego głosu Spota";
+MNU_SPOTALT_VOICE_DESC = "Użyj nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt uroczy.";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";

@@ -1,1 +1,2 @@
 server bool skip_intros = false;
+user bool use_spot_alt_voice = false;
