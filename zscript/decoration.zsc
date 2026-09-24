@@ -1,0 +1,13 @@
+class DeathsheadPlush : Actor
+{
+	Default 
+	{
+		Tag "Ace Deathshead Plush";
+	}
+	States
+	{
+		Spawn:
+			PLUS H -1;
+			Loop;
+	}
+}
