@@ -99,6 +99,10 @@ weapons/chainsaw/start2 "sounds/weapons/chainsaw_start_02.ogg"
 $random weapons/chainsaw/start {weapons/chainsaw/start1 weapons/chainsaw/start2}
 $volume weapons/chainsaw/start 0.3
 
+weapons/m249/deploy "sounds/weapons/m249_deploy.ogg"
+weapons/m249/fire "sounds/weapons/m249-1.wav"
+
+
 weapons/deagle/deploy "sounds/weapons/de_deploy.wav"
 
 weapons/sg550 "sounds/weapons/sg550-1.wav"

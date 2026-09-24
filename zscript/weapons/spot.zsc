@@ -554,6 +554,65 @@ class SpotChaingun : Chaingun
 	}
 }
 
+class SpotM249: Chaingun
+{
+	Default
+	{
+		Weapon.SelectionOrder 720;
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 40;
+		Weapon.AmmoType "Clip";
+		Inventory.PickupMessage "$GOTCHAINGUN";
+		Obituary "$OB_MPCHAINGUN";
+		Tag "$TAG_CHAINGUN";
+
+		Weapon.BobStyle "InverseSmooth";
+		Weapon.BobSpeed 1.75;
+		Weapon.BobRangeX 1.2;
+		Weapon.BobRangeY 0.6;
+
+		Tag "M249";
+
+		+INVENTORY.UNDROPPABLE
+	}
+	States
+	{
+	Deselect:
+		SM4R ABCDE 2;
+		TNT1 A 1 A_Lower(24);
+		Wait;
+	Select:
+		TNT1 A 1 A_Raise(24);
+		Wait;
+	Ready:
+		SM4R EDC 2;
+		SM4R B 0 A_PlayWeaponSound("weapons/m249/deploy");
+		SM4R BA 2;
+	RealReady:
+		SM24 A 1 A_WeaponReady;
+		Loop;
+	Fire:
+		SM24 A 1{
+			A_WeaponOffset(Random(-2,2),Random(-2,2) + 36);
+			A_FireBullets(4,2,1,10,"BlueBastardBulletPuff");
+			A_PlayWeaponSound("weapons/m249/fire");
+			A_SetPitch(self.pitch - 2, SPF_INTERPOLATE);
+			A_Recoil(0.2);
+			A_GunFlash("Flash");
+		}
+		SM24 BC 1{
+			A_WeaponOffset(Random(-2,2),Random(-2,2) + 36);
+			A_SetPitch(self.pitch + 1, SPF_INTERPOLATE);
+		}
+		SM24 DE 2 A_ReFire();
+		Goto RealReady;
+	Flash:
+		SM4F A 1 Bright A_Light2;
+		SM4F B 1 Bright A_Light1;
+		Goto LightDone;
+	}
+}
+
 
 class SpotPlasmaRifle : PlasmaRifle
 {
