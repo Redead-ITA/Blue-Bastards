@@ -78,7 +78,7 @@ GOTVODKA = "Picked up some vodka.";
 GOTMCAN = "Picked up a Can of... something.";
 GOTCHICKEN = "Picked up a wholeass chicken.";
 GOTCRUMBS = "Ate the last remaining chip crumbs.";
-GOTLASTMREBISCUIT = "Ate the last military biscuit.";
+GOTLASTMREBISCUIT = "Ate the last hardtack.";
 GOTLASTBLANKET = "Ate the last half of pig in a blanket.";
 GOTHALFBURGER = "Ate the last half of a burger.";
 
@@ -201,7 +201,7 @@ GOTVODKA = "Podniesiono Wódkę.";
 GOTMCAN = "Podniesiono Puszkę... czegoś.";
 GOTCHICKEN = "Podniesiono całego kurczaka.";
 GOTCRUMBS = "Zjedzono ostatnie okruchy chipsów.";
-GOTLASTMREBISCUIT = "Zjedzono ostatni wojskowy herbatnik.";
+GOTLASTMREBISCUIT = "Zjedzono ostatninego suchara.";
 GOTLASTBLANKET = "Zjedzono ostatnią połowę parówki w cieście.";
 GOTHALFBURGER = "Zjedzono ostatnią połowę burgera.";
 
