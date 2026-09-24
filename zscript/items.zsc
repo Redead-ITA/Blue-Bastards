@@ -1,7 +1,27 @@
 #include "zscript/items/doom.zsc"
 #include "zscript/items/heretic.zsc"
 
-class DrGibbCan : HealthBonus
+class BlueBastardHealthBonus : HealthBonus
+{
+	override bool TryPickup (in out Actor other)
+	{
+		PrevHealth = other.player != NULL ? other.player.health : other.health;
+		
+		int blehhh = 200;
+		if (other.FindInventory("SpotMallet"))
+		{
+			blehhh += 50;
+		}
+		if (other.GiveBody(Amount, blehhh))
+		{
+			GoAwayAndDie();
+			return true;
+		}
+		return false;
+	}
+}
+	
+class DrGibbCan : BlueBastardHealthBonus
 {
 	Default
 	{
@@ -16,7 +36,7 @@ class DrGibbCan : HealthBonus
 	}
 }
 
-class DrGibbGlass : HealthBonus
+class DrGibbGlass : BlueBastardHealthBonus
 {
 	Default
 	{
@@ -31,7 +51,7 @@ class DrGibbGlass : HealthBonus
 	}
 }
 
-class WhiskeyGlass : HealthBonus
+class WhiskeyGlass : BlueBastardHealthBonus
 {
 	Default
 	{
