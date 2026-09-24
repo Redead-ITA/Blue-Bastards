@@ -11,6 +11,8 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.CrouchSprite "SPCR";
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.Portrait "PRT_SPOT";
+		Player.StartItem "SpotFirstTimePump_KS";
+		Player.StartItem "SpotFirstTimePump_Classic";
 		Player.StartItem "SpotLevelEnter";
 		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotMallet";
