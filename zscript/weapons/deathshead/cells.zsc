@@ -13,6 +13,7 @@ class DeathsheadPlasmaRifle : PlasmaRifle
 		Weapon.AmmoType2 "Cell";
 		Weapon.AmmoUse2 5;
 		Tag "$ACE_PLASMA";
+		Obituary "$OB_ACE_PLASMA";
 		+INVENTORY.UNDROPPABLE
 	}
 	States
@@ -92,6 +93,7 @@ class DeathsheadBFG : BFG9000
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_BFG";
+		Obituary "$OB_ACE_BFG";
 		+INVENTORY.UNDROPPABLE
 	}
 	States

@@ -6,6 +6,7 @@ class DeathsheadRocketLauncher : RocketLauncher
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_ROCKET";
+		Obituary "$OB_ACE_ROCKET";
 		+INVENTORY.UNDROPPABLE
 	}
 	States

@@ -8,6 +8,7 @@ class DeathsheadPistol : Pistol //You don't have to make it a pistol derivative 
 		+WEAPON.NOAUTOFIRE
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_PISTOL";
+		Obituary "$OB_ACE_PISTOL";
 	}
 	States
 	{
@@ -53,6 +54,7 @@ class DeathsheadMAC10 : Chaingun
 		Weapon.BobSpeed 1.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_MAC10";
+		Obituary "$OB_ACE_MAC10";
 		+INVENTORY.UNDROPPABLE
 	}
 	States
@@ -124,6 +126,7 @@ class DeathsheadSG550 : Pistol
 		+WEAPON.NOALERT
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_SG550";
+		Obituary "$OB_ACE_SG550";
 	}
 	States
 	{
@@ -227,6 +230,7 @@ class DeathsheadM4 : Chaingun
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_M4";
+		Obituary "$OB_ACE_M4";
 		+INVENTORY.UNDROPPABLE
 		+WEAPON.AMMO_OPTIONAL
 		+WEAPON.ALT_AMMO_OPTIONAL
@@ -302,6 +306,7 @@ class DeathsheadM4Grenade : Grenade
 		BounceType "None";
 		SeeSound "weapons/m4/grenade";
 		DeathSound "weapons/rocklx";
+		Obituary "$OB_ACE_M4_GRENADE";
 	}
 }
 

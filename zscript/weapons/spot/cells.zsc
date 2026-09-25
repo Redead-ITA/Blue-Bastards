@@ -12,6 +12,8 @@ class SpotPlasmaRifle : PlasmaRifle
 		+WEAPON.NOAUTOFIRE
 		+INVENTORY.UNDROPPABLE
 
+		Obituary "$SPOT_KILL_LASER";
+
 		Tag "$SPOT_LASER";
 	}
 	States {
