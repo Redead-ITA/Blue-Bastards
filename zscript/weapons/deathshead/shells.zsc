@@ -5,6 +5,7 @@ class DeathsheadShotgun : Shotgun
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_AUTOSHOTGUN";
+		Obituary "$OB_ACE_AUTOSHOTGUN";
 		+INVENTORY.UNDROPPABLE
 	}
 	States
@@ -49,6 +50,7 @@ class DeathsheadSuperShotgun : SuperShotgun
 		Weapon.BobSpeed 1.75;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_SAWNOFFS";
+		Obituary "$OB_ACE_SAWNOFFS";
 		+INVENTORY.UNDROPPABLE;
 	}
 	Action void A_BBLefthand(int OverlayId)
