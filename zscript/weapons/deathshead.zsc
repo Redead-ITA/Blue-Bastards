@@ -877,9 +877,14 @@ class DeathsheadLevelEnter : DoomWeapon
 		Goto Fire;
 	Ready3:
 		ADDR A 2 A_StartSound("misc/can_open", CHAN_AUTO);
-		ADDR BCDEFG 2;
-		ADDR H 2 A_StartSound("misc/drink", CHAN_AUTO);
-		ADDR IJKLMNOPDCBA 2;
+		ADDR BCDEFGH 2;
+		ADDR I 2 A_StartSound("misc/drink", CHAN_AUTO);
+		ADDR JKLMNOP 2;
+		ADDR QR 1;
+		ADDR S 1 A_StartSound("misc/throw", CHAN_AUTO);
+		ADDR TU 1;
+		TNT1 A 4;
+		TNT1 A 2 A_StartSound("misc/drop", CHAN_AUTO);
 		Goto Fire;
 	Ready4:
 		ADMA ABCDEFGHIJKLMEDCBA 2;

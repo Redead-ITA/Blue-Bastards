@@ -155,6 +155,12 @@ misc/eat2 "sounds/misc/eating_2.ogg"
 misc/eat3 "sounds/misc/eating_3.ogg"
 $random misc/eat {misc/eat1 misc/eat2 misc/eat3}
 
+misc/throw "sounds/weapons/iceaxe_swing1.wav"
+misc/drop1 "sounds/misc/weapon_impact_hard1.wav"
+misc/drop2 "sounds/misc/weapon_impact_hard2.wav"
+misc/drop3 "sounds/misc/weapon_impact_hard3.wav"
+$random misc/drop {misc/drop1 misc/drop2 misc/drop3}
+
 misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
 misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"
 misc/metalslug/hmg  "sounds/weapons/metalslug_wpnhmg.wav"
