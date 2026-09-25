@@ -1,7 +1,7 @@
-#include "zscript/weapons/deathshead.zsc"
-#include "zscript/weapons/spot.zsc"
-#include "zscript/weapons/doom.zsc"
-#include "zscript/weapons/heretic.zsc"
+#include "./weapons/deathshead.zsc" //writing "./" means the directory this file is at right now, so this translates to "zscript/"
+#include "./weapons/spot.zsc"
+#include "./weapons/doom.zsc"
+#include "./weapons/heretic.zsc"
 
 class BlueBastardBulletPuff : BulletPuff
 {
