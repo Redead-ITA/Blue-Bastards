@@ -49,7 +49,7 @@ class DeathsheadPlasmaRifle : PlasmaRifle
 		ADPC B 2 Bright
 		{
 			A_StartSound("weapons/railgun", CHAN_WEAPON);
-			A_RailAttack(random(15,30), color1:"00c8ff", color2:"c1d6db", pufftype:null);
+			A_RailAttack(random(45,60), color1:"00c8ff", color2:"c1d6db", pufftype:null);
 			A_GunFlash();
 		}
 		ADPC C 2 Bright;
