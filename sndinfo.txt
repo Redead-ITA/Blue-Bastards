@@ -178,7 +178,10 @@ $random misc/laser_pkup {misc/metalslug misc/metalslug misc/metalslug/laser}
 $volume misc/laser_pkup 0.5
 
 // Spot
+spot/gib "sounds/spot/Gibbing.ogg"
+
 $playersound	spot	male	*death			   "sounds/spot/DSSPTDTH.wav"
+$playeralias	spot	male	*gibbed		spot/gib
 $playersound	spot	male	*xdeath			   "sounds/spot/DSSPDIEH.wav"
 $playersound	spot	male	*pain100		   "sounds/spot/DSSPTPAI.wav"
 $playersound	spot	male	*pain75			   "sounds/spot/DSSPTPAI.wav"
@@ -190,6 +193,7 @@ $playersounddup	spot	male	*land		*grunt
 $playersound    spot    male    *jump   "sounds/spot/foley_dbljump-03.ogg"
 
 $playersound	spotalt	male	*death			   "sounds/spot/Alt/DSSPTDTH.ogg"
+$playeralias	spotalt	male	*gibbed		spot/gib
 $playersound	spotalt	male	*xdeath			   "sounds/spot/Alt/DSSPDIEH.ogg"
 $playersound	spotalt	male	*pain100		   "sounds/spot/Alt/DSSPTPAI.ogg"
 $playersound	spotalt	male	*pain75			   "sounds/spot/Alt/DSSPTPAI.ogg"
@@ -207,6 +211,7 @@ moth/gib1 "sounds/deathshead/gib1.ogg"
 moth/gib2 "sounds/deathshead/gib2.ogg"
 moth/gib3 "sounds/deathshead/gib3.ogg"
 moth/gib4 "sounds/deathshead/splat.ogg"
+
 $random moth/gib {moth/gib1 moth/gib2 moth/gib3 moth/gib4}
 $playeralias	deathshead	male	*gibbed		moth/gib
 $playersound	deathshead	male	*pain100	"sounds/deathshead/DSMOFJMP.ogg"
