@@ -203,7 +203,12 @@ $playersound    spotalt    male    *jump   "sounds/spot/foley_dbljump-03.ogg"
 // Deathshead
 $playersound	deathshead	male	*death		"sounds/deathshead/DSMOFDIE.ogg"
 $playersound	deathshead	male	*xdeath		"sounds/deathshead/DSMOFSCR.ogg"
-$playersound	deathshead	male	*gibbed		"sounds/deathshead/DSMOFSPL.ogg"
+moth/gib1 "sounds/deathshead/gib1.ogg"
+moth/gib2 "sounds/deathshead/gib2.ogg"
+moth/gib3 "sounds/deathshead/gib3.ogg"
+moth/gib4 "sounds/deathshead/splat.ogg"
+$random moth/gib {moth/gib1 moth/gib2 moth/gib3 moth/gib4}
+$playeralias	deathshead	male	*gibbed		moth/gib
 $playersound	deathshead	male	*pain100	"sounds/deathshead/DSMOFJMP.ogg"
 $playersounddup	deathshead	male	*pain75		*pain100
 $playersounddup	deathshead	male	*pain50		*pain100
