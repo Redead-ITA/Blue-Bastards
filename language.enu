@@ -265,19 +265,19 @@ KICKYDICKY = "Kop";
 
 //TODO: Make them a bit more catchier.
 //Obituaries - Spot
-SPOT_KILL_CHAINSAW = "%k myślał, że %o było drzewem.";
-SPOT_KILL_MALLET = "%o został zbonkowany przez %k";
-SPOT_KILL_REV = "%o miał wystrzelony mózg przez rewolwer ekspresowy .600 %k.";
-SPOT_KILL_KS23 = "%o NAPRAWDĘ przeżuł boom %k.";
-SPOT_KILL_SHTCLASSIC = "%o stało się celem zardzewiałej bomby %k";
-SPOT_KILL_DEV = "%o został postrzelony w papkę przez dewastatora %k.";
-SPOT_KILL_ROCKET = "%o zjadł rakietę napalmową %k.";
-SPOT_KILL_NAVAL = "%k wyrwał... broń statku, aby zabić %o, czy to nie przesada?!";
-SPOT_KILL_M249 = "%k zrobił ser szwajcarski z %o dzięki karabinowi M249.";
+SPOT_KILL_CHAINSAW = "%k myślał@[ao_pl], że %o był@[ao_pl] drzewem.";
+SPOT_KILL_MALLET = "%o został@[ao_pl] zbonkowan@[adj_pl] przez %k";
+SPOT_KILL_REV = "%o miał wystrzelon@[adj_pl] mózg przez rewolwer ekspresowy .600 %k.";
+SPOT_KILL_KS23 = "%o NAPRAWDĘ przeżuł@[ao_pl] boom %k.";
+SPOT_KILL_SHTCLASSIC = "%o stał@[ao_pl] się celem zardzewiałej bomby %k";
+SPOT_KILL_DEV = "%o został@[ao_pl] postrzelon@[adj_pl] w papkę przez dewastatora %k.";
+SPOT_KILL_ROCKET = "%o zjadł@[ao_pl] rakietę napalmową %k.";
+SPOT_KILL_NAVAL = "%k wyrwał@[ao_pl]... broń statku, aby zabić %o, czy to nie przesada?!";
+SPOT_KILL_M249 = "%k zrobił@[ao_pl] ser szwajcarski z %o dzięki karabinowi M249.";
 SPOT_KILL_LASER = "Mózg %o stopił się na lewą stronę dzięki broni laserowej %k";
-SPOT_KILL_MOFFOBLI = "%o osobiście spotkał rakiete nuklearną %k.";
+SPOT_KILL_MOFFOBLI = "%o osobiście spotkał@[ao_pl] rakiete nuklearną %k.";
 
-SPOT_KILL_NAPALM = "%o stał się imprezą grillową %k.";
-SPOT_KILL_NUKEFIRE = "%k całkowicie wyparował %o i przestało istnieć.";
+SPOT_KILL_NAPALM = "%o stał@[ao_pl] się imprezą grillową %k.";
+SPOT_KILL_NUKEFIRE = "%k całkowicie wyparował@[ao_pl] %o i przestał@[ao_pl] istnieć.";
 
 //Obituaries - Ace
