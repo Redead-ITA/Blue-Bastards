@@ -48,9 +48,9 @@ weapons/railgun "sounds/weapons/railgf1a.wav"
 
 weapons/doubleshotties "sounds/weapons/SSHFIRE.ogg"
 
-weapons/weakswing1 "sounds/weapons/knife_slash1.wav"
-weapons/weakswing2 "sounds/weapons/knife_slash2.wav"
-$random weapons/weakswing {weapons/weakswing1 weapons/weakswing2}
+weapons/swing1 "sounds/weapons/Swing1.wav"
+weapons/swing2 "sounds/weapons/Swing2.wav"
+$random weapons/swing {weapons/swing1 weapons/swing2}
 
 weapons/missle/fire "sounds/weapons/firemissle.ogg"
 weapons/missle/deploy "sounds/weapons/bfg_raise.wav"
@@ -63,7 +63,6 @@ weapons/nuke/explode "sounds/weapons/1956_exploz1.ogg"
 $limit weapons/nuke/explode 0 
 weapons/nuke/alarm "sounds/weapons/nukealarm.ogg"
 weapons/nuke/load "sounds/weapons/nuke_in.ogg"
-
 
 weapons/laser/start "sounds/weapons/laserwindup.ogg"
 weapons/laser/stop "sounds/weapons/laserstop.ogg"
@@ -101,7 +100,6 @@ $volume weapons/chainsaw/start 0.3
 
 weapons/m249/deploy "sounds/weapons/m249_deploy.ogg"
 weapons/m249/fire "sounds/weapons/m249-1.wav"
-
 
 weapons/deagle/deploy "sounds/weapons/de_deploy.wav"
 
