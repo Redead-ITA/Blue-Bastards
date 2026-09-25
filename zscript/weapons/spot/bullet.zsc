@@ -9,6 +9,7 @@ class SpotExpress600 : Pistol
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
 		Tag "$SPOT_REV";
+		Obituary "$SPOT_KILL_REV";
 		
 		+INVENTORY.UNDROPPABLE
     }
@@ -65,8 +66,7 @@ class SpotChaingun : Chaingun
 		Weapon.AmmoGive 20;
 		Weapon.AmmoType "Clip";
 		Inventory.PickupMessage "$GOTCHAINGUN";
-		Obituary "$OB_MPCHAINGUN";
-		Tag "$TAG_CHAINGUN";
+		Obituary "$SPOT_KILL_NAVAL";
 
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobSpeed 1.75;
@@ -123,15 +123,14 @@ class SpotM249: Chaingun
 		Weapon.AmmoGive 40;
 		Weapon.AmmoType "Clip";
 		Inventory.PickupMessage "$GOTCHAINGUN";
-		Obituary "$OB_MPCHAINGUN";
-		Tag "$TAG_CHAINGUN";
+		Obituary "$SPOT_KILL_M249";
 
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobSpeed 1.75;
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
 
-		Tag "M249";
+		Tag "$SPOT_M249";
 
 		+INVENTORY.UNDROPPABLE
 	}

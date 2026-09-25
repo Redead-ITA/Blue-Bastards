@@ -11,6 +11,8 @@ class SpotMallet : Fist
 		Tag "$SPOT_MALLET";
 		//Weapon.WeaponScaleX 0.75;
 		//Weapon.WeaponScaleY 0.8;
+
+		Obituary "$SPOT_KILL_MALLET";
 	}
 	States
 	{
@@ -78,6 +80,8 @@ class SpotChainsaw : Chainsaw
 		Weapon.UpSound "";
 		+WEAPON.MELEEWEAPON
 		Tag "$SPOT_CHAINSAW";
+
+		Obituary "$SPOT_KILL_CHAINSAW";
 
 		+INVENTORY.UNDROPPABLE
 	}

@@ -12,6 +12,8 @@ class SpotRocketLauncher : RocketLauncher
 		+WEAPON.NOAUTOFIRE
 		+INVENTORY.UNDROPPABLE
 
+		Obituary "$SPOT_KILL_ROCKET";
+
 		Tag "$SPOT_ROCKET";
 	}
 	States {

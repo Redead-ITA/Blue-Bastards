@@ -115,10 +115,29 @@ SPOT_SHTCLASSIC= "''The Classic''";
 SPOT_DEV = "Devastator";
 SPOT_ROCKET = "M202 Incendiary Launcher";
 SPOT_NAVAL = "''Portable'' Naval Gun";
+SPOT_M249 = "M249"
 SPOT_LASER = "Laser Gun";
 SPOT_MOFFOBLI = "''Moff Obliterator'' Mark M07H";
 
 KICKYDICKY = "Kick";
+
+//Obituaries - Spot
+SPOT_KILL_CHAINSAW = "%k thought %o was a tree.";
+SPOT_KILL_MALLET = "%o got bonked by %k";
+SPOT_KILL_REV = "%o had %p brain blown out by %k's .600 express revolver.";
+SPOT_KILL_KS23 = "%o has REALLY chewed on %k's boomstick.";
+SPOT_KILL_SHTCLASSIC = "%o became target practice for that rusty boomstick of %k's";
+SPOT_KILL_DEV = "%o got shot to absolute goop by %k's devastator.";
+SPOT_KILL_ROCKET = "%o ate %k's napalm rocket.";
+SPOT_KILL_NAVAL = "%k ripped out a... ship weapon to kill %o, ain't that overkill?!";
+SPOT_KILL_M249 = "%o was turned into swiss cheese %k's M249";
+SPOT_KILL_LASER = "%o's brain got melted inside out thanks to %k's laser";
+SPOT_KILL_MOFFOBLI = "%o has meet %k's nuke personally.";
+
+SPOT_KILL_NAPALM = "%o became %k's barbecue party.";
+SPOT_KILL_NUKEFIRE = "%k completely vaporized %o out of existance.";
+
+//Obituaries - Ace
 
 [pl]
 
@@ -240,5 +259,25 @@ SPOT_ROCKET = "Podpalająca Wyrzutnia M202";
 SPOT_NAVAL = "''Przenośne'' Działo morskie";
 SPOT_LASER = "Karabin Laserowy";
 SPOT_MOFFOBLI = "''Ćma Obliterator'' Mark. CM4";
+SPOT_M249 = "M249"
 
 KICKYDICKY = "Kop";
+
+//TODO: Make them a bit more catchier.
+//Obituaries - Spot
+SPOT_KILL_CHAINSAW = "%k myślał, że %o było drzewem.";
+SPOT_KILL_MALLET = "%o został zbonkowany przez %k";
+SPOT_KILL_REV = "%o miał wystrzelony mózg przez rewolwer ekspresowy .600 %k.";
+SPOT_KILL_KS23 = "%o NAPRAWDĘ przeżuł boom %k.";
+SPOT_KILL_SHTCLASSIC = "%o stało się celem zardzewiałej bomby %k";
+SPOT_KILL_DEV = "%o został postrzelony w papkę przez dewastatora %k.";
+SPOT_KILL_ROCKET = "%o zjadł rakietę napalmową %k.";
+SPOT_KILL_NAVAL = "%k wyrwał... broń statku, aby zabić %o, czy to nie przesada?!";
+SPOT_KILL_M249 = "%k zrobił ser szwajcarski z %o dzięki karabinowi M249.";
+SPOT_KILL_LASER = "Mózg %o stopił się na lewą stronę dzięki broni laserowej %k";
+SPOT_KILL_MOFFOBLI = "%o osobiście spotkał rakiete nuklearną %k.";
+
+SPOT_KILL_NAPALM = "%o stał się imprezą grillową %k.";
+SPOT_KILL_NUKEFIRE = "%k całkowicie wyparował %o i przestało istnieć.";
+
+//Obituaries - Ace

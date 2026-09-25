@@ -27,6 +27,8 @@ class SpotShotgun : Shotgun
 		Weapon.BobRangeY 0.6;
 		Tag "$SPOT_KS23";
 
+		Obituary "SPOT_KILL_KS23";
+
 		+INVENTORY.UNDROPPABLE
 	}
 	override void PostBeginPlay()
@@ -106,6 +108,7 @@ class SpotShotgunClassic : SuperShotgun
 		Weapon.BobRangeY 0.6;
 		Tag "$SPOT_SHTCLASSIC";
 
+		Obituary "$SPOT_KILL_SHTCLASSIC";
 		+INVENTORY.UNDROPPABLE
 	}
 	
@@ -186,6 +189,7 @@ class SpotDevastator : SuperShotgun
 		Weapon.BobRangeX 1.2;
 		Weapon.BobRangeY 0.6;
 		Tag "$SPOT_DEV";
+		Obituary "SPOT_KILL_DEV";
 
 		+INVENTORY.UNDROPPABLE
 	}
