@@ -50,10 +50,10 @@ class SpotShotgun : Shotgun
 			SSHR EDCBA 2;
 			goto ready;
 		SelectPump:
-			SSHT B 2 Offset(-10,42);
-			SSHT B 2 Offset(9,41);
-			SSHT B 2 Offset(5,37);
-			SSHT B 2 Offset(2,34);
+			SSHT B 1 Offset(-10,42);
+			SSHT B 1 Offset(9,41);
+			SSHT B 1 Offset(5,37);
+			SSHT B 1 Offset(2,34);
 			TNT1 A 0 Offset(0,32);
 			goto Pump+1;
 		Ready:
@@ -130,10 +130,10 @@ class SpotShotgunClassic : SuperShotgun
 			SH2R EDCBA 2;
 			goto ready;
 		SelectPump:
-			SH2C B 2 Offset(-10,42);
-			SH2C B 2 Offset(9,41);
-			SH2C C 2 Offset(5,37);
-			SH2C C 2 Offset(2,34);
+			SH2C B 1 Offset(-10,42);
+			SH2C B 1 Offset(9,41);
+			SH2C C 1 Offset(5,37);
+			SH2C C 1 Offset(2,34);
 			TNT1 A 0 Offset(0,32);
 			goto Pump+2;
 		Ready:
