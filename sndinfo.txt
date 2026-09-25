@@ -212,6 +212,12 @@ $playersound	deathshead	male	*grunt		"sounds/deathshead/DSMOFOOF.ogg"
 $playersounddup	deathshead	male	*land		*grunt
 $playersound	deathshead	male	*jump		"sounds/deathshead/DSMOFJMP.ogg"
 $playersound	deathshead	male	*usefail	"sounds/deathshead/DSMOFNWA.ogg"
+$playeralias	deathshead	male	*fist	weapons/punch
+weapons/punch1 "sounds/weapons/punch1.ogg"
+weapons/punch2 "sounds/weapons/punch2.ogg"
+weapons/punch3 "sounds/weapons/punch3.ogg"
+weapons/punch4 "sounds/weapons/punch4.ogg"
+$random weapons/punch {weapons/punch1 weapons/punch2 weapons/punch3 weapons/punch4}
 
 menu/slam "sounds/menu/LogoSlam.wav"
 menu/cancel "sounds/menu/MenuCancel.wav"
