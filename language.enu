@@ -28,6 +28,7 @@ DARK_BLUE_SURE = "You're going to regret picking this color\n"
 
 CREDIT_HEADER = "Credit Where It's Due";
 CREDITS_ALMOST_EVERYTHING = "Nearly Everything";
+CREDITS_REDEAD = "Initial Feedback, Minor Reorganization";
 CREDITS_WEAPON_MODELS = "Weapon Models";
 CREDITS_WEAPON_SPRITES = "Weapon Sprites";
 CREDITS_WEAPON_SOUNDS = "Weapon Sounds";
@@ -183,6 +184,7 @@ DARK_BLUE_SURE = "Pożałujesz wyboru tego koloru\n"
 
 CREDIT_HEADER = "Podziękowania, gdzie się należą";
 CREDITS_ALMOST_EVERYTHING = "Prawie Wszystko";
+CREDITS_REDEAD = "Pierwsze Opinie i Mniejsze Reorganizacje";
 CREDITS_WEAPON_MODELS = "Modele Broni";
 CREDITS_WEAPON_SPRITES = "Sprity Broni";
 CREDITS_WEAPON_SOUNDS = "Dźwięki Broni";
