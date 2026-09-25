@@ -139,6 +139,12 @@ SPOT_KILL_NUKEFIRE = "%k completely vaporized %o out of existance.";
 
 //Obituaries - Ace
 
+OB_ACE_PISTOL = "%o was shot down by %k's SIG. Happy trails, %o.";
+OB_ACE_MAC10 = "%o was perforated by %k's MAC-10.";
+OB_ACE_SG550 = "%o was sniped by %k's SG 550.";
+OB_ACE_M4 = "%o was neutralized by %k's M16A1 carbine.";
+OB_ACE_M4_GRENADE = "%o was blown up by %k's M16A1 grenade.";
+
 [pl]
 
 BLUE_BASTARDS = "Niebiescy Gówniarze";
@@ -281,3 +287,9 @@ SPOT_KILL_NAPALM = "%o stał@[ao_pl] się imprezą grillową %k.";
 SPOT_KILL_NUKEFIRE = "%k całkowicie wyparował@[ao_pl] %o i przestał@[ao_pl] istnieć.";
 
 //Obituaries - Ace
+
+OB_ACE_PISTOL = "%o został@[ao_pl] postrzelon@[adj_pl] przez SIG %k.";
+OB_ACE_MAC10 = "%o został@[ao_pl] podziurawion@[adj_pl] przez MAC-10 %k.";
+OB_ACE_SG550 = "%o miał@[ao_pl] swój łeb rozsadzony przez SG 550 %k.";
+OB_ACE_M4 = "%o został@[ao_pl] zneutralizowany@[adj_pl] przez M16A1 %k.";
+OB_ACE_M4_GRENADE = "%o został@[ao_pl] wysadzon@[adj_pl] przez granatnik M16A1 %k.";
