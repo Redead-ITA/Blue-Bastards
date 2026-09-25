@@ -7,6 +7,7 @@ class DeathsheadFist : Fist
 		+WEAPON.NOALERT
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_FISTS";
+		Obituary "$OB_ACE_FISTS";
 	}
 	States
 	{
@@ -86,6 +87,7 @@ class DeathsheadChainsaw : Chainsaw
 		Weapon.BobStyle "InverseSmooth";
 		Weapon.BobRangeX 0.5;
 		Tag "$ACE_CHAINSAW";
+		Obituary "$OB_ACE_CHAINSAW";
 		+INVENTORY.UNDROPPABLE
 	}
 	States

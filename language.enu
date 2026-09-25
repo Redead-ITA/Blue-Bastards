@@ -146,6 +146,9 @@ OB_ACE_M4 = "%o was neutralized by %k's M16A1 carbine.";
 OB_ACE_M4_GRENADE = "%o was blown up by %k's M16A1 grenade.";
 OB_ACE_PLASMA = "%o was melted by %k's heavy plasma cannon.";
 OB_ACE_BFG = "%o was vaporized by %k's BFG 9k++.";
+OB_ACE_FISTS = "%k gave %o a nice beatdown.";
+OB_ACE_CHAINSAW = "%o was turned into chunky salsa by %k's chainsaw.";
+OB_ACE_ROCKET = "%o got blown up %k's missile launcher.";
 
 [pl]
 
@@ -297,3 +300,6 @@ OB_ACE_M4 = "%o został@[ao_pl] zneutralizowany@[adj_pl] przez M16A1 %k.";
 OB_ACE_M4_GRENADE = "%o został@[ao_pl] wysadzon@[adj_pl] przez granatnik M16A1 %k.";
 OB_ACE_PLASMA = "%o został@[ao_pl] roztopion@[adj_pl] przez ciężki karabin plazmowy %k.";
 OB_ACE_BFG = "%o został@[ao_pl] zwaporyzowany@[adj_pl] przez BFG 9k++ %k.";
+OB_ACE_FISTS = "%k spuścił@[adj_pl] łomot %o.";
+OB_ACE_CHAINSAW = "%o został@[ao_pl] zamienion@[adj_pl] na salsę przez piłę łańcuchową %k.";
+OB_ACE_ROCKET = "%o został@[ao_pl] rozsadzon@[adj_pl] przez wyrzutnię rakiet %k.";
