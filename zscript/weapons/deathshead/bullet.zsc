@@ -1,7 +1,11 @@
-class DeathsheadPistol : Pistol //You don't have to make it a pistol derivative here, You could make a weapon base that inherits from weapon and then make that what the other guns inherit, but i digress.
+class DeathsheadPistol : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.AmmoType "Clip";
+		Weapon.AmmoGive 20;
+		Weapon.AmmoUse 1;
 		Weapon.BobRangeX 0.5;
 		Weapon.BobSpeed 1.5;
 		Weapon.BobStyle "InverseSmooth";
@@ -46,10 +50,14 @@ class DeathsheadPistol : Pistol //You don't have to make it a pistol derivative 
 	}
 }
 
-class DeathsheadMAC10 : Chaingun
+class DeathsheadMAC10 : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.AmmoType "Clip";
+		Weapon.AmmoGive 20;
+		Weapon.AmmoUse 1;
 		Weapon.BobRangeX 0.5;
 		Weapon.BobSpeed 1.5;
 		Weapon.BobStyle "InverseSmooth";
@@ -116,10 +124,13 @@ class DeathsheadSG550Zoom : Inventory
 		Inventory.MaxAmount 1; 
 	}
 }
-class DeathsheadSG550 : Pistol
+class DeathsheadSG550 : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.AmmoType "Clip";
+		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 2;
 		Weapon.BobRangeX 1.25;
 		Weapon.BobStyle "InverseSmooth";
@@ -219,8 +230,9 @@ class DeathsheadSG550 : Pistol
 	}
 }
 
-class DeathsheadM4 : Chaingun
+class DeathsheadM4 : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
 		Weapon.AmmoType1 "Clip";

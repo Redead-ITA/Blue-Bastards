@@ -1,6 +1,7 @@
-
-class SpotRocketLauncher : RocketLauncher
+class SpotRocketLauncher : BlueBastardWeapon
 {
+	mixin BBSpotWeapon;
+	
 		Default{
 		Weapon.AmmoType "RocketAmmo";
 		Weapon.AmmoUse 1;

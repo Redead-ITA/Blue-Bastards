@@ -1,6 +1,6 @@
-
-class DeathsheadLevelEnter : DoomWeapon
+class DeathsheadLevelEnter : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
 		Tag " ";

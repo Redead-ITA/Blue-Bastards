@@ -3,6 +3,26 @@
 #include "./weapons/doom.zsc"
 #include "./weapons/heretic.zsc"
 
+Class BlueBastardWeapon : Weapon //This will affect everyone's weapon if the weapon themselves don't have any value specific to them.
+{
+	Default
+	{
+	
+	}
+	Action void A_BBLefthand(int OverlayId) //This function is used on Ace's SSG.
+	{
+		A_OverlayFlags(OverlayId,PSPF_MIRROR|PSPF_FLIP,1);
+		A_OverlayFlags(OverlayId,PSPF_ADDWEAPON,0);
+		A_OverlayOffset(OverlayId,0,32);
+	}
+	states
+	{
+	
+	}
+
+}
+
+
 class BlueBastardBulletPuff : BulletPuff
 {
 	Default
