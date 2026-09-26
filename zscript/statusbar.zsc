@@ -1,0 +1,25 @@
+class BlueBastardsAltHud : AltHud
+{
+	TextureID mugshot_bg;
+	override void Init()
+	{
+		Super.Init();
+		mugshot_bg = TexMan.CheckForTexture("graphics/hud_mugshot.png", TexMan.Type_MiscPatch);
+	}
+	virtual void DrawMugshot(void)
+	{
+		DrawImageToBox(mugshot_bg, 0, hudheight-36, 32, 36, 1.0);
+	}
+	override void DrawInGame(PlayerInfo CPlayer)
+	{
+		Super.DrawInGame(CPlayer);
+		if (gamestate == GS_TITLELEVEL || !CPlayer) return;
+		DrawMugshot();
+	}
+	override void DrawOneWeapon(PlayerInfo CPlayer, int x, in out int y, Weapon weapon)
+	{
+	}
+	override void DrawWeapons(PlayerInfo CPlayer, int x, int y)
+	{
+	}
+}
