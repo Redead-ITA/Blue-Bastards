@@ -31,14 +31,11 @@ class BlueBastardsStatusBar : DoomStatusBar
 		Vector2 iconbox = (40, 20);
 		DrawImage("graphics/hud_mugshot.png", (4, hudheight-36), DI_ITEM_OFFSETS);
 		DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (5,  hudheight-35), DI_ITEM_OFFSETS);
-		DrawString(mHUDFont, FormatNumber(CPlayer.health, 3), (44, -20));
-
+		DrawImage("graphics/hud_healthnarmor.png", (44, hudheight-49), DI_ITEM_OFFSETS);
+		DrawString(mHUDFont, FormatNumber(CPlayer.health, 3), (44, -41));
 		let armor = CPlayer.mo.FindInventory("BasicArmor", true);
-		if (armor != null && armor.Amount > 0)
-		{
-			DrawInventoryIcon(armor, (20, -22));
-			DrawString(mHUDFont, FormatNumber(armor.Amount, 3), (44, -40));
-		}
+		if (armor != null) DrawString(mHUDFont, FormatNumber(armor.Amount, 3), (44, -20));
+		
 		Inventory ammotype1, ammotype2;
 		[ammotype1, ammotype2] = GetCurrentAmmo();
 		int invY = -20;
