@@ -1,5 +1,6 @@
-class SpotLevelEnter : DoomWeapon
+class SpotLevelEnter : BlueBastardWeapon
 {
+	mixin BBSpotWeapon;
 	Default
 	{
 		Tag " ";

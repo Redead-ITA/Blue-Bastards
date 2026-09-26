@@ -1,21 +1,6 @@
-
-
-class SpotFirstTimePump_Classic : CustomInventory
+class SpotShotgun : BlueBastardWeapon
 {
-	States
-	{
-		Use:
-			TNT1 A -1;
-			Stop;
-	}
-}
-
-
-
-
-
-class SpotShotgun : Shotgun
-{
+	mixin BBSpotWeapon;
 	bool pumped;
 	Default{
 		Weapon.AmmoType "Shell";
@@ -95,8 +80,9 @@ class SpotShotgun : Shotgun
 	}
 }
 
-class SpotShotgunClassic : SuperShotgun
+class SpotShotgunClassic : BlueBastardWeapon
 {
+	mixin BBSpotWeapon;
 	bool pumped;
 	Default{
 		Weapon.AmmoType "Shell";
@@ -178,8 +164,9 @@ class SpotShotgunClassic : SuperShotgun
 	}
 }
 
-class SpotDevastator : SuperShotgun
+class SpotDevastator : BlueBastardWeapon
 {
+	mixin BBSpotWeapon;
 	Default{
 		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 1;

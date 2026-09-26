@@ -1,4 +1,5 @@
-class Spot : DoomPlayer replaces DoomPlayer
+//Removing the replaces parts as they do not do anything here, might also recommend just add a prefix to the class name to prevent issues, like BB or BlueBastard.
+class Spot : DoomPlayer
 {
 	Default
 	{
@@ -11,13 +12,13 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.CrouchSprite "SPCR";
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.Portrait "PRT_SPOT";
-		Player.StartItem "SpotFirstTimePump_KS";
-		Player.StartItem "SpotFirstTimePump_Classic";
+		
 		Player.StartItem "SpotLevelEnter";
 		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotMallet";
 		Player.StartItem "SpotKicky";
 		Player.StartItem "Clip", 50;
+		
 		Player.WeaponSlot 1, "SpotMallet", "SpotChainsaw";
 		Player.WeaponSlot 2, "SpotExpress600";
 		Player.WeaponSlot 3, "SpotShotgun", "SpotShotgunClassic", "SpotDevastator";
@@ -25,6 +26,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 		Player.WeaponSlot 5, "SpotRocketLauncher";
 		Player.WeaponSlot 6, "SpotPlasmaRifle";
 		Player.WeaponSlot 7, "SpotBFG";
+		
 		Player.MaxHealth 125;
 		Speed 0.9;
 	}
@@ -82,7 +84,7 @@ class Spot : DoomPlayer replaces DoomPlayer
 	}
 }
 
-class Deathshead : DoomPlayer replaces DoomPlayer
+class Deathshead : DoomPlayer
 {
 	Default
 	{
@@ -96,11 +98,13 @@ class Deathshead : DoomPlayer replaces DoomPlayer
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.Portrait "PRT_ACE";
 		BloodColor "37732b";
+		
 		Player.StartItem "DeathsheadLevelEnter";
 		Player.StartItem "DeathsheadPistol";
 		Player.StartItem "DeathsheadFist";
 		Player.StartItem "DeathsheadKicky";
 		Player.StartItem "Clip", 50;
+		
 		Player.WeaponSlot 1, "DeathsheadFist", "DeathsheadChainsaw";
 		Player.WeaponSlot 2, "DeathsheadPistol";
 		Player.WeaponSlot 3, "DeathsheadShotgun", "DeathsheadSuperShotgun";

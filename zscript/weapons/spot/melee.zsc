@@ -1,5 +1,6 @@
-class SpotMallet : Fist
+class SpotMallet : BlueBastardWeapon
 {
+	mixin BBSpotWeapon;
 	Default
 	{
 		+WEAPON.NOALERT
@@ -69,7 +70,7 @@ class SpotMallet : Fist
 	}
 }
 
-class SpotChainsaw : Chainsaw
+class SpotChainsaw : BlueBastardWeapon
 {
 	Default
 	{

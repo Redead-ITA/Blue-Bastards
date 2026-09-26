@@ -1,5 +1,6 @@
-class DeathsheadFist : Fist
+class DeathsheadFist : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
 		Weapon.BobStyle "Smooth";
@@ -79,8 +80,9 @@ class DeathsheadFist : Fist
 	}
 }
 
-class DeathsheadChainsaw : Chainsaw
+class DeathsheadChainsaw : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
 		Weapon.UpSound "";

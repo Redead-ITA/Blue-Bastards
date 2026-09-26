@@ -1,6 +1,6 @@
-
-class DeathsheadPlasmaRifle : PlasmaRifle
+class DeathsheadPlasmaRifle : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
 		Weapon.BobRangeX 1.25;
@@ -85,10 +85,14 @@ class PlasmaCannonBall : PlasmaBall
 	}
 }
 
-class DeathsheadBFG : BFG9000
+class DeathsheadBFG : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.AmmoType "Cell";
+		Weapon.AmmoUse 40;
+		Weapon.AmmoGive 40;
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";

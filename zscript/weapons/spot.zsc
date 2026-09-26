@@ -7,6 +7,10 @@
 
 
 
-
-
-
+mixin class BBSpotWeapon //the mixing classes are classes you add in to the class, which is great for more minor stuff.
+{
+	default
+	{
+		Inventory.RestrictedTo "Spot";
+	}
+}

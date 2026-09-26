@@ -1,7 +1,11 @@
-class DeathsheadShotgun : Shotgun
+class DeathsheadShotgun : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.AmmoType "Shell";
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 8;
 		Weapon.BobRangeY 0.5;
 		Weapon.BobStyle "InverseSmooth";
 		Tag "$ACE_AUTOSHOTGUN";
@@ -41,10 +45,12 @@ class DeathsheadShotgun : Shotgun
 	}
 }
 
-class DeathsheadSuperShotgun : SuperShotgun
+class DeathsheadSuperShotgun : BlueBastardWeapon
 {
+	mixin BBDeathsheadWeapon;
 	Default
 	{
+		Weapon.AmmoType "Shell";
 		Weapon.AmmoUse 4;
 		Weapon.AmmoGive 16;
 		Weapon.BobSpeed 1.75;
@@ -53,12 +59,7 @@ class DeathsheadSuperShotgun : SuperShotgun
 		Obituary "$OB_ACE_SAWNOFFS";
 		+INVENTORY.UNDROPPABLE;
 	}
-	Action void A_BBLefthand(int OverlayId)
-	{
-		A_OverlayFlags(OverlayId,PSPF_MIRROR|PSPF_FLIP,1);
-		A_OverlayFlags(OverlayId,PSPF_ADDWEAPON,0);
-		A_OverlayOffset(OverlayId,0,32);
-	}
+	
     States
 	{
 	Select: //While the A_Raise(24) seems to work perfectly, 
