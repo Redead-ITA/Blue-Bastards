@@ -13,7 +13,6 @@ class BlueBastardsStatusBar : DoomStatusBar
 {
 	DynamicValueInterpolator mHealthInterpolator;
 	DynamicValueInterpolator mArmorInterpolator;
-	int hudwidth, hudheight;
 	
 	override void Init()
 	{
