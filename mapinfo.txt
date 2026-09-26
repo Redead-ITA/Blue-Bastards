@@ -21,6 +21,7 @@ GameInfo
 	DimColor = "00 00 c0"
 	DimAmount = 0.5
 	BlurAmount = 0.25
+	StatusBarClass = "BlueBastardsStatusBar"
 	AltHudClass = "BlueBastardsAltHud"
 	statscreen_single = "BlueBastards_StatusScreen"
 }
