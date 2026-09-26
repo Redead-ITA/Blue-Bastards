@@ -11,7 +11,30 @@ class BlueBastardsAltHud : AltHud
 
 class BlueBastardsStatusBar : DoomStatusBar
 {
+	DynamicValueInterpolator mHealthInterpolator;
+	DynamicValueInterpolator mArmorInterpolator;
 	int hudwidth, hudheight;
+	
+	override void Init()
+	{
+		Super.Init();
+		mHealthInterpolator = DynamicValueInterpolator.Create(0, 0.5, 1, 16);
+		mArmorInterpolator = DynamicValueInterpolator.Create(0, 0.5, 1, 24);
+	}
+	override void NewGame ()
+	{
+		Super.NewGame();
+		mHealthInterpolator.Reset (0);
+		mArmorInterpolator.Reset (0);
+	}
+	override void Tick()
+	{
+		Super.Tick();
+		mHealthInterpolator.Update(CPlayer.health);
+		let armor = CPlayer.mo.FindInventory("BasicArmor", true);
+		if (armor != null) mArmorInterpolator.Update(armor.Amount);
+	}
+	
 	override void Draw (int state, double TicFrac)
 	{
 		if (state == HUD_StatusBar)
@@ -32,9 +55,8 @@ class BlueBastardsStatusBar : DoomStatusBar
 		DrawImage("graphics/hud_mugshot.png", (4, hudheight-36), DI_ITEM_OFFSETS);
 		DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (5,  hudheight-35), DI_ITEM_OFFSETS);
 		DrawImage("graphics/hud_healthnarmor.png", (44, hudheight-49), DI_ITEM_OFFSETS);
-		DrawString(mHUDFont, FormatNumber(CPlayer.health, 3), (44, -41));
-		let armor = CPlayer.mo.FindInventory("BasicArmor", true);
-		if (armor != null) DrawString(mHUDFont, FormatNumber(armor.Amount, 3), (44, -20));
+		DrawString(mHUDFont, FormatNumber(mHealthInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -41));
+		DrawString(mHUDFont, FormatNumber(mArmorInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -20));
 		
 		Inventory ammotype1, ammotype2;
 		[ammotype1, ammotype2] = GetCurrentAmmo();
