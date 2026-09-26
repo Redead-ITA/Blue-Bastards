@@ -116,7 +116,7 @@ SPOT_SHTCLASSIC= "''The Classic''";
 SPOT_DEV = "Devastator";
 SPOT_ROCKET = "M202 Incendiary Launcher";
 SPOT_NAVAL = "''Portable'' Naval Gun";
-SPOT_M249 = "M249"
+SPOT_M249 = "M249";
 SPOT_LASER = "Laser Gun";
 SPOT_MOFFOBLI = "''Moff Obliterator'' Mark M07H";
 
@@ -274,7 +274,7 @@ SPOT_ROCKET = "Podpalająca Wyrzutnia M202";
 SPOT_NAVAL = "''Przenośne'' Działo morskie";
 SPOT_LASER = "Karabin Laserowy";
 SPOT_MOFFOBLI = "''Ćma Obliterator'' Mark. CM4";
-SPOT_M249 = "M249"
+SPOT_M249 = "M249";
 
 KICKYDICKY = "Kop";
 
