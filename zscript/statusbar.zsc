@@ -11,4 +11,66 @@ class BlueBastardsAltHud : AltHud
 
 class BlueBastardsStatusBar : DoomStatusBar
 {
+	int hudwidth, hudheight;
+	override void Draw (int state, double TicFrac)
+	{
+		if (state == HUD_StatusBar)
+		{
+			BeginStatusBar();
+			DrawMainBar (TicFrac);
+		}
+		else if (state == HUD_Fullscreen)
+		{
+			BeginHUD();
+			DrawFullScreenBullshit ();
+		}
+	}
+	
+	protected void DrawFullScreenBullshit ()
+	{
+		Vector2 iconbox = (40, 20);
+		DrawImage("graphics/hud_mugshot.png", (4, hudheight-36), DI_ITEM_OFFSETS);
+		DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (5,  hudheight-35), DI_ITEM_OFFSETS);
+		DrawString(mHUDFont, FormatNumber(CPlayer.health, 3), (44, -20));
+
+		let armor = CPlayer.mo.FindInventory("BasicArmor", true);
+		if (armor != null && armor.Amount > 0)
+		{
+			DrawInventoryIcon(armor, (20, -22));
+			DrawString(mHUDFont, FormatNumber(armor.Amount, 3), (44, -40));
+		}
+		Inventory ammotype1, ammotype2;
+		[ammotype1, ammotype2] = GetCurrentAmmo();
+		int invY = -20;
+		if (ammotype1 != null)
+		{
+			DrawInventoryIcon(ammotype1, (-14, -4));
+			DrawString(mHUDFont, FormatNumber(ammotype1.Amount, 3), (-30, -20), DI_TEXT_ALIGN_RIGHT);
+			invY -= 20;
+		}
+		if (ammotype2 != null && ammotype2 != ammotype1)
+		{
+			DrawInventoryIcon(ammotype2, (-14, invY + 17));
+			DrawString(mHUDFont, FormatNumber(ammotype2.Amount, 3), (-30, invY), DI_TEXT_ALIGN_RIGHT);
+			invY -= 20;
+		}
+		if (!isInventoryBarVisible() && !Level.NoInventoryBar && CPlayer.mo.InvSel != null)
+		{
+			DrawInventoryIcon(CPlayer.mo.InvSel, (-14, invY + 17), DI_DIMDEPLETED);
+			DrawString(mHUDFont, FormatNumber(CPlayer.mo.InvSel.Amount, 3), (-30, invY), DI_TEXT_ALIGN_RIGHT);
+		}
+		if (deathmatch)
+		{
+			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 3), (-3, 1), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
+		}
+		else
+		{
+			DrawFullscreenKeys();
+		}
+
+		if (isInventoryBarVisible())
+		{
+			DrawInventoryBar(diparms, (0, 0), 7, DI_SCREEN_CENTER_BOTTOM, HX_SHADOW);
+		}
+	}
 }
