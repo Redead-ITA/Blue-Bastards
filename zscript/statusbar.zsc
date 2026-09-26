@@ -52,9 +52,9 @@ class BlueBastardsStatusBar : DoomStatusBar
 	protected void DrawFullScreenBullshit ()
 	{
 		Vector2 iconbox = (40, 20);
-		DrawImage("graphics/hud_mugshot.png", (4, hudheight-36), DI_ITEM_OFFSETS);
-		DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (5,  hudheight-35), DI_ITEM_OFFSETS);
-		DrawImage("graphics/hud_healthnarmor.png", (44, hudheight-49), DI_ITEM_OFFSETS);
+		DrawImage("graphics/hud_mugshot.png", (4,-36), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		DrawTexture(GetMugShot(5,Mugshot.XDEATHFACE), (5, -35), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		DrawImage("graphics/hud_healthnarmor.png", (44,-49), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
 		DrawString(mHUDFont, FormatNumber(mHealthInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -41));
 		DrawString(mHUDFont, FormatNumber(mArmorInterpolator.GetValue(), 3, 3, FNF_FILLZEROS), (48, -20));
 		
@@ -91,5 +91,29 @@ class BlueBastardsStatusBar : DoomStatusBar
 		{
 			DrawInventoryBar(diparms, (0, 0), 7, DI_SCREEN_CENTER_BOTTOM, HX_SHADOW);
 		}
+	}
+
+	override void DrawFullscreenKeys()
+	{
+		bool locks[6];
+		String image;
+		for(int i = 0; i < 6; i++) locks[i] = CPlayer.mo.CheckKeys(i + 1, false, true);
+		// key 1
+		if (locks[1] && locks[4]) image = "STKEYS6";
+		else if (locks[1]) image = "STKEYS0";
+		else if (locks[4]) image = "STKEYS3";
+		DrawImage(image, (92, -28), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		// key 2
+		if (locks[2] && locks[5]) image = "STKEYS7";
+		else if (locks[2]) image = "STKEYS1";
+		else if (locks[5]) image = "STKEYS4";
+		else image = "";
+		DrawImage(image, (92, -20), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		// key 3
+		if (locks[0] && locks[3]) image = "STKEYS8";
+		else if (locks[0]) image = "STKEYS2";
+		else if (locks[3]) image = "STKEYS5";
+		else image = "";
+		DrawImage(image, (92, -12), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
 	}
 }
