@@ -120,6 +120,11 @@ weapons/kick2 "sounds/weapons/KICKHIT2.ogg"
 weapons/kick3 "sounds/weapons/KICKHIT3.ogg"
 $random weapons/kick {weapons/kick1 weapons/kick2 weapons/kick3}
 
+weapons/punch/hitwall1 "sounds/weapons/BodyHit-1.wav"
+weapons/punch/hitwall2 "sounds/weapons/BodyHit-2.wav"
+weapons/punch/hitwall3 "sounds/weapons/BodyHit-3.wav"
+$random weapons/punch/hitwall {weapons/punch/hitwall1 weapons/punch/hitwall2 weapons/punch/hitwall3}
+
 misc/drink "sounds/misc/drink.ogg"
 misc/gulp "sounds/misc/gulp.wav"
 misc/drink_alt "sounds/misc/drink_hardtime.wav"

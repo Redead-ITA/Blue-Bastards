@@ -61,7 +61,7 @@ class SpotMallet : BlueBastardWeapon
 			{
 				dmg *= 10;
 			}
-			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
+			A_CustomPunch(dmg, norandom:true, pufftype:"BlueBastardPunchPuff", range: meleeRange + 20, meleesound: "weapons/mallet", misssound: "weapons/mallet/miss");
 		}
 		MALL HIJ 1 A_SetAngle(self.angle - 4, SPF_INTERPOLATE);
 		TNT1 A 10;
