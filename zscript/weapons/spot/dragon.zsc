@@ -101,28 +101,16 @@ class BBSpot_Dragon_Claws : BlueBastardWeapon
         }
 		stop;
     Claw_Left:
-        DGCL AB 1;
-        DGCL C 1{
-			int dmg = random(5,15);
-			if (FindInventory("PowerStrength"))
-			{
-				dmg *= 10;
-			}
-			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "imp/melee", misssound: "weapons/mallet/miss");
-		}
+        DGCL A 1 A_PlaySound("weapons/swing", CHAN_AUTO);
+		DGCL B 1;
+        DGCL C 1 A_CustomPunch(random(50,150), norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/rip");
         DGCL DE 1;
         DCWR FDB 1 A_Refire("Fire");
         Goto RealReady;
     Claw_Right:
-        DGCR AB 1;
-        DGCR C 1{
-			int dmg = random(5,15);
-			if (FindInventory("PowerStrength"))
-			{
-				dmg *= 10;
-			}
-			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "imp/melee", misssound: "weapons/mallet/miss");
-		}
+        DGCL A 1 A_PlaySound("weapons/swing", CHAN_AUTO);
+		DGCL B 1;
+        DGCR C 1 A_CustomPunch(random(50,150), norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/rip");
         DGCR DE 1;
         DCWR FDB 1 A_Refire("Fire");
         Goto RealReady;
