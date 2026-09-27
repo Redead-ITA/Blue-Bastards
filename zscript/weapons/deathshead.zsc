@@ -5,7 +5,6 @@
 #include "./deathshead/rockets.zsc"//etc
 #include "./deathshead/cells.zsc"//etc
 
-
 mixin class BBDeathsheadWeapon //the mixing classes are classes you add in to the class, which is great for more minor stuff.
 {
 	default
