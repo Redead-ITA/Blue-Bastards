@@ -8,7 +8,7 @@ class Dragon_Spot_Transform : CustomInventory {
 
     action void TryTransform()
     {
-        A_Print("Attempting To Transform");
+        A_Print("$SPOT_TRANSFORM_INIT", 5);
         let ppawn = PlayerPawn(self);
 
         if (!ppawn){
@@ -33,12 +33,12 @@ class Dragon_Spot_Transform : CustomInventory {
 class BBSpot_Dragon_Claws : BlueBastardWeapon 
 {
     mixin BBSpotWeapon;
-
     int which_claw;
 
     Default
 	{
 		+WEAPON.MELEEWEAPON
+        Tag " ";
 
         Weapon.BobStyle "InverseSmooth";
 		Weapon.BobSpeed 2.5;
@@ -72,7 +72,6 @@ class BBSpot_Dragon_Claws : BlueBastardWeapon
             invoker.which_claw += 1;
             invoker.which_claw = invoker.which_claw % 2;
 
-            // Check which claw to use, programmed this in so 
             switch(invoker.which_claw)
             {
                 case 0:

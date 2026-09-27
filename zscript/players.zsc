@@ -13,12 +13,11 @@ class Spot : DoomPlayer
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.Portrait "PRT_SPOT";
 
-		Player.StartItem "Dragon_Spot_Transform";
+		//Player.StartItem "Dragon_Spot_Transform";
 		Player.StartItem "SpotLevelEnter";
 		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotMallet";
 		Player.StartItem "SpotKicky";
-		Player.StartItem "Fist";
 		Player.StartItem "Clip", 50;
 		
 		Player.WeaponSlot 1, "SpotMallet", "SpotChainsaw";

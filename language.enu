@@ -120,6 +120,9 @@ SPOT_M249 = "M249";
 SPOT_LASER = "Laser Gun";
 SPOT_MOFFOBLI = "''Moff Obliterator'' Mark M07H";
 
+SPOT_TRANSFORM_TIP = "Press %s to transform into a dragon.";
+SPOT_TRANSFORM_INIT = "You feel like your heart is about to blow. \n You feel a very deep hatred towards anything that lives.";
+
 KICKYDICKY = "Kick";
 
 //Obituaries - Spot
@@ -275,6 +278,9 @@ SPOT_NAVAL = "''Przenośne'' Działo morskie";
 SPOT_LASER = "Karabin Laserowy";
 SPOT_MOFFOBLI = "''Ćma Obliterator'' Mark. CM4";
 SPOT_M249 = "M249";
+
+SPOT_TRANSFORM_TIP = "Naciśnij %s, aby się przekształcić w smoka.";
+SPOT_TRANSFORM_INIT = "Czujesz, że Twoje serce zaraz ci wysadzi.\n Czujesz bardzo głęboką nienawiść do wszystkiego, co żyje.";
 
 KICKYDICKY = "Kop";
 

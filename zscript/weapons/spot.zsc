@@ -29,6 +29,7 @@ class SpotDragon : Spot
 	}
 
 	// Bobbing when the player is transformed won't work otherwise unless i override this entire function.
+	// Taken from Playerpawn with modifiactions.
 	override void CalcHeight()
 	{
 		let player = self.player;
