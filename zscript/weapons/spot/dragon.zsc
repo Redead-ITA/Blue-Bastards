@@ -130,9 +130,11 @@ class BBDragonFireBall : Actor
 {
     Default{
         Projectile;
-        Speed 20;
+        Speed 40;
         Scale 2.0;
         Damage 3.0;
+
+        DeathSound "weapons/nuke/explode";
     }
 
     States
@@ -141,15 +143,42 @@ class BBDragonFireBall : Actor
             MANF AB 2;
             Loop;
         Death:
+            MISL A 0{
+                RadiusAttack(target,32,64);
+                for (int i=0; i < 4; i++){
+                    A_SpawnItemEx("NapalmFlame",0,0,0, random(-8,8),random(-8,8),0);
+                }
+            }
             MISL ABCD 2;
             Stop;
     }
 }
 
 // Will implement proper projectile soon, but it should be good for now
-class BBDragonFlame : NapalmFlame{
-    Default{
-        Projectile;
-        Speed 16;
-    }
+class BBDragonFlame : Actor{
+    Default
+	{
+		Radius 16;
+		Height 8;
+		Scale 0.5;
+		Speed 40;
+		Damage 75;
+		DeathSound "weapons/nuke/explode";
+		Obituary "$SPOT_KILL_NAPALM";
+		+RANDOMIZE
+		+ROCKETTRAIL
+		+ZDOOMTRANS
+	}
+
+	States
+	{
+		Spawn:
+			NFRL A 0;
+		Death:
+			NFRL ACEGIK 2 bright{
+				RadiusAttack(target,16,16);
+			}
+			NFRD ABCDEFGHIJKLMNO 2 bright RadiusAttack(target,15,32, "none", RADF_THRUSTLESS);
+			Stop;
+	}
 }
