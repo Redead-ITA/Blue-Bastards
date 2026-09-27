@@ -21,14 +21,14 @@ class BlueBastardHealthBonus : HealthBonus
 	}
 }
 
-class BlueBastardsBerserk : CustomInventory Replaces Berserk{
+class BlueBastardsBerserk : CustomInventory Replaces Berserk {
 	Default
 	{
 		+COUNTITEM
 		+INVENTORY.ALWAYSPICKUP
 		+INVENTORY.ISHEALTH
 		Inventory.PickupMessage "$GOTBERSERK";
-		Inventory.PickupSound "misc/p_pkup";
+		Inventory.PickupSound "misc/berserk";
 	}
 
 	override bool TryPickup (in out Actor toucher)
