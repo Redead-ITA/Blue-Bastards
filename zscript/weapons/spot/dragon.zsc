@@ -126,7 +126,8 @@ class BBSpot_Dragon_Claws : BlueBastardWeapon
 	}
 }
 
-class BBDragonFireBall : Projectile{
+class BBDragonFireBall : Actor
+{
     Default{
         Projectile;
         Speed 20;
