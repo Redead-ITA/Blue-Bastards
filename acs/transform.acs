@@ -10,6 +10,9 @@ Script "Transform" ENTER
 			if (CheckInventory("Dragon_Spot_Transform"))
 			{
 				UseInventory("Dragon_Spot_Transform");
+				Delay(945);
+				GiveInventory("Dragon_Spot_Transform_End",1);
+				UseInventory("Dragon_Spot_Transform_End");
 			}
 		}
 	}

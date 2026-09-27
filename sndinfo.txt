@@ -159,6 +159,9 @@ misc/drop2 "sounds/misc/weapon_impact_hard2.wav"
 misc/drop3 "sounds/misc/weapon_impact_hard3.wav"
 $random misc/drop {misc/drop1 misc/drop2 misc/drop3}
 
+misc/protect "sounds/weapons/protect.wav"
+misc/protect/end "sounds/weapons/protect2.wav"
+
 misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
 misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"
 misc/metalslug/hmg  "sounds/weapons/metalslug_wpnhmg.wav"

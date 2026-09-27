@@ -16,7 +16,7 @@ class Dragon_Spot_Transform : CustomInventory {
         }
 
         if (ppawn.Alternative == null){
-            A_PlaySound("misc/berserk");
+            A_PlaySound("misc/protect", CHAN_AUTO);
             A_Morph("SpotDragon", 35 * 30, MRF_FULLHEALTH);
         }
     }
@@ -24,6 +24,22 @@ class Dragon_Spot_Transform : CustomInventory {
     States {
         Use:
             TNT1 A 0 TryTransform();
+            stop;
+    }
+}
+
+// this is atrocious lol
+class Dragon_Spot_Transform_End : CustomInventory {
+    mixin BBSpotWeapon;
+    Default
+	{
+		Tag " ";
+		+INVENTORY.UNDROPPABLE
+	}
+
+    States {
+        Use:
+            TNT1 A 0 A_PlaySound("misc/protect/end", CHAN_AUTO);
             stop;
     }
 }
