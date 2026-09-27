@@ -116,7 +116,7 @@ class SuperShotgunReplacement : CustomInventory replaces SuperShotgun
 				  break;
 				}
 			}
-			if (CheckInventory("DeathsheadFist", 1)) A_GiveInventory("DeathsheadShotgun", 1, false);
+			if (CheckInventory("DeathsheadFist", 1)) A_GiveInventory("DeathsheadSuperShotgun", 1, false);
 		}
 		Stop;
 	}
