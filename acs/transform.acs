@@ -4,15 +4,18 @@
 Script "Transform" ENTER
 {
 	while (True){
-		Delay(1);
-		if (GetPlayerInput(-1,INPUT_OLDBUTTONS)&BT_RELOAD)
-		{
-			if (CheckInventory("Dragon_Spot_Transform"))
+		bool allow_spot_dragon = GetCvar("allow_spot_dragon")
+			Delay(1);
+			if (allow_spot_dragon == true){
+			if (GetPlayerInput(-1,INPUT_OLDBUTTONS)&BT_RELOAD)
 			{
-				UseInventory("Dragon_Spot_Transform");
-				Delay(945);
-				GiveInventory("Dragon_Spot_Transform_End",1);
-				UseInventory("Dragon_Spot_Transform_End");
+				if (CheckInventory("Dragon_Spot_Transform"))
+				{
+					UseInventory("Dragon_Spot_Transform");
+					Delay(945);
+					GiveInventory("Dragon_Spot_Transform_End",1);
+					UseInventory("Dragon_Spot_Transform_End");
+				}
 			}
 		}
 	}

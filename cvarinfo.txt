@@ -1,2 +1,3 @@
 server bool skip_intros = false;
+server bool allow_spot_dragon = true;
 user bool use_spot_alt_voice = false;
