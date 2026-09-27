@@ -111,6 +111,9 @@ ACE_ROCKET = "Missile Launcher Mark W4N6";
 ACE_PLASMA = "Heavy Plasma Cannon";
 ACE_BFG = "BFG-Nine-Kay Plus-Plus";
 
+ACE_TRANSFORM_TIP = "Press %s to transform into the Mothman.";
+ACE_TRANSFORM_INIT = "You start feeling the inner rage of your ancestors...";
+
 SPOT_CHAINSAW = "Chainsaw";
 SPOT_MALLET = "Comically Sized Mallet";
 SPOT_REV = ".600 Nitro Express Revolver";

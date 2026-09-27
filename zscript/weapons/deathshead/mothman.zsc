@@ -1,0 +1,34 @@
+class Mothman_Transform : CustomInventory {
+    mixin BBDeathsheadWeapon;
+    Default
+	{
+		Tag " ";
+		+INVENTORY.UNDROPPABLE
+	}
+
+    action void TryTransform()
+    {
+        A_Print("$ACE_TRANSFORM_INIT", 5);
+        let ppawn = PlayerPawn(self);
+
+        if (!ppawn){
+            return;
+        }
+
+        if (ppawn.Alternative == null){
+            A_PlaySound("misc/protect", CHAN_AUTO);
+            A_Morph("DeathsheadMothman", 35 * 30, MRF_FULLHEALTH);
+        }
+    }
+
+    States {
+        Use:
+            TNT1 A 0 TryTransform();
+            stop;
+    }
+}
+
+// planning to add transformation wearing off messages with this
+class Mothman_Transform_End : Dragon_Spot_Transform_End {
+    mixin BBDeathsheadWeapon;
+}

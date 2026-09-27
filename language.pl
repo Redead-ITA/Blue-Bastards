@@ -112,6 +112,9 @@ ACE_ROCKET = "Wyrzutnia Rakiet Mark. W4N6";
 ACE_PLASMA = "Ciężkie Działo Plazmowe";
 ACE_BFG = "BFG-Dziewięć-Ka Plus-Plus";
 
+ACE_TRANSFORM_TIP = "Wciśnij %s, aby się przekształcić w Mothmana.";
+ACE_TRANSFORM_INIT = "Czujesz wewnętrzną złość twych przodków...";
+
 SPOT_CHAINSAW = "Piła Łańcuchowa";
 SPOT_MALLET = "Komicznie Wielki Młot";
 SPOT_REV = "Rewolwer Nitro Express .600";
@@ -124,7 +127,7 @@ SPOT_LASER = "Karabin Laserowy";
 SPOT_MOFFOBLI = "''Ćma Obliterator'' Mark. CM4";
 SPOT_M249 = "M249";
 
-SPOT_TRANSFORM_TIP = "Naciśnij %s, aby się przekształcić w smoka.";
+SPOT_TRANSFORM_TIP = "Wciśnij %s, aby się przekształcić w smoka.";
 SPOT_TRANSFORM_INIT = "Czujesz, że Twoje serce zaraz ci wysadzi.\n Czujesz bardzo głęboką nienawiść do wszystkiego, co żyje.";
 
 KICKYDICKY = "Kop";
