@@ -15,8 +15,8 @@ class Spot : DoomPlayer
 
 		//Player.StartItem "Dragon_Spot_Transform";
 		Player.StartItem "SpotLevelEnter";
-		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotMallet";
+		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotKicky";
 		Player.StartItem "Clip", 50;
 		
