@@ -7,6 +7,16 @@ weapons/claw/swing "sounds/weapons/fists_raise_fists_01.wav"
 weapons/claw/impact "sounds/weapons/claw_impact.ogg"
 weapons/claw/hitwall "sounds/weapons/knife_hitwall1.wav"
 $limit weapons/claw/hitwall 0
+weapons/claw/rip1 "sounds/weapons/SwordHit-1.wav"
+weapons/claw/rip2 "sounds/weapons/SwordHit-2.wav"
+weapons/claw/rip3 "sounds/weapons/SwordHit-3.wav"
+weapons/claw/rip4 "sounds/weapons/SwordHit-4.wav"
+weapons/claw/rip5 "sounds/weapons/SwordHit-5.wav"
+weapons/claw/rip6 "sounds/weapons/SwordHit-6.wav"
+weapons/claw/rip7 "sounds/weapons/SwordHit-7.wav"
+weapons/claw/rip8 "sounds/weapons/SwordHit-8.wav"
+weapons/claw/rip9 "sounds/weapons/SwordHit-9.wav"
+$random weapons/claw/rip {weapons/claw/rip1 weapons/claw/rip2 weapons/claw/rip3 weapons/claw/rip4 weapons/claw/rip5 weapons/claw/rip6 weapons/claw/rip7 weapons/claw/rip8 weapons/claw/rip9}
 
 weapons/shotgun/pump "sounds/weapons/shotgunpump1.ogg"
 weapons/shotgun/fire "sounds/weapons/ssg_fire_04.wav"
@@ -163,6 +173,9 @@ misc/drop1 "sounds/misc/weapon_impact_hard1.wav"
 misc/drop2 "sounds/misc/weapon_impact_hard2.wav"
 misc/drop3 "sounds/misc/weapon_impact_hard3.wav"
 $random misc/drop {misc/drop1 misc/drop2 misc/drop3}
+
+misc/protect "sounds/weapons/protect.wav"
+misc/protect/end "sounds/weapons/protect2.wav"
 
 misc/metalslug/generic  "sounds/weapons/metalslug_wpn.wav"
 misc/metalslug/okay  "sounds/weapons/metalslug_wpnok.wav"

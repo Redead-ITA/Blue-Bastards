@@ -12,10 +12,11 @@ class Spot : DoomPlayer
 		Player.CrouchSprite "SPCR";
 		Player.Colorset 0, "$TXT_COLOR_BLUE", 0xC2, 0xCB,  0xCF;
 		Player.Portrait "PRT_SPOT";
-		
+
+		//Player.StartItem "Dragon_Spot_Transform";
 		Player.StartItem "SpotLevelEnter";
-		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotMallet";
+		Player.StartItem "SpotExpress600";
 		Player.StartItem "SpotKicky";
 		Player.StartItem "Clip", 50;
 		
@@ -84,7 +85,7 @@ class Spot : DoomPlayer
 	}
 }
 
-class Deathshead : DoomPlayer
+class Deathshead : DoomPlayer replaces DoomPlayer
 {
 	Default
 	{

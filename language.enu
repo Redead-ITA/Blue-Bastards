@@ -12,6 +12,9 @@ MNU_CHOOSECLASS = "PICK YOUR BLUE BASTARD!";
 MNU_CHOOSESKILL = "HOW TOUGH?";
 MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
 MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
+MNU_ALLOW_TRANSFORM = "Allow Transformations";
+MNU_ALLOW_TRANSFORM_DESC = "Allow the player to morph into a stronger version of themselves temporarly after picking up the berserk pack.";
+MNU_ALLOW_TRANSFORM_DESC2 = "Currently only Spot HAS THIS.";
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
@@ -120,6 +123,9 @@ SPOT_M249 = "M249";
 SPOT_LASER = "Laser Gun";
 SPOT_MOFFOBLI = "''Moff Obliterator'' Mark M07H";
 
+SPOT_TRANSFORM_TIP = "Press %s to transform into a dragon.";
+SPOT_TRANSFORM_INIT = "You feel like your heart is about to blow. \n You feel a very deep hatred towards anything that lives.";
+
 KICKYDICKY = "Kick";
 
 //Obituaries - Spot
@@ -168,6 +174,9 @@ MNU_CHOOSESKILL = "JAK NIEBIESKO?";
 MNU_RANDOM = "Losowy";
 MNU_SPOTALT_VOICE = "Użyj alternatywnego głosu Spota";
 MNU_SPOTALT_VOICE_DESC = "Użyj nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt uroczy.";
+MNU_ALLOW_TRANSFORM = "Zezwalaj na transformacje";
+MNU_ALLOW_TRANSFORM_DESC = "Pozwala graczowi tymczasowo przemienić się w silniejszą wersję siebie po podniesieniu paczki szału.";
+MNU_ALLOW_TRANSFORM_DESC2 = "Obecnie tylko Spot MA TO.";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
@@ -275,6 +284,9 @@ SPOT_NAVAL = "''Przenośne'' Działo morskie";
 SPOT_LASER = "Karabin Laserowy";
 SPOT_MOFFOBLI = "''Ćma Obliterator'' Mark. CM4";
 SPOT_M249 = "M249";
+
+SPOT_TRANSFORM_TIP = "Naciśnij %s, aby się przekształcić w smoka.";
+SPOT_TRANSFORM_INIT = "Czujesz, że Twoje serce zaraz ci wysadzi.\n Czujesz bardzo głęboką nienawiść do wszystkiego, co żyje.";
 
 KICKYDICKY = "Kop";
 

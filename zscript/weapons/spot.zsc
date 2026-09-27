@@ -4,6 +4,7 @@
 #include "./spot/shells.zsc" //Includes all weapons that use shells.
 #include "./spot/rockets.zsc"//etc
 #include "./spot/cells.zsc"//etc
+#include "./spot/dragon.zsc"//etc
 
 
 
@@ -12,5 +13,187 @@ mixin class BBSpotWeapon //the mixing classes are classes you add in to the clas
 	default
 	{
 		Inventory.RestrictedTo "Spot";
+	}
+}
+
+class SpotDragon : Spot
+{
+	Default
+	{
+		Player.WeaponSlot 1, "BBSpot_Dragon_Claws";
+		Player.MorphWeapon "BBSpot_Dragon_Claws";
+		Player.Face "DRG";
+		Speed 1.1;
+		Player.ViewBob 0.5;
+		Player.ViewBobSpeed 1.07;
+		+INVULNERABLE;
+	}
+
+	// Bobbing when the player is transformed won't work otherwise unless i override this entire function.
+	// Taken from Playerpawn with modifiactions.
+	override void CalcHeight()
+	{
+		let player = self.player;
+		double angle;
+		double bob;
+		bool still = false;
+
+		// 
+
+		if (player.cheats & CF_NOCLIP2)
+		{
+			player.bob = 0;
+		}
+		else if (bNoGravity && !player.onground)
+		{
+			player.bob = min(abs(0.5 * FlyBob), MAXBOB);
+		}
+		else
+		{
+			player.bob = player.Vel dot player.Vel;
+			if (player.bob == 0)
+			{
+				still = true;
+			}
+			else
+			{
+				player.bob *= player.GetMoveBob();
+
+				if (player.bob > MAXBOB)
+					player.bob = MAXBOB;
+			}
+		}
+
+		double defaultviewheight = ViewHeight + player.crouchviewdelta;
+
+		if (player.cheats & CF_NOVELOCITY)
+		{
+			player.viewz = pos.Z + defaultviewheight;
+
+			if (player.viewz > ceilingz-4)
+				player.viewz = ceilingz-4;
+
+			return;
+		}
+
+		if (bFly && !GetCVar("FViewBob"))
+		{
+			bob = 0;
+		}
+		else if (still)
+		{
+			if (player.health > 0)
+			{
+				angle = player.BobTimer / (120 * TICRATE / 35.) * 360.;
+				bob = player.GetStillBob() * sin(angle);
+			}
+			else
+			{
+				bob = 0;
+			}
+		}
+		else
+		{
+			angle = player.BobTimer / (ViewBobSpeed * TICRATE / 35.) * 360.;
+			bob = player.bob * sin(angle) * (waterlevel > 1 ? 0.25f : 0.5f);
+		}
+
+		// move viewheight
+		if (player.playerstate == PST_LIVE)
+		{
+			player.viewheight += player.deltaviewheight;
+
+			if (player.viewheight > defaultviewheight)
+			{
+				player.viewheight = defaultviewheight;
+				player.deltaviewheight = 0;
+			}
+			else if (player.viewheight < (defaultviewheight/2))
+			{
+				player.viewheight = defaultviewheight/2;
+				if (player.deltaviewheight <= 0)
+					player.deltaviewheight = 1 / 65536.;
+			}
+
+			if (player.deltaviewheight)
+			{
+				player.deltaviewheight += 0.25;
+				if (!player.deltaviewheight)
+					player.deltaviewheight = 1/65536.;
+			}
+		}
+
+		//if (Alternative)
+		//{
+		//	bob = 0;
+		//}
+		player.viewz = pos.Z + player.viewheight + (bob * clamp(ViewBob, 0. , 1.5)); // [SP] Allow DECORATE changes to view bobbing speed.
+
+		if (Floorclip && player.playerstate != PST_DEAD
+			&& pos.Z <= floorz)
+		{
+			player.viewz -= Floorclip;
+		}
+		if (player.viewz > ceilingz - 4)
+		{
+			player.viewz = ceilingz - 4;
+		}
+		if (player.viewz < floorz + 4)
+		{
+			player.viewz = floorz + 4;
+		}
+	}
+
+	States
+	{
+	Spawn:
+		SPOT A -1;
+		Loop;
+	See:
+		SPOT ABCD 4;
+		Loop;
+	Missile:
+		SPOT E 12;
+		Goto Spawn;
+	Melee:
+		SPOT F 6 BRIGHT;
+		Goto Missile;
+	Pain:
+		SPOT G 4;
+		SPOT G 4 A_Pain;
+		Goto Spawn;
+	Death:
+		SPOT H 0 A_PlayerSkinCheck("AltSkinDeath");
+	Death1:
+		SPOT H 10;
+		SPOT I 10 A_PlayerScream;
+		SPOT J 10 A_NoBlocking;
+		SPOT KLM 10;
+		SPOT N -1;
+		Stop;
+	XDeath:
+		SPOT O 0 A_PlayerSkinCheck("AltSkinXDeath");
+	XDeath1:
+		SPOT O 5;
+		SPOT P 5 A_XScream;
+		SPOT Q 5 A_NoBlocking;
+		SPOT RSTUV 5;
+		SPOT W -1;
+		Stop;
+	AltSkinDeath:
+		SPOT H 6;
+		SPOT I 6 A_PlayerScream;
+		SPOT JK 6;
+		SPOT L 6 A_NoBlocking;
+		SPOT MNO 6;
+		SPOT P -1;
+		Stop;
+	AltSkinXDeath:
+		SPOT Q 5 A_PlayerScream;
+		SPOT R 0 A_NoBlocking;
+		SPOT R 5 A_SkullPop;
+		SPOT STUVWX 5;
+		SPOT Y -1;
+		Stop;
 	}
 }
