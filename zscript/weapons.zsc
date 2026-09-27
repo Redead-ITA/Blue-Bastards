@@ -22,7 +22,6 @@ Class BlueBastardWeapon : Weapon //This will affect everyone's weapon if the wea
 
 }
 
-
 class BlueBastardBulletPuff : BulletPuff
 {
 	Default
@@ -54,22 +53,10 @@ class BlueBastardBulletPuff : BulletPuff
 		Stop;
 	}
 }
-
-class BlueBastardBulletPuffSaw : BlueBastardBulletPuff
-{
-	Default
-	{
-		+EXTREMEDEATH
-	}
-}
-
-class BlueBastardBulletPuffStab : BlueBastardBulletPuff
-{
-	States
-	{
+class BlueBastardBulletPuffStab : BlueBastardBulletPuff {
+	States {
 	Crash:
-		TNT1 A 0 
-		{
+		TNT1 A 0 {
 			scale = default.scale*random(1.0,1.5);
 			A_StartSound("weapons/claw/hitwall",CHAN_AUTO,CHANF_DEFAULT,0.8);
 		}
@@ -77,11 +64,6 @@ class BlueBastardBulletPuffStab : BlueBastardBulletPuff
 		Stop;
 	}
 }
-
-class BlueBastardKickPuff : BulletPuff
-{
-	Default
-	{
-		AttackSound "weapons/kick";
-	}
-}
+class BlueBastardBulletPuffSaw : BlueBastardBulletPuff { Default { +EXTREMEDEATH } }
+class BlueBastardKickPuff : BulletPuff { Default { AttackSound "weapons/kick";} }
+class BlueBastardPunchPuff : BulletPuff { Default { AttackSound "weapons/punch/hitwall";} }
