@@ -156,6 +156,24 @@ class BlueBastardsStatusBar : DoomStatusBar
 		{
 			DrawInventoryBar(diparms, (0, 0), 7, DI_SCREEN_CENTER_BOTTOM, HX_SHADOW);
 		}
+
+		bool drawthatshit = false;
+		// it's a fuckin' mess
+		if (CPlayer.mo.FindInventory("PowerStrength")||CPlayer.mo.FindInventory("PowerInvulnerable")||
+		CPlayer.mo.FindInventory("PowerBuddha")||CPlayer.mo.FindInventory("PowerInvisibility")||
+		CPlayer.mo.FindInventory("PowerProtection")||CPlayer.mo.FindInventory("PowerIronFeet")) DrawImage("graphics/hud_powerup.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		if (CPlayer.mo.FindInventory("PowerStrength")) {
+			DrawImage("graphics/hud_powerup_berserk.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		}
+		if (CPlayer.mo.FindInventory("PowerInvulnerable")||CPlayer.mo.FindInventory("PowerBuddha")) {
+			DrawImage("graphics/hud_powerup_god.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		}
+		if (CPlayer.mo.FindInventory("PowerInvisibility")) {
+			DrawImage("graphics/hud_powerup_invis.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		}
+		if (CPlayer.mo.FindInventory("PowerProtection")||CPlayer.mo.FindInventory("PowerIronFeet")) {
+			DrawImage("graphics/hud_powerup_protection.png", (4,-44), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+		}
 	}
 
 	override void DrawFullscreenKeys()
