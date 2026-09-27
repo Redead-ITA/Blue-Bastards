@@ -96,6 +96,7 @@ class BBSpot_Dragon_Claws : BlueBastardWeapon
 			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "imp/melee", misssound: "weapons/mallet/miss");
 		}
         DGCL DE 1;
+        DCWR FDB 1 A_Refire("Fire");
         Goto RealReady;
     Claw_Right:
         DGCR AB 1;
@@ -108,6 +109,7 @@ class BBSpot_Dragon_Claws : BlueBastardWeapon
 			A_CustomPunch(dmg, norandom:true, range: meleeRange + 20, meleesound: "imp/melee", misssound: "weapons/mallet/miss");
 		}
         DGCR DE 1;
+        DCWR FDB 1 A_Refire("Fire");
         Goto RealReady;
     AltFire:
         DGFR ABC 2;
