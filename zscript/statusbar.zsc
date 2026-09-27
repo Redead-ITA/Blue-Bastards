@@ -35,6 +35,8 @@ class BlueBastardsStatusBar : DoomStatusBar
 	
 	override void Draw (int state, double TicFrac)
 	{
+		// calling this causes the doom hud to redraw, which is not ideal
+		// but the crosshair doesn't draw too
 		//Super.Draw (state, TicFrac);
 		if (state == HUD_StatusBar)
 		{
@@ -163,7 +165,18 @@ class BlueBastardsStatusBar : DoomStatusBar
 	{
 		bool locks[6];
 		String image;
-		for(int i = 0; i < 6; i++) locks[i] = CPlayer.mo.CheckKeys(i + 1, false, true);
+		bool drawn = false;
+		for(int i = 0; i < 6; i++) 
+		{
+			locks[i] = CPlayer.mo.CheckKeys(i + 1, false, true);
+			// I'm too tired to find a better way to do this
+			// is there something to check if a value is in an array in zscript?
+			if (CPlayer.mo.CheckKeys(i + 1, false, true) && !drawn) 
+			{
+				drawn = true;
+				DrawImage("graphics/hud_key.png", (90,-30), DI_SCREEN_LEFT_BOTTOM|DI_ITEM_OFFSETS);
+			}
+		}
 		// key 1
 		if (locks[1] && locks[4]) image = "STKEYS6";
 		else if (locks[1]) image = "STKEYS0";
