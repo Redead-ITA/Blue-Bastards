@@ -148,7 +148,8 @@ class BlueBastardsStatusBar : DoomStatusBar
 		}
 		if (deathmatch)
 		{
-			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 3), (-3, 1), DI_TEXT_ALIGN_RIGHT, Font.CR_GOLD);
+			DrawImage("graphics/hud_score.png", (-50, 2), DI_SCREEN_RIGHT_TOP|DI_ITEM_OFFSETS);
+			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 3, 3, FNF_FILLZEROS), (-4, 3), DI_TEXT_ALIGN_RIGHT);
 		}
 		else
 		{
