@@ -41,23 +41,17 @@ class BlueBastardsBerserk : CustomInventory Replaces Berserk {
 			useok = Super.TryPickup (toucher);
 		}
 
-		if (allow_spot_dragon){
-			if (toucher.FindInventory("SpotMallet"))
-			{
-				toucher.A_GiveInventory("Dragon_Spot_Transform");
-				
-				let [k1, k2] = Bindings.GetKeysForCommand("+reload");
-				string s1 = Bindings.NameKeys(k1, k2);
-				string tip = String.Format(StringTable.Localize("$SPOT_TRANSFORM_TIP"), s1);
-				
-				toucher.A_Print(tip);
-				GoAwayAndDie();
+		if (useok) {
+			if (allow_spot_dragon) {
+				if (toucher.FindInventory("SpotMallet"))
+				{
+					toucher.A_GiveInventory("Dragon_Spot_Transform");
+					let [k1, k2] = Bindings.GetKeysForCommand("+reload");
+					string s1 = Bindings.NameKeys(k1, k2);
+					string tip = String.Format(StringTable.Localize("$SPOT_TRANSFORM_TIP"), s1);
+					toucher.A_Print(tip);
+				}
 			}
-		}
-
-
-		else if (useok)
-		{
 			GoAwayAndDie();
 		}
 		return useok;
