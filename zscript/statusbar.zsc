@@ -151,11 +151,7 @@ class BlueBastardsStatusBar : DoomStatusBar
 			DrawImage("graphics/hud_score.png", (-50, 2), DI_SCREEN_RIGHT_TOP|DI_ITEM_OFFSETS);
 			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 3, 3, FNF_FILLZEROS), (-4, 3), DI_TEXT_ALIGN_RIGHT);
 		}
-		else
-		{
-			DrawFullscreenKeys();
-		}
-
+		DrawFullscreenKeys();
 		if (isInventoryBarVisible())
 		{
 			DrawInventoryBar(diparms, (0, 0), 7, DI_SCREEN_CENTER_BOTTOM, HX_SHADOW);
