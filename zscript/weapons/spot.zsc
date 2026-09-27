@@ -22,6 +22,7 @@ class SpotDragon : Spot
 	{
 		Player.WeaponSlot 1, "BBSpot_Dragon_Claws";
 		Player.MorphWeapon "BBSpot_Dragon_Claws";
+		Player.Face "DRG";
 		Speed 1.1;
 		Player.ViewBob 0.5;
 		Player.ViewBobSpeed 1.07;
