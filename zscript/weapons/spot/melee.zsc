@@ -150,7 +150,7 @@ class SpotKicky : CustomInventory
 			{
 				dmg *= 6;
 			}
-			A_CustomPunch(dmg, norandom:true, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
+			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
 		}
         SKCK EFGHA 2;
         Stop;
@@ -163,7 +163,7 @@ class SpotKicky : CustomInventory
 			{
 				dmg *= 6;
 			}
-			A_CustomPunch(dmg, norandom:true, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
+			A_CustomPunch(dmg, norandom:true, flags: 0, pufftype: "BlueBastardKickPuff", range: meleeRange + 20, meleesound: "weapons/kick", misssound: "");
 		}
         SRDH DEFGH 2;
         Stop;
