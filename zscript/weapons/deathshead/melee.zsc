@@ -59,7 +59,10 @@ class DeathsheadFist : BlueBastardWeapon
 		ADFS A 2 A_ReFire;
 		Goto RealReady;
 	AltFire:
-		ADGB AB 2;
+		ADFS A 0 A_Jump(256, "AltFireRight", "AltFireLeft");
+	AltFireRight:
+		ADGB A 2;
+		ADGB B 1;
 		ADGB C 2 
 		{
 			int dmg = random(2,48);
@@ -69,8 +72,27 @@ class DeathsheadFist : BlueBastardWeapon
 			}
 			A_CustomPunch(dmg, norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/swing");
 		}
-		ADGB DE 2;
-		ADGB F 2 A_ReFire;
+		ADGB D 1;
+		ADGB E 2;
+		ADGB F 1;
+		ADGB G 2 A_ReFire;
+		Goto RealReady;
+	AltFireLeft:
+		ADGB H 2;
+		ADGB I 1;
+		ADGB J 2 
+		{
+			int dmg = random(2,48);
+			if (FindInventory("PowerStrength"))
+			{
+				dmg *= 2;
+			}
+			A_CustomPunch(dmg, norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/impact", misssound: "weapons/swing");
+		}
+		ADGB K 1;
+		ADGB L 2;
+		ADGB M 1;
+		TNT1 A 2 A_ReFire;
 		Goto RealReady;
 	Reload:
 		ADFK CD 2;
