@@ -15,7 +15,6 @@ MNU_SPOTALT_VOICE = "Użyj alternatywnego głosu Spota";
 MNU_SPOTALT_VOICE_DESC = "Użyj nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt uroczy.";
 MNU_ALLOW_TRANSFORM = "Zezwalaj na transformacje";
 MNU_ALLOW_TRANSFORM_DESC = "Pozwala graczowi tymczasowo przemienić się w silniejszą wersję siebie po podniesieniu paczki szału.";
-MNU_ALLOW_TRANSFORM_DESC2 = "Obecnie tylko Spot MA TO.";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
@@ -112,6 +111,9 @@ ACE_ROCKET = "Wyrzutnia Rakiet Mark. W4N6";
 ACE_PLASMA = "Ciężkie Działo Plazmowe";
 ACE_BFG = "BFG-Dziewięć-Ka Plus-Plus";
 
+ACE_TRANSFORM_TIP = "Wciśnij %s, aby się przekształcić w Mothmana.";
+ACE_TRANSFORM_INIT = "Czujesz wewnętrzną złość twych przodków...";
+
 SPOT_CHAINSAW = "Piła Łańcuchowa";
 SPOT_MALLET = "Komicznie Wielki Młot";
 SPOT_REV = "Rewolwer Nitro Express .600";
@@ -124,7 +126,7 @@ SPOT_LASER = "Karabin Laserowy";
 SPOT_MOFFOBLI = "''Ćma Obliterator'' Mark. CM4";
 SPOT_M249 = "M249";
 
-SPOT_TRANSFORM_TIP = "Naciśnij %s, aby się przekształcić w smoka.";
+SPOT_TRANSFORM_TIP = "Wciśnij %s, aby się przekształcić w smoka.";
 SPOT_TRANSFORM_INIT = "Czujesz, że Twoje serce zaraz ci wysadzi.\n Czujesz bardzo głęboką nienawiść do wszystkiego, co żyje.";
 
 KICKYDICKY = "Kop";
@@ -160,3 +162,5 @@ OB_ACE_CHAINSAW = "%o został@[ao_pl] zamienion@[adj_pl] na salsę przez piłę 
 OB_ACE_ROCKET = "%o został@[ao_pl] rozsadzon@[adj_pl] przez wyrzutnię rakiet %k.";
 OB_ACE_AUTOSHOTGUN = "%o został@[ao_pl] rozerwan@[adj_pl] przez autostrzelbę AA-12 %k.";
 OB_ACE_SAWNOFFS = "%o został@[ao_pl] rozerwan@[adj_pl] przez dubeltówki %k.";
+OB_ACE_MOTHMAN = "%o został@[ao_pl] spalon@[adj_pl] żywcem przez moce Mothmana %k.";
+OB_ACE_MOTHMAN_MELEE = "%o został@[ao_pl] rozciachan@[adj_pl] przez moce Mothmana %k.";
