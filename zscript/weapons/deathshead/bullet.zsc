@@ -6,9 +6,9 @@ class DeathsheadPistol : BlueBastardWeapon
 		Weapon.AmmoType "Clip";
 		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 1;
-		Weapon.BobRangeX 0.5;
+		
 		Weapon.BobSpeed 1.5;
-		Weapon.BobStyle "InverseSmooth";
+		
 		+WEAPON.NOAUTOFIRE
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_PISTOL";
@@ -58,9 +58,9 @@ class DeathsheadMAC10 : BlueBastardWeapon
 		Weapon.AmmoType "Clip";
 		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 1;
-		Weapon.BobRangeX 0.5;
+		
 		Weapon.BobSpeed 1.5;
-		Weapon.BobStyle "InverseSmooth";
+		
 		Tag "$ACE_MAC10";
 		Obituary "$OB_ACE_MAC10";
 		+INVENTORY.UNDROPPABLE
@@ -132,8 +132,9 @@ class DeathsheadSG550 : BlueBastardWeapon
 		Weapon.AmmoType "Clip";
 		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 2;
+		
 		Weapon.BobRangeX 1.25;
-		Weapon.BobStyle "InverseSmooth";
+		
 		+WEAPON.NOALERT
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_SG550";
@@ -239,8 +240,8 @@ class DeathsheadM4 : BlueBastardWeapon
 		Weapon.AmmoType2 "RocketAmmo";
 		Weapon.AmmoUse1 1;
 		Weapon.AmmoUse2 1;
-		Weapon.BobRangeY 0.5;
-		Weapon.BobStyle "InverseSmooth";
+		
+		
 		Tag "$ACE_M4";
 		Obituary "$OB_ACE_M4";
 		+INVENTORY.UNDROPPABLE

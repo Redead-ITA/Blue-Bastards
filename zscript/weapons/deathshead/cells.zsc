@@ -5,9 +5,9 @@ class DeathsheadPlasmaRifle : BlueBastardWeapon
 	{
 		Weapon.BobRangeX 1.25;
 		Weapon.BobRangeY 0.75;
-		Weapon.BobStyle "InverseSmooth";
 		Weapon.WeaponScaleX 0.9;
 		Weapon.WeaponScaleY 1.08;
+		
 		Weapon.AmmoType1 "Cell";
 		Weapon.AmmoUse1 5;
 		Weapon.AmmoType2 "Cell";
@@ -94,9 +94,10 @@ class DeathsheadBFG : BlueBastardWeapon
 		Weapon.AmmoType "Cell";
 		Weapon.AmmoUse 40;
 		Weapon.AmmoGive 40;
+		
 		Weapon.BobRangeX 1.5;
 		Weapon.BobRangeY 0.5;
-		Weapon.BobStyle "InverseSmooth";
+		
 		Tag "$ACE_BFG";
 		Obituary "$OB_ACE_BFG";
 		+INVENTORY.UNDROPPABLE

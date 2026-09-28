@@ -6,10 +6,7 @@ class SpotPlasmaRifle : BlueBastardWeapon
 		Weapon.AmmoType "Cell";
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 40;
-		Weapon.BobStyle "InverseSmooth";
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
+
 		+WEAPON.NOAUTOFIRE
 		+INVENTORY.UNDROPPABLE
 
@@ -68,10 +65,6 @@ class SpotBFG : BlueBastardWeapon
 		+WEAPON.NOAUTOFIRE;
 		+INVENTORY.UNDROPPABLE
 
-		Weapon.BobSpeed 1.75;
-		Weapon.BobRangeX 1.2;
-		Weapon.BobRangeY 0.6;
-		Weapon.BobStyle "InverseSmooth";
 
 		Tag "$SPOT_MOFFOBLI";
 	}
