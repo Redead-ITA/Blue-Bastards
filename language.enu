@@ -14,7 +14,6 @@ MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
 MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
 MNU_ALLOW_TRANSFORM = "Allow Transformations";
 MNU_ALLOW_TRANSFORM_DESC = "Allow the player to morph into a stronger version of themselves temporarly after picking up the berserk pack.";
-MNU_ALLOW_TRANSFORM_DESC2 = "Currently only Spot HAS THIS.";
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";

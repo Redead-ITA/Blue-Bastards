@@ -15,7 +15,6 @@ MNU_SPOTALT_VOICE = "Użyj alternatywnego głosu Spota";
 MNU_SPOTALT_VOICE_DESC = "Użyj nieco bardziej surowego głosu zamiast domyślnego, jeśli uważasz ten drugi za zbyt uroczy.";
 MNU_ALLOW_TRANSFORM = "Zezwalaj na transformacje";
 MNU_ALLOW_TRANSFORM_DESC = "Pozwala graczowi tymczasowo przemienić się w silniejszą wersję siebie po podniesieniu paczki szału.";
-MNU_ALLOW_TRANSFORM_DESC2 = "Obecnie tylko Spot MA TO.";
 
 // PLAYER_SPOT = "Spot"; może jesli znajde coś bo brzmi pobodnie uroczo po polsku
 PLAYER_DEATHSHEAD = "Trupiogłowy";
