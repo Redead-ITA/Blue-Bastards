@@ -43,7 +43,7 @@ class MothmanWhiskeyBottle : BlueBastardWeapon
 		+WEAPON.NOALERT
 		+INVENTORY.UNDROPPABLE
 		Tag "$ACE_FISTS";
-		Obituary "$OB_ACE_FISTS";
+		Obituary "$OB_ACE_MOTHMAN_MELEE";
 	}
 	States
 	{
@@ -72,5 +72,35 @@ class MothmanWhiskeyBottle : BlueBastardWeapon
 		MFMW RSTU 1;
 		MFMW VWAA 1 A_ReFire;
 		Goto Ready;
+	AltFire:
+		MFMM ABC 1;
+		MFMM DEF 1 A_FireProjectile("MothmanFire");
+	AltHold:
+		MFMM F 1 A_FireProjectile("MothmanFire");
+		MFMM EDCBA 1 A_ReFire;
+	}
+}
+
+class MothmanFire : Actor
+{
+	Default
+	{
+		Radius 6;
+		Height 8;
+		Speed 20;
+		Damage 4;
+		DamageType "Fire";
+		Projectile;
+		RenderStyle "Add";
+		Obituary "$OB_ACE_MOTHMAN";
+	}
+	States
+	{
+	Spawn:
+		BAL1 ABABABABABABCDE 2 Bright;
+		Stop;
+	Death:
+		BAL1 CDE 2 Bright RadiusAttack(target,2,64);
+		Stop;
 	}
 }

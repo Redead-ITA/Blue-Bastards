@@ -163,3 +163,5 @@ OB_ACE_CHAINSAW = "%o został@[ao_pl] zamienion@[adj_pl] na salsę przez piłę 
 OB_ACE_ROCKET = "%o został@[ao_pl] rozsadzon@[adj_pl] przez wyrzutnię rakiet %k.";
 OB_ACE_AUTOSHOTGUN = "%o został@[ao_pl] rozerwan@[adj_pl] przez autostrzelbę AA-12 %k.";
 OB_ACE_SAWNOFFS = "%o został@[ao_pl] rozerwan@[adj_pl] przez dubeltówki %k.";
+OB_ACE_MOTHMAN = "%o został@[ao_pl] spalon@[adj_pl] żywcem przez moce Mothmana %k.";
+OB_ACE_MOTHMAN_MELEE = "%o został@[ao_pl] rozciachan@[adj_pl] przez moce Mothmana %k.";

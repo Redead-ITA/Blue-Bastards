@@ -161,3 +161,5 @@ OB_ACE_CHAINSAW = "%o was turned into chunky salsa by %k's chainsaw.";
 OB_ACE_ROCKET = "%o got blown up %k's missile launcher.";
 OB_ACE_AUTOSHOTGUN = "%o was blown away by %k's AA-12 autoshotty.";
 OB_ACE_SAWNOFFS = "%o was torn apart by %k's dual sawn offs.";
+OB_ACE_MOTHMAN = "%o was burnt to a crisp by %k's Mothman powers.";
+OB_ACE_MOTHMAN_MELEE = "%o was slashed apart by %k's Mothman powers.";
