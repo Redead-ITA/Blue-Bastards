@@ -285,17 +285,30 @@ class BBClip : BBAmmoDistributor replaces clip
 
 			if (CheckInventory("SpotMallet", 1)) 
 			{
-				A_GiveInventory("BBSpot600", A_ammomultiplier(2), false);
-				A_GiveInventory("BBSpotNavalBullets", A_ammomultiplier(10), false);
-				A_GiveInventory("Clip", A_ammomultiplier(10), false);
+	
+				if(A_AllowedToGrab("BBSpot600") || A_AllowedToGrab("BBSpotNavalBullets") || A_AllowedToGrab("Clip"))
+				{
+					
+					A_GiveInventory("BBSpot600", A_ammomultiplier(2), false);
+					A_GiveInventory("BBSpotNavalBullets", A_ammomultiplier(10), false);
+					A_GiveInventory("Clip", A_ammomultiplier(10), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
 			if (CheckInventory("DeathsheadFist", 1))
 			{ 
-				A_GiveInventory("BBDeathshead9mm", A_ammomultiplier(10), false);
-				A_GiveInventory("BBDeathshead556", A_ammomultiplier(10), false);
+				if(A_AllowedToGrab("BBDeathshead9mm") || A_AllowedToGrab("BBDeathshead556"))
+				{
+					A_GiveInventory("BBDeathshead9mm", A_ammomultiplier(10), false);
+					A_GiveInventory("BBDeathshead556", A_ammomultiplier(10), false);
+					return resolvestate(Null);
+				} else return resolvestate("cantpickup");
 			}
+			return resolvestate(null);
 		}
-		Stop;
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
+		stop;	
+		
 	}
 }
 	
@@ -320,20 +333,30 @@ class BBClipBox : BBAmmoDistributor replaces clipbox
 	Pickup:
 		TNT1 A 0
 		{
-
 			if (CheckInventory("SpotMallet", 1)) 
 			{
-				A_GiveInventory("BBSpot600", A_ammomultiplier(10), false);
-				A_GiveInventory("BBSpotNavalBullets", A_ammomultiplier(50), false);
-				A_GiveInventory("Clip", A_ammomultiplier(50), false);
+				if(A_AllowedToGrab("BBSpot600") || A_AllowedToGrab("BBSpotNavalBullets") || A_AllowedToGrab("Clip"))
+				{
+					A_GiveInventory("BBSpot600", A_ammomultiplier(10), false);
+					A_GiveInventory("BBSpotNavalBullets", A_ammomultiplier(50), false);
+					A_GiveInventory("Clip", A_ammomultiplier(50), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
 			if (CheckInventory("DeathsheadFist", 1))
 			{ 
-				A_GiveInventory("BBDeathshead9mm", A_ammomultiplier(50), false);
-				A_GiveInventory("BBDeathshead556", A_ammomultiplier(50), false);
+				if(A_AllowedToGrab("BBDeathshead9mm") || A_AllowedToGrab("BBDeathshead556"))
+				{
+					A_GiveInventory("BBDeathshead9mm", A_ammomultiplier(50), false);
+					A_GiveInventory("BBDeathshead556", A_ammomultiplier(50), false);
+					return resolvestate(Null);
+				} else return resolvestate("cantpickup");
 			}
+			return resolvestate(null);
 		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
 		Stop;
+
 	}
 }
 
@@ -357,14 +380,29 @@ class BBShell : BBAmmoDistributor replaces Shell
 	Pickup:
 		TNT1 A 0
 		{
-			A_GiveInventory("Shell", A_ammomultiplier(4), false);
 			if (CheckInventory("SpotMallet", 1)) 
 			{
-				A_GiveInventory("BBSpotDevastatorShell", A_ammomultiplier(4), false);
+				if(A_AllowedToGrab("BBSpotDevastatorShell") || A_AllowedToGrab("Shell")) 
+				{ 
+					A_GiveInventory("BBSpotDevastatorShell", A_ammomultiplier(4), false);
+					A_GiveInventory("Shell", A_ammomultiplier(4), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
-			if (CheckInventory("DeathsheadFist", 1)){ }
+			if (CheckInventory("DeathsheadFist", 1))
+			{
+				if(A_AllowedToGrab("Shell"))
+				{
+					A_GiveInventory("Shell", A_ammomultiplier(4), false);
+					return resolvestate(null);			
+				}else return resolvestate("cantpickup");
+			}
+			return resolvestate(null);
+			
 		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
 		Stop;
+	
 	}
 }
 
@@ -382,14 +420,29 @@ class BBShellBox : BBAmmoDistributor replaces ShellBox
 	Pickup:
 		TNT1 A 0
 		{
-			A_GiveInventory("Shell", A_ammomultiplier(20), false);
+			
 			if (CheckInventory("SpotMallet", 1)) 
 			{
-				A_GiveInventory("BBSpotDevastatorShell", A_ammomultiplier(10), false);
+				if(A_AllowedToGrab("BBSpotDevastatorShell") || A_AllowedToGrab("Shell")) 
+				{ 
+					A_GiveInventory("Shell", A_ammomultiplier(20), false);
+					A_GiveInventory("BBSpotDevastatorShell", A_ammomultiplier(10), false);
+				return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
-			if (CheckInventory("DeathsheadFist", 1)){ }
+			if (CheckInventory("DeathsheadFist", 1))
+			{
+				if(A_AllowedToGrab("Shell"))
+				{
+					A_GiveInventory("Shell", A_ammomultiplier(20), false);
+					return resolvestate(null);			
+				}else return resolvestate("cantpickup");
+			}
+			return resolvestate(null);
 		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
 		Stop;
+
 	}
 }
 
@@ -408,13 +461,28 @@ class BBRocketAmmo : BBAmmoDistributor replaces RocketAmmo
 	Pickup:
 		TNT1 A 0
 		{
-			A_GiveInventory("RocketAmmo", 1, false);
-			if (CheckInventory("SpotMallet", 1)) {	}
+			
+			if (CheckInventory("SpotMallet", 1)) 
+			{
+				if(A_AllowedToGrab("RocketAmmo")) 
+				{ 
+					A_GiveInventory("RocketAmmo", 1, false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
+			}
+			
 			if (CheckInventory("DeathsheadFist", 1))
 			{ 
-				A_GiveInventory("BBDeathsheadGrenade", A_ammomultiplier(2), false);
+				if(A_AllowedToGrab("BBDeathsheadGrenade") || A_AllowedToGrab("RocketAmmo")) 
+				{ 
+					A_GiveInventory("BBDeathsheadGrenade", A_ammomultiplier(2), false);
+					A_GiveInventory("RocketAmmo", 1, false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
+			return resolvestate(null);
 		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
 		Stop;
 	}
 }
@@ -435,13 +503,27 @@ class BBRocketBox : BBAmmoDistributor replaces RocketBox
 		TNT1 A 0
 		{
 
-			A_GiveInventory("RocketAmmo", A_ammomultiplier(5), false);
-			if (CheckInventory("SpotMallet", 1)) {	}
+			
+			if (CheckInventory("SpotMallet", 1)) 
+			{
+				if(A_AllowedToGrab("RocketAmmo")) 
+				{ 
+					A_GiveInventory("RocketAmmo", A_ammomultiplier(5), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
+			}
 			if (CheckInventory("DeathsheadFist", 1))
 			{ 
-				A_GiveInventory("BBDeathsheadGrenade", A_ammomultiplier(5), false);
+				if(A_AllowedToGrab("BBDeathsheadGrenade") || A_AllowedToGrab("RocketAmmo")) 
+				{ 
+					A_GiveInventory("BBDeathsheadGrenade", A_ammomultiplier(5), false);
+					A_GiveInventory("RocketAmmo", A_ammomultiplier(5), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
+			return resolvestate(null);
 		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
 		Stop;
 	}
 }
@@ -453,6 +535,7 @@ class BBCell : BBAmmoDistributor replaces Cell
 		Inventory.PickupMessage "$GOTCELL";
 		Tag "$AMMO_CELLS";
 	}
+
 	States
 	{
 	Spawn:
@@ -461,16 +544,29 @@ class BBCell : BBAmmoDistributor replaces Cell
 	Pickup:
 		TNT1 A 0
 		{
-			A_GiveInventory("Cell", A_ammomultiplier(20), false);
+			
 			if (CheckInventory("SpotMallet", 1)) 
 			{
-				A_GiveInventory("BBSpotAtomicBomb", 1, false);
+				if(A_AllowedToGrab("Cell") || A_AllowedToGrab("BBSpotAtomicBomb")) 
+				{ 
+					A_GiveInventory("BBSpotAtomicBomb", 1, false);
+					A_GiveInventory("Cell", A_ammomultiplier(20), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
+				
 			}
 			if (CheckInventory("DeathsheadFist", 1))
 			{
-				A_GiveInventory("BBDeathsheadBFGCell", 1, false);
+				if(A_AllowedToGrab("Cell") || A_AllowedToGrab("BBDeathsheadBFGCell")) 
+				{ 
+					A_GiveInventory("BBDeathsheadBFGCell", 1, false);
+					A_GiveInventory("Cell", A_ammomultiplier(20), false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
+			return resolvestate(null);
 		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
 		Stop;
 	}
 }
@@ -489,16 +585,28 @@ class BBCellPack : BBAmmoDistributor replaces CellPack
 	Pickup:
 		TNT1 A 0
 		{
-			A_GiveInventory("Cell", A_ammomultiplier(100), false);
+			
 			if (CheckInventory("SpotMallet", 1)) 
 			{
-				A_GiveInventory("BBSpotAtomicBomb", 2, false);
+				if(A_AllowedToGrab("Cell") || A_AllowedToGrab("BBSpotAtomicBomb")) 
+				{ 
+					A_GiveInventory("Cell", A_ammomultiplier(100), false);
+					A_GiveInventory("BBSpotAtomicBomb", 2, false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
 			if (CheckInventory("DeathsheadFist", 1))
 			{
-				A_GiveInventory("BBDeathsheadBFGCell", 2, false);
+				if(A_AllowedToGrab("Cell") || A_AllowedToGrab("BBDeathsheadBFGCell")) 
+				{
+					A_GiveInventory("Cell", A_ammomultiplier(100), false);
+					A_GiveInventory("BBDeathsheadBFGCell", 2, false);
+					return resolvestate(null);
+				}else return resolvestate("cantpickup");
 			}
+			return resolvestate(null);
 		}
+		TNT1 A 1 A_Railwait(); //This function does nothing, but the entire anonymous function system would always fail if there was no function afterwards...
 		Stop;
 	}
 }
