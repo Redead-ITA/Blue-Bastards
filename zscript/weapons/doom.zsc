@@ -262,7 +262,7 @@ class BFG9000Replacement : CustomInventory replaces BFG9000
 //Ammo specific stuff
 
 
-class BBClip : BBAmmo replaces clip
+class BBClip : BBAmmoDistributor replaces clip
 {
 	Default
 	{
@@ -300,7 +300,7 @@ class BBClip : BBAmmo replaces clip
 }
 	
 
-class BBClipBox : BBAmmo replaces clipbox
+class BBClipBox : BBAmmoDistributor replaces clipbox
 {
 	Default
 	{
@@ -337,7 +337,7 @@ class BBClipBox : BBAmmo replaces clipbox
 	}
 }
 
-class BBShell : BBAmmo replaces Shell
+class BBShell : BBAmmoDistributor replaces Shell
 {
 	Default
 	{
@@ -368,7 +368,7 @@ class BBShell : BBAmmo replaces Shell
 	}
 }
 
-class BBShellBox : BBAmmo replaces ShellBox
+class BBShellBox : BBAmmoDistributor replaces ShellBox
 {
 	Default
 	{
@@ -393,7 +393,7 @@ class BBShellBox : BBAmmo replaces ShellBox
 	}
 }
 
-class BBRocketAmmo : BBAmmo replaces RocketAmmo
+class BBRocketAmmo : BBAmmoDistributor replaces RocketAmmo
 {
 	Default
 	{
@@ -420,7 +420,7 @@ class BBRocketAmmo : BBAmmo replaces RocketAmmo
 }
 	
 
-class BBRocketBox : BBAmmo replaces RocketBox
+class BBRocketBox : BBAmmoDistributor replaces RocketBox
 {
 	Default
 	{
@@ -446,7 +446,7 @@ class BBRocketBox : BBAmmo replaces RocketBox
 	}
 }
 
-class BBCell : BBAmmo replaces Cell
+class BBCell : BBAmmoDistributor replaces Cell
 {
 	Default
 	{
@@ -475,7 +475,7 @@ class BBCell : BBAmmo replaces Cell
 	}
 }
 
-class BBCellPack : BBAmmo replaces CellPack
+class BBCellPack : BBAmmoDistributor replaces CellPack
 {
 	Default
 	{

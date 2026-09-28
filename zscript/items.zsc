@@ -245,7 +245,7 @@ class Medkit_Mslug : Medikit
 	}
 }
 //Ammo distribution base
-class BBAmmo : Custominventory
+class BBAmmoDistributor : Custominventory
 {
 	Action int A_ammomultiplier(int amount)
 	{
