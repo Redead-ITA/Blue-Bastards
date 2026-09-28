@@ -244,3 +244,12 @@ class Medkit_Mslug : Medikit
 		Loop;
 	}
 }
+//Ammo distribution base
+class BBAmmo : Custominventory
+{
+	Action int A_ammomultiplier(int amount)
+	{
+		if(bdropped) return amount/2;
+		return amount;
+	}
+}

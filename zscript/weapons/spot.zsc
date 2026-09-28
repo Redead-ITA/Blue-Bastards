@@ -1,3 +1,4 @@
+#include "./spot/ammo.zsc" //ammo types for all weapons
 #include "./spot/intros.zsc"
 #include "./spot/melee.zsc" //Includes fists, chainsaw and the kick.
 #include "./spot/bullet.zsc" //Includes all weapons that use bullets.

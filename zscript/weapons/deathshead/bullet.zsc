@@ -3,7 +3,7 @@ class DeathsheadPistol : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
-		Weapon.AmmoType "Clip";
+		Weapon.AmmoType "BBDeathshead9mm";
 		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 1;
 		
@@ -55,7 +55,7 @@ class DeathsheadMAC10 : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
-		Weapon.AmmoType "Clip";
+		Weapon.AmmoType "BBDeathshead9mm";
 		Weapon.AmmoGive 20;
 		Weapon.AmmoUse 1;
 		
@@ -129,9 +129,9 @@ class DeathsheadSG550 : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
-		Weapon.AmmoType "Clip";
-		Weapon.AmmoGive 20;
-		Weapon.AmmoUse 2;
+		Weapon.AmmoType "BBDeathshead556";
+		Weapon.AmmoGive 10;
+		Weapon.AmmoUse 1;
 		
 		Weapon.BobRangeX 1.25;
 		
@@ -236,11 +236,12 @@ class DeathsheadM4 : BlueBastardWeapon
 	mixin BBDeathsheadWeapon;
 	Default
 	{
-		Weapon.AmmoType1 "Clip";
-		Weapon.AmmoType2 "RocketAmmo";
+		Weapon.AmmoType1 "BBDeathshead556";
+		Weapon.AmmoType2 "BBDeathsheadGrenade";
 		Weapon.AmmoUse1 1;
 		Weapon.AmmoUse2 1;
-		
+		Weapon.AmmoGive1 20;
+		Weapon.AmmoGive2 2;
 		
 		Tag "$ACE_M4";
 		Obituary "$OB_ACE_M4";
