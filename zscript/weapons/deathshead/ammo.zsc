@@ -10,6 +10,7 @@ class BBDeathshead9mm : Ammo
 		Ammo.BackpackMaxAmount 400;
 		Inventory.Icon "CLIPA0";
 		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
 	}
 	States
 	{
@@ -30,6 +31,7 @@ class BBDeathshead556 : Ammo
 		Ammo.BackpackMaxAmount 200;
 		Inventory.Icon "CLIPA0";
 		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
 	}
 	States
 	{
@@ -50,6 +52,7 @@ class BBDeathsheadGrenade : Ammo
 		Ammo.BackpackMaxAmount 50;
 		Inventory.Icon "ROCKA0";
 		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
 	}
 	States
 	{
@@ -70,6 +73,7 @@ class BBDeathsheadBFGCell : Ammo
 		Ammo.BackpackMaxAmount 15;
 		Inventory.Icon "CELLA0";
 		//Tag "$AMMO_CLIP";
+		Inventory.RestrictedTo "Deathshead";
 	}
 	States
 	{
