@@ -32,3 +32,45 @@ class Mothman_Transform : CustomInventory {
 class Mothman_Transform_End : Dragon_Spot_Transform_End {
     mixin BBDeathsheadWeapon;
 }
+
+class MothmanWhiskeyBottle : BlueBastardWeapon
+{
+	mixin BBDeathsheadWeapon;
+	Default
+	{
+		Weapon.BobStyle "Smooth";
+		Weapon.BobRangeX 1.5;
+		+WEAPON.NOALERT
+		+INVENTORY.UNDROPPABLE
+		Tag "$ACE_FISTS";
+		Obituary "$OB_ACE_FISTS";
+	}
+	States
+	{
+	Select:
+		MFMW A 1 A_Raise(24);
+		Wait;
+	Deselect:
+		MFMW A 1 A_Lower(24);
+		Wait;
+	Ready:
+		MFMW A 1 A_WeaponReady;
+		Wait;
+	Fire:
+		MFMW A 0 A_Jump(256, "FireRight", "FireLeft");
+	FireRight:
+		MFMW B 1 A_PlaySound("weapons/swing", CHAN_AUTO);
+		MFMW CD 1;
+		MFMW E 1 A_CustomPunch(random(75,200), norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/rip");
+		MFMW FGHI 1;
+		MFMW JKLM 1 A_ReFire;
+		Goto Ready;
+	FireLeft:
+		MFMW N 1 A_PlaySound("weapons/swing", CHAN_AUTO);
+		MFMW OP 1;
+		MFMW Q 1 A_CustomPunch(random(75,200), norandom:true, pufftype:"BlueBastardBulletPuffStab", range: meleeRange + 20, meleesound: "weapons/claw/rip");
+		MFMW RSTU 1;
+		MFMW VWAA 1 A_ReFire;
+		Goto Ready;
+	}
+}

@@ -301,12 +301,13 @@ class DeathsheadMothman : Deathshead
 {
 	Default
 	{
+		Player.WeaponSlot 1, "MothmanWhiskeyBottle";
+		Player.MorphWeapon "MothmanWhiskeyBottle";
+		Speed 1.1;
 		Player.Face "MFM";
 		+INVULNERABLE;
 	}
-
-	// Bobbing when the player is transformed won't work otherwise unless i override this entire function.
-	// Taken from Playerpawn with modifiactions.
+	
 	override void CalcHeight()
 	{
 		let player = self.player;
