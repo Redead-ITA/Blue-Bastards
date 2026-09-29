@@ -1,10 +1,11 @@
 #include "./deathshead/ammo.zsc" //Custom ammo types
 #include "./deathshead/intros.zsc"
-#include "./deathshead/melee.zsc" //Includes fists, chainsaw and the kick.
-#include "./deathshead/bullet.zsc" //Includes all weapons that use bullets.
-#include "./deathshead/shells.zsc" //Includes all weapons that use shells.
-#include "./deathshead/rockets.zsc"//etc
-#include "./deathshead/cells.zsc"//etc
+#include "./deathshead/melee.zsc"
+#include "./deathshead/bullet.zsc"
+#include "./deathshead/shells.zsc"
+#include "./deathshead/rockets.zsc"
+#include "./deathshead/cells.zsc"
+#include "./deathshead/mothman.zsc"
 
 
 mixin class BBDeathsheadWeapon  //the mixing classes are classes you add in to the class, which is great for more minor stuff.

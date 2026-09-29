@@ -51,6 +51,14 @@ class BlueBastardsBerserk : CustomInventory Replaces Berserk {
 					string tip = String.Format(StringTable.Localize("$SPOT_TRANSFORM_TIP"), s1);
 					toucher.A_Print(tip);
 				}
+				if (toucher.FindInventory("DeathsheadFist"))
+				{
+					toucher.A_GiveInventory("Mothman_Transform");
+					let [k1, k2] = Bindings.GetKeysForCommand("+reload");
+					string s1 = Bindings.NameKeys(k1, k2);
+					string tip = String.Format(StringTable.Localize("$ACE_TRANSFORM_TIP"), s1);
+					toucher.A_Print(tip);
+				}
 			}
 			GoAwayAndDie();
 		}
@@ -65,7 +73,8 @@ class BlueBastardsBerserk : CustomInventory Replaces Berserk {
 	Pickup:
 		TNT1 A 0 A_GiveInventory("PowerStrength");
 		TNT1 A 0 HealThing(100, 0);
-		TNT1 A 0 A_SelectWeapon("Fist");
+		TNT1 A 0 A_SelectWeapon("SpotMallet");
+		TNT1 A 0 A_SelectWeapon("DeathsheadFist");
 		Stop;
 	}
 }
