@@ -111,6 +111,7 @@ class BlueBastardsStatusBar : BaseStatusBar
 					[amt1, maxamt] = GetAmount("BBDeathshead9mm");
 					DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
 					DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
+					DrawImage("graphics/stbar_9mm.png", (249, 168), DI_ITEM_OFFSETS);
 				}
 				[amt1, maxamt] = GetAmount("Shell");
 				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 179), DI_TEXT_ALIGN_RIGHT);
