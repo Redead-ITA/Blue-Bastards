@@ -146,7 +146,6 @@ class BlueBastardsStatusBar : BaseStatusBar
 	override void Init()
 	{
 		Super.Init();
-		SetSize(32, 320, 200);
 		Font fnt = "HUDFONT_DOOM";
 		mHUDFont = HUDFont.Create(fnt, fnt.GetCharWidth("0"), Mono_CellLeft, 1, 1);
 		fnt = "INDEXFONT_DOOM";
