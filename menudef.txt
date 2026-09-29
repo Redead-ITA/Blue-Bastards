@@ -42,6 +42,7 @@ OptionMenu "ModOptionsMenu"
 	StaticText "$MNU_SPOTALT_VOICE_DESC"
 	Option "$MNU_ALLOW_TRANSFORM", "allow_spot_dragon", "OnOff"
 	StaticText "$MNU_ALLOW_TRANSFORM_DESC"
+	StaticText "$MNU_ALLOW_TRANSFORM_DESC2"
 }
 
 ListMenu "Extras"

@@ -14,6 +14,7 @@ MNU_SPOTALT_VOICE = "Use Spot's Alternative Voice";
 MNU_SPOTALT_VOICE_DESC = "Use a slightly tougher voice instead of the default one, if you think it's too cute.";
 MNU_ALLOW_TRANSFORM = "Allow Transformations";
 MNU_ALLOW_TRANSFORM_DESC = "Allow the player to morph into a stronger version of themselves temporarly after picking up the berserk pack.";
+MNU_ALLOW_TRANSFORM_DESC2 = "Currently only Spot HAS THIS.";
 
 PLAYER_SPOT = "Spot";
 PLAYER_DEATHSHEAD = "Deathshead";
@@ -110,9 +111,6 @@ ACE_ROCKET = "Missile Launcher Mark W4N6";
 ACE_PLASMA = "Heavy Plasma Cannon";
 ACE_BFG = "BFG-Nine-Kay Plus-Plus";
 
-ACE_TRANSFORM_TIP = "Press %s to transform into the Mothman.";
-ACE_TRANSFORM_INIT = "You start feeling the inner rage of your ancestors...";
-
 SPOT_CHAINSAW = "Chainsaw";
 SPOT_MALLET = "Comically Sized Mallet";
 SPOT_REV = ".600 Nitro Express Revolver";
@@ -160,5 +158,3 @@ OB_ACE_CHAINSAW = "%o was turned into chunky salsa by %k's chainsaw.";
 OB_ACE_ROCKET = "%o got blown up %k's missile launcher.";
 OB_ACE_AUTOSHOTGUN = "%o was blown away by %k's AA-12 autoshotty.";
 OB_ACE_SAWNOFFS = "%o was torn apart by %k's dual sawn offs.";
-OB_ACE_MOTHMAN = "%o was burnt to a crisp by %k's Mothman powers.";
-OB_ACE_MOTHMAN_MELEE = "%o was slashed apart by %k's Mothman powers.";
